@@ -87,6 +87,7 @@ Then, from within your project folder:
 ```bash
 cd public
 vercel deploy --name my-project
+vercel --prod (deploy to vercel)
 ```
 
 ### With [surge](https://surge.sh/)
