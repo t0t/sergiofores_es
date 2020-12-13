@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;800&display=swap');
+
+$secondary_font: 'Montserrat', sans-serif;
+
+main > * {
+  font-family: $secondary_font;
+  letter-spacing: 1px;
+}
+
+main {
+  line-height: 1.6em;
+}
+
+

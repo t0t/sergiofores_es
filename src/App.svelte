@@ -188,6 +188,8 @@
 </main>
 
 <style lang="scss">
+    @import "../sass/_main.scss";
+
     $light_grey: rgb(255,255,255);
     $dark_grey: rgb(102,102,102);
     
@@ -218,9 +220,8 @@
 
 	main {
 		text-align: center;
-		padding: 1em;
 		max-width: 240px;
-		margin: 0 auto;
+        margin: 0 auto;
 	}
 
 	h1 {
