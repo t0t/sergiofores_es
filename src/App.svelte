@@ -8,7 +8,7 @@
 
   <div class="VideoContainer">
     <div class="textoverlay"><h1>+0+1234</h1></div>
-    <div class="mask"></div>
+    <!-- <div class="mask"></div> -->
     <video 
       poster="/img/cover2.jpg"
       playsinline
