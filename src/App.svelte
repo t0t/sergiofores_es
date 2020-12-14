@@ -141,7 +141,7 @@
   }
   .VideoContainer {
     position: relative;
-    min-height: 33vh;
+
     .mask {
       width: 100%;
       height: 100%;
@@ -156,8 +156,8 @@
 
 	main {
 		text-align: center;
-		max-width: 340px;
-    margin: 0 auto;
+		/* max-width: 340px;
+    margin: 0 auto; */
 	}
 
 	h1 {
