@@ -34,8 +34,8 @@
 
 <div class="ClaimYoutube">
     <div class="ClaimYoutubeText">
-        <p>Éste es mi último video en el que vuelco reflexiones acerca de la metafísica, el arte y el símbolo desde una  perspectiva hermenéutica +0+1234.</p>
+        <p>Éste es mi último video en el que vuelco reflexiones acerca de la metafísica, el arte y el símbolo desde una  perspectiva hermenéutica arquetípica clásica. (+0+1234.)</p>
         <Button variante={1} text="Mi canal de Youtube" url="https://www.youtube.com/channel/UC9C6HRn2RDG3bmWC4Soxtcw" />
     </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7BtDRQuPjDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/7BtDRQuPjDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

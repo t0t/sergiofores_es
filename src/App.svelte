@@ -1,41 +1,39 @@
 <script>
+  import SiteHeader from './components/SiteHeader.svelte';
   import Banner from './components/Banner.svelte';
   import About from './components/About.svelte';
   import BlockQuote from './components/BlockQuote.svelte';
+  import Image from './components/Image.svelte';
   import ClaimYoutube from './components/ClaimYoutube.svelte';
+  import VideoContainer from './components/VideoContainer.svelte';
 </script>
 
-<main>
-	<h1>+0+1234</h1>
+<SiteHeader/>
 
-  <div class="VideoContainer">
-    <!-- <div class="mask"></div> -->
-    <video 
-      poster="/img/cover2.jpg"
-      playsinline
-      controls="controls"
-    >
-      <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />
-      <source src="/img/desdelapoesiadelamateria.mp4" type="video/mp4" />
-      <p>Su navegador no soporta vídeos HTML5.</p>
-    </video>
-  </div>
+<main>
+
+  <VideoContainer></VideoContainer>
 
 	<Banner></Banner>
 
 	<div class="Content">
 
-    <h2><i>+0+1234</i> es el código con el que leo la Creación.</h2>
+    <h2><i>+0+1234</i> Un código universal y atemporal para leer la Creación y vivir en coherencia.</h2>
     
     <BlockQuote quote="Quisiera que tú me entendieras a mí sin palabras. Sin palabras hablarte, lo mismo que se habla mi gente. Que tú me entendieras a mí sin palabras como entiendo yo al mar o a la brisa enredada en un álamo verde..." author="José Hierro" variante={2} />
     
     <h4>Nada nuevo bajo el Sol. Fundamentos.</h4>
-
-    <p>Si me preguntaran para qué he venido a este mundo diría que para recordar. En un sentido teleológico creo que esa es la función de porqué nacemos. Recordamos para recuperar el conocimiento que tenemos de nosotros mismos y de lo que Es.
+    
+    <p>Si me preguntaran para qué he venido a este mundo diría que para recordar. En un sentido teleológico creo que esa es la función de porqué nacemos. Recordamos para recuperar el conocimiento que tenemos de nosotros mismos y de lo que Es.</p>
+    
+    <Image src="/img/detalle4.jpg" variante="1" />
+      
     <p>El acto de recordar produce en mi una gran liberación y paz interior. Me "ordeno a mi mismo" el recordar... Y lo hago desde un sincretismo hermenéutico vivo a través del arte como simbolo.</p>
+    
     <p>A riesgo de parecer pedante, y aún reconociendo mi torpeza con las palabras, no veo forma mas clara de decir con palabras cómo es aquello hacia lo que me ha llevado el recuerdo en esta vida.</p>
 
     <p>Del griego hermeneutikos; Hermeneuo (Yo descifro) y Tekné (Arte, técnica, tejer). La Hermenéutica nace como <strong>"el arte o la técnica de explicar, descifrar o interpretar"</strong>. Así que para explicar algo, luego veremos el qué, primeramente yo tengo que hacer una interpretación, un desciframiento de algo que viene cifrado, escrito, plasmado en alguna parte. Puede estar en los libros o en el legado sapiencial de algún maestro pero puede estar también en mi propio interior, como algo latente que busca manifestarse o ser visto.</p>
+    
 
     <p>Al expresar y comunicar, desciframos siempre un algo "tejido" previamente, representándolo, volviendolo a hacer presente. Así, la hermenéutica es el Arte de descifrar pero también puede ser comprendido como <i>un arte que me descifra a mi mismo en el acto de descifrar</i>.</p>
     
@@ -43,6 +41,8 @@
 
     <p>Veámos cómo es esto: la palabra Hermeneutiké también hace referencia al dios Griego Hermes, encargado de llevar mensajes secretos (herméticos) a través de distintos mundos y descifrarlos sólo a determinados destinatarios. Hermes era un psicopompo, un mismo mensajero alado que significaba al Mercurio de los romanos y, por supuesto, el mismo que el Toth de los egipcios, dios-símbolo de la mediación y de la interpretación entre distintos mundos o caras de una misma realidad. </p>
     
+    <Image src="/img/grafico-siete.jpg" variante="2" />
+
     <p>Esto revela la noción de sincretismo que es clave; y es que se puede percibir lo que hay de idéntico en lo diferente, de tal manera que se puede esencializar a partir de la mirada para ir al nucleo de una experiencia cognoscitiva más inmediata.</p>
     
     <p>Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.</p>
@@ -61,9 +61,11 @@
 
     <p>La experiencia estética es incomparablemente más rica, está preñada de infinitas posibilidades que quedan sin realizar en la experiencia sensible ordinaria. En la obra del artista estas posibilidades se actualizan; salen a la luz y toman una forma definida.</p>
 
-    <h2>Hermenéutica arquetípica y simbólica de la Creación</h2>
+    <h2>Una hermenéutica arquetípica desde el símbolo</h2>
+    
+    <Image src="/img/01234.svg" variante="1" />
 
-    <p>Este código simbólico se basa en los 5 arjés universales y activa un tipo de visión y de comprensión que se vive como la experiencia misma del conocimiento.</p>
+    <p><i>Este código simbólico se basa en los 5 arjés universales y activa un tipo de visión y de comprensión que se vive como la experiencia misma del conocimiento.</i></p>
     
     <h4>0. <em>Disolución y apertura del sentido</em></h4>
     <p>Cada Creación surge de un vacío infinito de posibilidades queriendo conocerse y experimentarse. (Y esto es así tanto si se trata de una obra artística como de cualquier otra cosa viva.) En el origen existe una nada que se contrae en el dar hasta el punto de autoexiliarse o esconderse de sí, de manera que puede caber en la existencia.</p>

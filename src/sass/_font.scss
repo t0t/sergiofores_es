@@ -36,7 +36,8 @@ $line-heights: (
   @return map-get($line-heights, $level);
 }
 
-main {
+main,
+h1 {
   font-family: $secondary_font;
   letter-spacing: 1px;
 }
