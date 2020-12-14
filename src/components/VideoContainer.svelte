@@ -47,6 +47,7 @@
     <video 
         poster="/img/cover2.jpg"
         loop
+        playsinline
         controls="controls"
     >
         <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />
