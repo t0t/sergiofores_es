@@ -25,5 +25,5 @@
     }
 </style>
 <header>
-    <h1>Sergio Forés · <span>Arte Holístico</span></h1>
+    <h1>Sergio Forés · <span>Arte y Metafísica</span></h1>
 </header>

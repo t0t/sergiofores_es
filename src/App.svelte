@@ -22,28 +22,45 @@
     
     <BlockQuote quote="Quisiera que tú me entendieras a mí sin palabras. Sin palabras hablarte, lo mismo que se habla mi gente. Que tú me entendieras a mí sin palabras como entiendo yo al mar o a la brisa enredada en un álamo verde..." author="José Hierro" variante={2} />
     
-    <h4>Nada nuevo bajo el Sol. Fundamentos.</h4>
+    <h4>Némesis teleológica</h4>
     
-    <p>Si me preguntaran para qué he venido a este mundo diría que para recordar. En un sentido teleológico creo que esa es la función de porqué nacemos. Recordamos para recuperar el conocimiento que tenemos de nosotros mismos y de lo que Es.</p>
+    <p>Si me preguntaran para qué he venido a este mundo posiblemente diría que para recordar. En un sentido teleológico creo que esa es la función de porqué nacemos. Recordamos para recuperar un conocimiento que ya tenemos de nosotros mismos y de lo que Es.</p>
     
     <Image src="/img/detalle4.jpg" variante="1" />
       
-    <p>El acto de recordar produce en mi una gran liberación y paz interior. Me "ordeno a mi mismo" el recordar... Y lo hago desde un sincretismo hermenéutico vivo a través del arte como simbolo.</p>
-    
-    <p>A riesgo de parecer pedante, y aún reconociendo mi torpeza con las palabras, no veo forma mas clara de decir con palabras cómo es aquello hacia lo que me ha llevado el recuerdo en esta vida.</p>
+    <p>El acto de recordar produce en mi una gran liberación y paz interior. Me "ordeno a mi mismo" el recordar... las cosas que hago son aquello hacia lo que me ha llevado el recuerdo en esta vida.</p>
 
-    <p>Del griego hermeneutikos; Hermeneuo (Yo descifro) y Tekné (Arte, técnica, tejer). La Hermenéutica nace como <strong>"el arte o la técnica de explicar, descifrar o interpretar"</strong>. Así que para explicar algo, luego veremos el qué, primeramente yo tengo que hacer una interpretación, un desciframiento de algo que viene cifrado, escrito, plasmado en alguna parte. Puede estar en los libros o en el legado sapiencial de algún maestro pero puede estar también en mi propio interior, como algo latente que busca manifestarse o ser visto.</p>
-    
+    <h4>Hermenéutica holística</h4>
 
-    <p>Al expresar y comunicar, desciframos siempre un algo "tejido" previamente, representándolo, volviendolo a hacer presente. Así, la hermenéutica es el Arte de descifrar pero también puede ser comprendido como <i>un arte que me descifra a mi mismo en el acto de descifrar</i>.</p>
+    <p>Del griego <em>hermeneutikos</em>; <em>Hermeneuo</em> (Yo descifro) y <em>Tekné</em> (Arte, técnica, tejer). La Hermenéutica nace como <strong>"el arte o la técnica de explicar, descifrar o interpretar"</strong>. Así que para explicar o descifrar algo, luego veremos el qué, primeramente yo tengo que hacer una hermenéutica de ese "algo", averiguar algo que vendrá recogido en alguna otra parte. Puede estar en los libros o en el legado sapiencial de algún maestro, puede que haya sido sellado dentro de una obra de arte, una piedra o incluso en mí propio interior.</p>
     
-    <p>Es por eso que a medida que uno aumenta su sensibilidad perceptiva, interpretativa, intelectual o consciencial se va dando cuenta de las relaciones intrínsecas que hacen que en esencia todo sea lo mismo o provenga de un mismo origen arquetipal. Un mar de significados encapsulados o fractales, embebidos unos dentro de otros como muñecas rusas, generando estructuras complejas e inabarcables por todas partes pero extremadamente simples y obvias al mismo tiempo. A medida que una persona descifra, interpreta, percibe o lee va entendiendo, y se simplifica a él mismo a la vez que se expande una comprensión real de la cosa que nace en ese momento y que hace que las cosas se muestren como lo que son verdaderamente, vivencialmente. Los conceptos, las nociones, son meras partes de un sistema de significantes que comparten la misma raíz, esencia o significado.</p> 
+    <p>Al descifrar o interpretar ese algo que fue presentado en alguna otra parte lo estamos perpetuando, lo estamos representando en esta parte que somos nosotros ahora. Descifrar es hacer presente o representar. Cada representación implica un desciframiento. Al interpretar, "traemos algo a nosotros", el que observa se actualiza a sí a partir de aquello que observa. <em>El mero hecho de observar es lo que descifra.</em></p>
 
-    <p>Veámos cómo es esto: la palabra Hermeneutiké también hace referencia al dios Griego Hermes, encargado de llevar mensajes secretos (herméticos) a través de distintos mundos y descifrarlos sólo a determinados destinatarios. Hermes era un psicopompo, un mismo mensajero alado que significaba al Mercurio de los romanos y, por supuesto, el mismo que el Toth de los egipcios, dios-símbolo de la mediación y de la interpretación entre distintos mundos o caras de una misma realidad. </p>
+    <p>En función del ángulo o perspectiva relativa de cada observador, cada observación genera una distinta observación de la cosa, es decir, una distinta interpretación. Al descifrar los libros sagrados antiguos se produjo una multiplicidad de credos aún mayor. No, la hermenéutica holística, el desciframiento de lo que es real y verdadero tiene que partir de la experiencia directa de eso que es original y único. Entonces sí que podemos percibir después sus reflejos en las cosas.</p>
+
+    <h4>El desciframiento +0+1234</h4>
+
+    <p>No puedes percibir nada que no estuviera antes, algo viene de un origen y se revifica en tí al percibirlo. Cuando percibimos horizontalmente percibimos desde la diversidad, cuando percibimos verticalmente lo hacemos desde la unicidad ya que atravesamos el campo de las multiples interpretaciones y llegamos al principio en si, lo que está antes, el arjé.</p>
+
+    <p>Hemos dicho que descifrar es el arte de leer las cifras y que lo cifrado es aquello que permea el mundo. Entonces, ¿qué es eso que está en todas partes, qué es una cifra?. Viene del árabe hispánico <em>ṣífr</em> ("cero"), y eventualmente cualquier dígito, a su vez de <em>صفر</em> (safara), "estar vacío".</p>
+
+    <p>Interesante, <em>al descifrar retiramos el cero que oculta el significado de las cosas. <strong>Aquello que está siendo retirado permanentemente es el vacío mismo</strong>, es la nada, el cero.</em> El cero<sub>0</sub> es un recipiente que contiene algo y al desvelarlo se llena de interpretación, muestra lo que estaba oculto. Lo cifrado se actualiza a sí mismo, se hace presente a partir de su propio vaciamiento. Y, además, en su propio desciframiento se vuelve a cifrar y en medio de ese eterno proceso se libera algo que se experimenta como conocimiento.</p>
+
+    <p>Ocurre que estamos acostumbrados a percibir los conceptos como cosas estáticas y separadas. Construimos todo nuestro sistema de pensamiento en base a otros sistemas de pensamiento que, a su vez, hicieron lo mismo, pero necesitamos comprener la esencia de las cosas desde la propia experiencia. La verdadera hermenéutica, en mi opinión, funciona como un Tetris; el objetivo no es amontonar piezas sino disolverlas, que desaparezcan! Lo que se propone es descifrar el sentido de la realidad en si. Jamás llegaremos al sentido original de todo si no desintegramos todas las diferencias ilusorias que nos separan de las causas primeras.</p>
+
+    <p>A medida que uno aumenta su sensibilidad perceptiva, interpretativa, intelectual o consciencial se va dando cuenta de las relaciones intrínsecas que hacen que en esencia todo sea lo mismo o provenga de un mismo origen arquetipal (arjé). Un mar de significados encapsulados fractalmente, embebidos unos dentro de otros como muñecas rusas, generando estructuras complejas e inabarcables por todas partes pero extremadamente simples y obvias en su esencia. A medida que una persona descifra, interpreta, percibe o lee se va simplificando a él mismo dentro de una comprensión viva y no supuesta de la cosa que nace en ese momento y que hace que las cosas se muestren como lo que son verdaderamente. Los conceptos, las nociones, son meras partes de un sistema de significantes que comparten la misma raíz, esencia o significado.</p> 
+
+    <h4>Simballein</h4>
+
+    <p><em>Hermeneutiké</em> también es un término que hace referencia al dios Griego Hermes, encargado de llevar mensajes secretos de una dimensión a otra y descifrarlos sólo a determinados destinatarios. Hermes era un psicopompo, un mismo mensajero alado que significaba al Mercurio de los romanos y, por supuesto, el mismo que el Toth de los egipcios, dios-símbolo de la mediación y de la interpretación entre distintos mundos o caras de una misma realidad.</p>
+
+    <p>Hemos visto que interpretar, actualizar, comprender o simbolizar son algunas de las palabras que apuntan a un mismo hecho y germinan desde una misma realidad. Hay una fuerza que tiende a esencializar, reunir. Esa fuerza es lo que re-presenta el símbolo. en este sentido poco me importa cómo es el cifrado y qué forma adopta.</p>
     
     <Image src="/img/grafico-siete.jpg" variante="2" />
 
     <p>Esto revela la noción de sincretismo que es clave; y es que se puede percibir lo que hay de idéntico en lo diferente, de tal manera que se puede esencializar a partir de la mirada para ir al nucleo de una experiencia cognoscitiva más inmediata.</p>
+
+    <p></p>
     
     <p>Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.</p>
 
@@ -75,7 +92,8 @@
     <p>
       Como dice el Mario Sabán en un curso que imarte de Kabalah; Las lenguas más antiguas como el hebreo, por ejemplo, se escribían grabando en la piedra y para eso tenían que quitar tierra y generar un vacío en la piedra. Las letras podían leerse gracias al vacío de las letras. Lo que produce que la letra diga algo es el vacío de la letra, el vacío, pues, es el que nos habla.
     </p>
-      
+    <Image src="/img/malla2.gif" variante="2" />
+
     <h4>1. <em>El recipiente del ser</em></h4>
     <p>Unidad. Centro. Espíritu. Luz. Principio Solar. La respuesta que se disuelve en preguntas <sub>4</sub></p>
     <p>El 1, antes del 0 es el 10; la proyección hacia mundos nuevos en distintos ordenes de existencia. La Unidad en la manifestación es cuaternaria o cuatriunitaria. No existe más que Unidad, pero esa unidad se fragmenta o despliega en partes. La luz va siendo aminorada a través de recipientes o vasijas que la canalizan, la vehiculen y la relentizan para que niveles más densos de energía puedan soportarla. </p>
