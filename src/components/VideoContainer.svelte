@@ -40,8 +40,8 @@
 
 <div class="VideoContainer">
     <div class="VideoContainerText">
-        <p><strong>Un diálogo entre el Arte Plástico, la hermenéutica arquetípica universal y la Impresión 3D.</strong></p>
-        <p>Nueva obra disponible. <br> Showroom en Mediona, Barcelona.</p>
+        <p><strong>Nueva obra disponible.</strong></p>
+        <p>"Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia."</p>
         <Button variante={1} text="Chat por Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
     </div>
     <video 
