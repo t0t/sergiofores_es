@@ -50,39 +50,35 @@
 
     <p>A medida que uno aumenta su sensibilidad perceptiva, interpretativa, intelectual o consciencial se va dando cuenta de las relaciones intrínsecas que hacen que en esencia todo sea lo mismo o provenga de un mismo origen arquetipal (arjé). Un mar de significados encapsulados fractalmente, embebidos unos dentro de otros como muñecas rusas, generando estructuras complejas e inabarcables por todas partes pero extremadamente simples y obvias en su esencia. A medida que una persona descifra, interpreta, percibe o lee se va simplificando a él mismo dentro de una comprensión viva y no supuesta de la cosa que nace en ese momento y que hace que las cosas se muestren como lo que son verdaderamente. Los conceptos, las nociones, son meras partes de un sistema de significantes que comparten la misma raíz, esencia o significado.</p> 
 
-    <h4>Simballein</h4>
+    <h4>Símbolo, sincretismo y arte</h4>
 
     <p><em>Hermeneutiké</em> también es un término que hace referencia al dios Griego Hermes, encargado de llevar mensajes secretos de una dimensión a otra y descifrarlos sólo a determinados destinatarios. Hermes era un psicopompo, un mismo mensajero alado que significaba al Mercurio de los romanos y, por supuesto, el mismo que el Toth de los egipcios, dios-símbolo de la mediación y de la interpretación entre distintos mundos o caras de una misma realidad.</p>
 
-    <p>Hemos visto que interpretar, actualizar, comprender o simbolizar son algunas de las palabras que apuntan a un mismo hecho y germinan desde una misma realidad. Hay una fuerza que tiende a esencializar, reunir. Esa fuerza es lo que re-presenta el símbolo. en este sentido poco me importa cómo es el cifrado y qué forma adopta.</p>
+    <p>Hemos visto que interpretar, actualizar, comprender y simbolizar son algunas de las palabras que apuntan a un mismo hecho y germinan desde una misma realidad. Hay una fuerza que tiende a esencializar, reunir. Esa fuerza es lo que re-presenta el símbolo. Comprendido el fondo y sentido de esto poco me importa cómo es el cifrado y qué forma específica adoptará, eso es secundario. El símbolo permite la completitud de lo secundario en lo primario. El positivismo y el cartesianismo racional empírico han renegando del pensamiento simbólico y han alimentado la fuerza contraria (el lado oscuro); la confusión y el extravío de lo que somos. La fragmentación es inevitable y hasta necesaria, pero necesaria para comprender el valor de la unidad. Es cuanto menos estúpido renegar de lo simbolico cuando el propio lenguaje humano se edifica desde signos creados desde una dimensión que fue simbólica. Hemos idolatrado el signo por el signo y hemos olvidado que los números son cualidades, y no meras cantidades. Lo simbólico está presente en el núcleo de nuestro ADN precisamente por esa cualidad de unir el final de las cosas con su principio. La vida misma es de naturaleza simbólica, lo simbolico marca el recorrido de todo lo que ocurre cíclicamente curvando la linealidad de la percepción y completándola.</p>
+
+    <p>Lo simbólico permite recorrer las separaciones entre las cosas y las personas para poder reconocer lo que son desde lo que parecen.</p>
     
     <Image src="/img/grafico-siete.jpg" variante="2" />
 
-    <p>Esto revela la noción de sincretismo que es clave; y es que se puede percibir lo que hay de idéntico en lo diferente, de tal manera que se puede esencializar a partir de la mirada para ir al nucleo de una experiencia cognoscitiva más inmediata.</p>
-
-    <p></p>
+    <p>Esto revela la noción de sincretismo que es clave; lo que define a Hermes en el relato mitológico es lo mismo que define al Toth de los egipcios. Lo que hay es precisamente lo que podemos percibir. Lo que realmente vemos cuando miramos la forma del agua es lo que vemos en el alma, aunque las formas del agua y del alma sean distintas. El símbolo permite reconocer lo idéntico a partir de lo diferente. Se reunifica partir de la mirada misma para ir al nucleo de una experiencia cognoscitiva inmediata.</p>
     
-    <p>Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.</p>
+    <p><strong>Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.</strong></p>
 
-    <p>La obra de arte no es un mero portador de sentido y no sólo remite a algo, sino que en ella está aquello a lo que remite. Lo simbólico no sólo nos lleva al significado, sino que lo hace estar presente, representándolo.</p>
+    <p><strong>La obra de arte no es un mero portador de sentido y no sólo remite a algo, sino que en ella está aquello a lo que remite.</strong> Lo simbólico no sólo nos lleva al significado, sino que lo hace estar presente, representándolo.</p>
 
-    <p>En toda obra de arte hay algo así como mimesis o imitatio, pero mimesis no se refiere a la imitación de algo previamente conocido, sino de llevar algo a su representación, de manera que esté presente ahí en su plenitud sensible. </p>
+    <p>Lo humano "imita" algo, hay una imitatio en las formas. Arte es un oficio, una labor que teje y desteje lo imitado, lo que tiene mimesis con "otra cosa", pero mimesis no se refiere a la imitación de algo previamente conocido, sino de llevar algo a su representación, descifrando de manera que "ello" presente ahí en su plenitud sensible. </p>
     
-    <p>En la representación de una obra de arte, no se trata de que ésta represente algo que ella no es, como hace una alegoría y por lo tanto no dice algo para que así se piense en otra cosa. Sólo en ella, y precisamente en ella puede encontrarse lo que tenga que decir.</p>
+    <p>En la representación de una obra de arte, no se trata de que ésta represente algo que ella no es, como hace una alegoría o una metáfora y por lo tanto no dice algo para que así se piense en otra cosa. Sólo en ella, y precisamente en ella puede encontrarse lo que tenga que decir.</p>
 
-    <p>En la obra de arte como símbolo se produce es un reconocimiento mútuo entre dos polos de una misma realidad que se encuentran. La realidad se reune y se completa a sí misma haciendose presente como símbolo.</p>
+    <p>En la obra de arte, como símbolo que es, se produce un reconocimiento mútuo entre dos caras de una misma realidad que se encuentran. <em>La realidad se reune a si misma, se completa a sí misma haciéndose presente como símbolo proporcionando la experiencia de descubrimiento de una realidad más original.</p>
 
-    <p>No, el arte no es una imitación sino un descubrimiento de la realidad.</p>
+    <p>Por otra parte, la experiencia de conocimiento que se libera a través del símbolo-arte es ineludiblemente estética, pues la belleza y la armonía equilibran y ordenan toda la naturaleza. La liberación del conocimiento se produce como un chasquido, un darse cuenta que está preñado de infinitas posibilidades que la experiencia sensible ordinaria por sí sola no puede realizar. En la obra del artista estas posibilidades se actualizan; salen a la luz y toman una forma definida.</p>
 
-    <p>Lo simbólico en el arte, además de remitirnos al significado, lo representa.</p>
-
-    <p>La experiencia estética es incomparablemente más rica, está preñada de infinitas posibilidades que quedan sin realizar en la experiencia sensible ordinaria. En la obra del artista estas posibilidades se actualizan; salen a la luz y toman una forma definida.</p>
-
-    <h2>Una hermenéutica arquetípica desde el símbolo</h2>
+    <h2>Hermenéutica primordial</h2>
     
     <Image src="/img/01234.svg" variante="1" />
 
-    <p><i>Este código simbólico se basa en los 5 arjés universales y activa un tipo de visión y de comprensión que se vive como la experiencia misma del conocimiento.</i></p>
+    <p>01234 son 5 simbolos que condensan la estructura de toda la realidad. Entre estos símbolos y los principios que representan existe una serie de fuerzas y dinámicas.</p>
     
     <h4>0. <em>Disolución y apertura del sentido</em></h4>
     <p>Cada Creación surge de un vacío infinito de posibilidades queriendo conocerse y experimentarse. (Y esto es así tanto si se trata de una obra artística como de cualquier otra cosa viva.) En el origen existe una nada que se contrae en el dar hasta el punto de autoexiliarse o esconderse de sí, de manera que puede caber en la existencia.</p>
