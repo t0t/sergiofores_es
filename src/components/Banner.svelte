@@ -1,3 +1,7 @@
+<script>
+    import Button from './Button.svelte';
+</script>
+
 <style lang="scss">
     @import "../sass/_main.scss";
     /* :global(h1) {
@@ -17,7 +21,7 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        h2 {
+        p {
             margin-left: $h1;
             margin-right: 0;
         }
@@ -30,7 +34,9 @@
 <div class="Banner">
     <img src="../img/01234.svg" alt="">
     <div class="BannerText">
-        <h1>Hay una verdad que puede ser conocida...</h1>
-        <h2>¿Percibes<sub>2</sub> ese orden<sub>1</sub> atravesándote<sub>0</sub> en la forma<sub>4</sub> del encuentro<sub>3</sub>? Es lo inefable conociéndose a través de la Creación. 01234 son las llaves de tus ojos. Éstas son las cosas que yo he visto, a donde me llevan las corrientes de todas las formas...</h2>
+        <h1>+0+ 1234 <br> Hermenéutica Universal</h1>
+        <p>De momento es sólo otro Work in progress. La verdad es que escribir nunca ha sido mi intención y me cuesta horrores hacerlo, sin embargo no puedo evitarlo. Necesito vaciarme de las cosas que me vienen a la cabeza. </p>
+        <p>Aún no sé si finalmente será en formato ebook, en papel o un audiolibro. El tiempo dirá...</p>
+        <Button variante={1} text="Leer libro en Google Docs >" url="https://docs.google.com/document/d/15oUQRghNb_lihCFGJ9Ls0z1PyihD_a18v1V3AohVqQ4/edit?usp=sharing" />
     </div>
 </div>

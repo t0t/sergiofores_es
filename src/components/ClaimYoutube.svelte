@@ -8,7 +8,7 @@
     } */
 
     .ClaimYoutube {
-        background-color: $primary;
+        background-color: $dark_grey;
         padding: $s0;
 
         @include media(s2) {
