@@ -82,7 +82,7 @@
 	<BannerFull></BannerFull>
 
   <BannerHalf
-    text="Haciendo mis pinitos como Youtuber :) Me gusta volvar mis reflexiones en cápsulas en torno a metafísica, arte, símbolos, etc. Y, por supuesto desde la Hermenéutica +0+1234."
+    text="Haciendo mis pinitos como Youtuber :) Vuelco mis reflexiones en cápsulas en torno a metafísica, arte, símbolos, etc. Y, por supuesto desde la Hermenéutica +0+1234."
   >
     <Button text="Visita mi canal" url="https://www.youtube.com/channel/UC9C6HRn2RDG3bmWC4Soxtcw" />
     
@@ -93,7 +93,7 @@
   </BannerHalf>
   
   <BannerHalf  variante={1}
-    text="Me gusta prototipar productos digitales porque son análogos al Universo, son sistemas holísticos. El Diseño Frontend es arte simbólico también. Adoro: SvelteJS, Git, Sass, CSSGrid, Vercel"
+    text="Disfruto prototipando productos digitales porque son análogos al Universo, son sistemas holísticos en si mismos. El Diseño Frontend es arte simbólico también. Mi workflow: SvelteJS, Git, Sass, CSSGrid, Vercel, etc."
     img="../img/frontend.jpg"
   >
     <Button variante={1} text="Mi repo en Github" url="https://github.com/t0t/sergiofores_es" />

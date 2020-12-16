@@ -97,7 +97,7 @@
         <figure class="MainFeature">
             <img src="img/malla2.gif" alt="">
             <figcaption class="MainFeature__caption">
-                <small>Artefactos concebidos e imprimidos en 3D que finalmente entran en fase de acabado finale en la que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
+                <small>Artefactos concebidos e imprimidos en 3D que finalmente entran en fase de acabado final en la que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
             </figcaption>
         </figure>
     </div>
