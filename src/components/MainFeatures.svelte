@@ -7,6 +7,7 @@
     
     .MainFeatures {
         padding: $h2;
+        background-color: #4d443e;
         
         @include media(s1) {
             display: grid;
@@ -50,9 +51,9 @@
         padding-bottom: $h2;
         border-bottom: none;
         margin-bottom: $h2;
-        border-right: 1px solid $primary;
-        border-left: 1px solid $primary;
-        border-bottom: 1px solid $primary;
+        border-right: 1px solid $tertiary;
+        border-left: 1px solid $tertiary;
+        border-bottom: 1px solid $tertiary;
         
         small {
             font-style: normal;
@@ -87,7 +88,7 @@
         <figure class="MainFeature">
             <img src="img/malla2.gif" alt="">
             <figcaption class="MainFeature__caption">
-                <small>Enn mi cabeza, en el ordenador y luego manifestada en la materia con una impresora 3D de gran formato. Finalmente entran en fase de acabados finales en los que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
+                <small>En mi cabeza, en el ordenador y luego manifestada en la materia con una impresora 3D de gran formato. Finalmente entran en fase de acabados finales en los que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
             </figcaption>
         </figure>
     </div>
