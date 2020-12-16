@@ -1,7 +1,6 @@
 <script>
     export let text = "Texto inicial";
     export let img = "";
-    export let url = "url";
     export let variante = 0;
     let modificador = [
         "Light",
