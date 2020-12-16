@@ -1,9 +1,9 @@
 <style lang="scss">
     @import "../sass/_main.scss";
     header {
-        height: 20vh;
+        height: 100vh;
         background-image: url("../img/cover1.jpg");
-        background-position: center;
+        background-position: right 0;
         background-size: cover;
         background-repeat: no-repeat;
         background-color: $dark_grey;
@@ -12,7 +12,6 @@
         grid-template-columns: 1fr;
         @include padding-top(3);
         @include padding-bottom(3);
-        /* mix-blend-mode: soft-light; */
     }
 
     h1 {
@@ -25,5 +24,6 @@
     }
 </style>
 <header>
-    <h1>Sergio Forés · <span>Arte y Metafísica</span></h1>
+    <h1>Sergio Forés<br>
+    <span>sentir orden es crear conexión</span></h1>
 </header>

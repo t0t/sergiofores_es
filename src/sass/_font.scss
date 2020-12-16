@@ -56,7 +56,8 @@ strong {
   font-weight: 800;
 }
 
-h1 {
+h1, 
+h2 {
   font-weight: 800;
   @include type-setting(0);
   @include media(s1) {

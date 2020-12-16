@@ -1,29 +1,37 @@
 <script>
-
+    import Button from './Button.svelte';
 </script>
 
 <style lang="scss">
     @import "../sass/_main.scss";
     
     .MainFeatures {
-        padding: $h2;
-        background-color: #4d443e;
+        padding-top: $h2;
+        padding-right: $h2;
+        padding-left: $h2;
+        padding-bottom: 0;
+        background-color: $quaternary;
         
         @include media(s1) {
             display: grid;
-            padding: $h3;
-            gap: $h3;
+            gap: $h2;
+            grid-template-columns: repeat(3, 1fr);
             grid-template-areas:
             "a a a"
             "b b b"
             "c c c"
             ;
+            /* align-items: center;
+            justify-items: center; */
         }
         
         @include media(s2) {
             grid-template-areas:
             "a b c"
             ;
+            padding-top: $h4;
+            padding-right: $h4;
+            padding-left: $h4;
         }
 
         > div {
@@ -51,18 +59,16 @@
         padding-bottom: $h2;
         border-bottom: none;
         margin-bottom: $h2;
-        border-right: 1px solid $tertiary;
-        border-left: 1px solid $tertiary;
-        border-bottom: 1px solid $tertiary;
+        display: grid;
+        justify-items: center;
         
-        small {
-            font-style: normal;
-            font-weight: 500;
+        @include media(s2) {
+            justify-items: end;
+            padding-bottom: $h2;
         }
         
-        @include media(s1) {
-            padding-bottom: $h2;
-            background-color: reds;
+        small {
+            @include margin-bottom(1);
         }
     }
 </style>
@@ -72,7 +78,8 @@
         <figure class="MainFeature">
             <img src="img/grafico-nueve.jpg" alt="">
             <figcaption class="MainFeature__caption">
-                <small>Las cosas que hago son artefactos cuyas geometrías son concebidas y modeladas desde un plano virtual; construyo una serie de mallas o estructuras poliédricas sobre las que aplico una serie de fuerzas y vibraciones que interactúan entre sí.</small>
+                <small>Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.</small>
+                <Button variante={2} text="Curators Portafolio" url="https://docs.google.com/presentation/d/1ZIZl5yvhs7ScW4BU9_Cj59YTcA01eiMr5oMEgb_Yr9Y/edit?usp=sharing" />
             </figcaption>   
         </figure>
     </div>
@@ -80,7 +87,9 @@
         <figure class="MainFeature">
             <img src="img/grafico-siete.jpg" alt="">
             <figcaption class="MainFeature__caption">
-                <small>Showroom en Mediona, Barcelona. Encantado de recibirte si te apetece visitar mi estudio</small>
+                <small><strong>¡Nueva obra disponible!</strong> <br> 
+                    Showroom en Mediona, Barcelona.</small>
+                <Button variante={2} text="Consultar por Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
             </figcaption>
         </figure>
     </div>
@@ -88,7 +97,7 @@
         <figure class="MainFeature">
             <img src="img/malla2.gif" alt="">
             <figcaption class="MainFeature__caption">
-                <small>En mi cabeza, en el ordenador y luego manifestada en la materia con una impresora 3D de gran formato. Finalmente entran en fase de acabados finales en los que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
+                <small>Artefactos concebidos e imprimidos en 3D que finalmente entran en fase de acabado finale en la que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
             </figcaption>
         </figure>
     </div>

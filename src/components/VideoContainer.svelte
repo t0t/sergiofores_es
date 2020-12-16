@@ -14,19 +14,9 @@
 
     .VideoContainer {
         color: $dark;
-        background-color: $light;
-        padding: $s0;
-
-        @include media(s2) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            @include padding-top(3);
-            @include padding-bottom(3);
-        }
+        background-color: $dark;
 
         .VideoContainerText {
-            align-self: center;
-            justify-self: center;
             margin-bottom: $h2;
 
             @include media(s2) {
@@ -39,12 +29,6 @@
 </style>
 
 <div class="VideoContainer">
-    <div class="VideoContainerText">
-        <p><strong>Nueva obra disponible.</strong></p>
-        <p>"Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia."</p>
-        <Button variante={1} text="Mi Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
-        <Button variante={1} text="Portafolio de Arte >" url="https://docs.google.com/presentation/d/1ZIZl5yvhs7ScW4BU9_Cj59YTcA01eiMr5oMEgb_Yr9Y/edit?usp=sharing" />
-    </div>
     <video 
         poster="/img/cover2.jpg"
         loop
@@ -55,5 +39,6 @@
         <source src="/img/desdelapoesiadelamateria.mp4" type="video/mp4" />
         <p>Su navegador no soporta vídeos HTML5.</p>
     </video>
+
 </div>
 

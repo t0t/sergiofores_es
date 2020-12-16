@@ -3,33 +3,50 @@
     export let url = "url";
     export let variante = 0;
     let modificador = [
-        "Default",
-        "Inverse"
+        "Light",
+        "Dark",
+        "Colored"
     ];
 </script>
 
 <style lang="scss">
     @import "../sass/_main.scss";
     a {
-        color: $light_grey;
         padding: $h1;
-        border: 1px solid $light_grey;
+        text-decoration: none;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .Dark {
+        color: $secondary;
+        border-color: $quaternary;
         &:hover {
-            color: $dark;
-            background-color: $light_grey;
-            text-decoration: none;
+            color: $light;
+            background-color: $quaternary;
+            border-color: $quaternary;
         }
     }
-    button { 
-        border: none;
-    }
-    .Inverse {
+    .Light {
         color: $primary;
-        background-color: $primary;
-        @include margin-top(1);
+        border-color: $primary;
+        &:hover {
+            color: $light;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+    .Colored {
+        color: $light_grey;
+        border-color: $light_grey;
+        &:hover {
+            color: $dark;
+            background-color: $light;
+            border-color: $light;
+        }
     }
 </style>
 
-<button class="{modificador[variante]}">
-    <a href="{url}" target="_blank">{text}</a>
-</button>
+<a href="{url}" target="_blank" class="{modificador[variante]}">
+    {text}
+</a>

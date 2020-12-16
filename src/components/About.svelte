@@ -15,9 +15,9 @@
         padding-top: $s1/2;
     }
     img {
-        width: $s1*3;
+        width: $h5;
         border-radius: 50%;
-        margin-bottom: $s1;
+        margin-bottom: $h1;
     }
     svg {
         margin-left: $s1/4;
