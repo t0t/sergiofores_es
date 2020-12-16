@@ -6,6 +6,7 @@
   import Image from './components/Image.svelte';
   import ClaimYoutube from './components/ClaimYoutube.svelte';
   import VideoContainer from './components/VideoContainer.svelte';
+  import MainFeatures from './components/MainFeatures.svelte';
 </script>
 
 <SiteHeader/>
@@ -13,6 +14,8 @@
 <main>
 
   <VideoContainer></VideoContainer>
+
+  <MainFeatures></MainFeatures>
 
 	<Banner></Banner>
 
