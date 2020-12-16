@@ -30,7 +30,7 @@
 
 <div class="VideoContainer">
     <video 
-        poster="/img/cover2.jpg"
+        poster="/img/cover3.jpg"
         loop
         playsinline
         controls="controls"

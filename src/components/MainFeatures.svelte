@@ -54,8 +54,8 @@
         }
     }
     .MainFeature__caption {
-        padding-left: $h2;
-        padding-right: $h2;
+        /* padding-left: $h2;
+        padding-right: $h2; */
         padding-bottom: $h2;
         border-bottom: none;
         margin-bottom: $h2;
@@ -63,7 +63,7 @@
         justify-items: center;
         
         @include media(s2) {
-            justify-items: end;
+            justify-items: start;
             padding-bottom: $h2;
         }
         

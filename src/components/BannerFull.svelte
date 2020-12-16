@@ -4,40 +4,51 @@
 
 <style lang="scss">
     @import "../sass/_main.scss";
-    /* :global(h1) {
-        color: $light_grey;
-    } */
 
     .BannerFull {
+        padding: $h2;
         background-color: $primary;
-        padding: $s0;
-        min-height: 100vh;
-
+        
         @include media(s1) {
-            @include padding-top(3);
-            @include padding-bottom(3);
+            display: grid;
+            gap: $h1;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            @include padding-top(4);
+            @include padding-bottom(4);
         }
         @include media(s2) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            padding: $h4;
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        p {
-            margin-left: $h1;
-            margin-right: 0;
-            @include margin-bottom(2);
-        }
+        .BannerFullImg {}
+
         .BannerFullText {
             align-self: center;
+            p {
+                text-align: center;
+                margin-left: $h1;
+                margin-right: $h1;
+                @include margin-bottom(2);
+                @include media(s1) {
+                    margin-left: $h3;
+                    margin-right: $h3;
+                }
+                @include media(s2) {
+                    margin-left: $h4;
+                    margin-right: $h4;
+                }
+            }
         }
     }
 </style>
 
-<div class="BannerFull">
-    <img src="../img/01234.svg" alt="">
+<section class="BannerFull">
+    <img class="BannerFullImg" src="../img/libro.svg" alt="Portada de mi libro">
     <div class="BannerFullText">
         <h1>Hermenéutica Universal</h1>
-        <p>Es un Libro work in progress sobre mi Cosmovisión y el proyecto +0+1234. Aún no sé si finalmente será en formato ebook, en papel o un audiolibro. El tiempo dirá...</p>
-        <Button variante={2} text="Leer borrador en Google Docs" url="https://docs.google.com/document/d/15oUQRghNb_lihCFGJ9Ls0z1PyihD_a18v1V3AohVqQ4/edit?usp=sharing" />
+        <p>Es un Libro work in progress sobre mi Cosmovisión y el proyecto <em>+0+1234.</em> Aún no sé si finalmente será en formato ebook, en papel o un audiolibro. El tiempo dirá...</p>
+        <Button variante={2} text="Leer" url="https://docs.google.com/document/d/15oUQRghNb_lihCFGJ9Ls0z1PyihD_a18v1V3AohVqQ4/edit?usp=sharing" />
     </div>
-</div>
+</section>

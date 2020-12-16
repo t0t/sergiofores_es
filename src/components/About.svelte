@@ -1,12 +1,9 @@
 <style lang="scss">
     @import "../sass/_main.scss";
-    /* :global(h1) {
-        color: $light_grey;
-    } */
 
     .About {
         background-color: $dark;
-        padding: $s1;
+        padding: $h2;
         h1 {
             font-weight: 800;
         }
@@ -20,11 +17,15 @@
         margin-bottom: $h1;
     }
     svg {
-        margin-left: $s1/4;
-        margin-right: $s1/4;
-        fill: $light_grey;
+        margin-left: $h-1;
+        margin-right: $h-1;
+        fill: $quaternary;
         &:hover {
-            fill: $light;
+          fill: $light;
+        }
+        @include media(s2) {
+          margin-left: $h1;
+          margin-right: $h1;
         }
     }
 </style>

@@ -94,7 +94,7 @@
   
   <BannerHalf  variante={1}
     text="Me gusta prototipar productos digitales porque son análogos al Universo, son sistemas holísticos. El Diseño Frontend es arte simbólico también. Adoro: SvelteJS, Git, Sass, CSSGrid, Vercel"
-    img="../img/frontend.png"
+    img="../img/frontend.jpg"
   >
     <Button variante={1} text="Mi repo en Github" url="https://github.com/t0t/sergiofores_es" />
   </BannerHalf>

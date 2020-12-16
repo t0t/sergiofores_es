@@ -1,9 +1,8 @@
 <style lang="scss">
     @import "../sass/_main.scss";
     header {
-        height: 100vh;
         background-image: url("../img/cover1.jpg");
-        background-position: right 0;
+        background-position: right center;
         background-size: cover;
         background-repeat: no-repeat;
         background-color: $dark_grey;
@@ -12,18 +11,24 @@
         grid-template-columns: 1fr;
         @include padding-top(3);
         @include padding-bottom(3);
+        
+        @include media(s2) {
+            margin-bottom: 0;
+            margin-right: $h2;
+        }
     }
 
     h1 {
         color: $light;
         align-self: center;
         justify-self: center;
-        span {
+        em {
+            color: $tertiary;
             font-weight: normal;
         }
     }
 </style>
 <header>
     <h1>Sergio Forés<br>
-    <span>sentir orden es crear conexión</span></h1>
+    <em>sentir orden es crear conexión</em></h1>
 </header>
