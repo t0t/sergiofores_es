@@ -34,7 +34,7 @@
             padding-left: $h4;
         }
 
-        > div {
+        > article {
             img {
                 border-radius: 50%;
                 margin-bottom: $h2;
@@ -73,8 +73,8 @@
     }
 </style>
   
-<div class="MainFeatures">
-    <div>
+<section class="MainFeatures">
+    <article>
         <figure class="MainFeature">
             <img src="img/grafico-nueve.jpg" alt="">
             <figcaption class="MainFeature__caption">
@@ -82,8 +82,8 @@
                 <Button variante={2} text="Curators Portafolio" url="https://docs.google.com/presentation/d/1ZIZl5yvhs7ScW4BU9_Cj59YTcA01eiMr5oMEgb_Yr9Y/edit?usp=sharing" />
             </figcaption>   
         </figure>
-    </div>
-    <div>
+    </article>
+    <article>
         <figure class="MainFeature">
             <img src="img/grafico-siete.jpg" alt="">
             <figcaption class="MainFeature__caption">
@@ -92,14 +92,13 @@
                 <Button variante={2} text="Consultar por Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
             </figcaption>
         </figure>
-    </div>
-    <div>
+    </article>
+    <article>
         <figure class="MainFeature">
             <img src="img/malla2.gif" alt="">
             <figcaption class="MainFeature__caption">
                 <small>Artefactos concebidos e imprimidos en 3D que finalmente entran en fase de acabado final en la que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
             </figcaption>
         </figure>
-    </div>
-    
-</div>
+    </article>
+</section>

@@ -10,9 +10,6 @@
 </script>
 <style lang="scss">
     @import "../sass/_main.scss";
-    /* :global(h1) {
-        color: $light_grey;
-    } */
     
     .BannerHalf {
         display: grid;
@@ -32,8 +29,8 @@
             grid-template-areas: 
             "texto video"
             ;
-            @include padding-top(3);
-            @include padding-bottom(3);
+            /* @include padding-top(3);
+            @include padding-bottom(3); */
         }
 
         .BannerMedia {
