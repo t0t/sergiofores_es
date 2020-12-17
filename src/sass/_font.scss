@@ -1,7 +1,7 @@
 // ****************************************
 // @TODH FONT
 // ****************************************
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap');
 
 $secondary_font: 'Montserrat', sans-serif;
 
@@ -63,7 +63,7 @@ $line-heights: (
 main,
 header {
   font-family: $secondary_font;
-  // letter-spacing: 0px;
+  letter-spacing: 1px;
 }
 
 i {

@@ -5,17 +5,12 @@
 <style lang="scss">
     @import "../sass/_main.scss";
     header {
-        /* background-image: url("../img/cover1.png");
-        background-position: top right;
-        background-size: contain;
-        background-repeat: no-repeat; */
         position: relative;
-        background-color: $quaternary;
-        
+        background-color: $quaternary;  
         display: grid;
+        grid-template-columns: $h4 1fr;
         grid-template-areas: 
-        "brand"
-        "slogan"
+            "logo brand"
         ;
         align-items: center;
         justify-items: start;
@@ -27,17 +22,18 @@
         @include media(s1) {
             padding-top: $h2;
             padding-bottom: $h2;
-        }
-        @include media(s2) {
-            /* padding-left: $h4; */
+            height: $h6;
         }
 
         .SiteBrand {
             grid-area: brand;
-            z-index: 0;
+            z-index: 2;
+            h1 {
+                line-height: inherit;
+            }
         }
-        .SiteSlogan {
-            grid-area: slogan;
+        .SiteLogo {
+            grid-area: logo;
         }
 
         img {
@@ -55,11 +51,11 @@
 </style>
 
 <header>
-    <div class="SiteBrand">
+    <div class="SiteLogo">
         <SiteLogo/>
-        <h1>Sergio Forés</h1>
     </div>
-    <div class="SiteSlogan">
+    <div class="SiteBrand">
+        <h1>Sergio Forés</h1>
         <i>Sentir Orden y Crear Conexión</i>
     </div>
     <img src="../img/cover1.png" alt="">

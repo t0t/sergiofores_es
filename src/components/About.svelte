@@ -18,19 +18,15 @@
     justify-items: center;
 
     @include media(s2) {
-      grid-template-columns: .5fr 1fr .5fr;
+      grid-template-columns: 1fr 1fr;
       justify-items: center;
     }
     
     .SiteLogo {
       justify-self: start;
-      /* align-self: center; */
-      /* width: 50%; */
-      /* border-radius: 50%; */
       margin-right: $h2;
       margin-bottom: $h2;
       opacity: .7;
-      mix-blend-mode: difference;
       
       @include media(s2) {
         justify-self: end;
