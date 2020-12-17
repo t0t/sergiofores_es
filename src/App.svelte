@@ -93,7 +93,7 @@
   </BannerHalf>
   
   <BannerHalf  variante={1}
-    text="Un producto digital es un sistema orgánico que evoluciona desde un orden prototípico, a análogamente al Universo. El Diseño Frontend es Arte también. Mi workflow: SvelteJS, Git, Sass, CSSGrid, Vercel, etc."
+    text="Un producto digital es un sistema orgánico con un orden que que evoluciona análogamente al Universo. El Diseño Frontend es Arte y es holístico. Mi workflow: SvelteJS, Git, Sass, CSSGrid, Vercel, etc."
     img="../img/frontend.jpg"
   >
     <Button variante={1} text="Repo en Github" url="https://github.com/t0t/sergiofores_es" />

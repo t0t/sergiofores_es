@@ -39,6 +39,10 @@
                 border-radius: 50%;
                 margin-bottom: $h2;
                 width: 100%;
+                mix-blend-mode: exclusion; 
+                &:hover {
+                    mix-blend-mode: inherit; 
+                }
             }
 
             &:nth-child(1) {
