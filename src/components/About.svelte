@@ -55,7 +55,7 @@
       }
     }
     small {
-      color: $light_grey;
+      color: $quaternary;
     }
   }
 </style>
@@ -71,7 +71,7 @@
   </main>
 
   <aside class="Links">
-    <small>Puedes seguirme por aquí:</small>
+    <small>PERFILES DONDE COMPARTO:</small>
     <ul>
       <li>
         <a href="https://www.instagram.com/t.o.d.h/" target="_blank" rel="noopener">
