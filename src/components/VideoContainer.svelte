@@ -39,7 +39,7 @@
 
 <section class="VideoContainer">
     <header>
-        <h1>Todo opera desde un mismo orden universal (+0+1234). Desde su esencia el Arte, el prototipado web, la impresión 3D y toda la Creación son lo mismo. Eso es lo que he venido a recordar.</h1>
+        <h1>La Creación opera desde un mismo orden universal siempre: <i>+0+1234</i>, de modo que lo que hago es básicamente detectar, interpretar, descifrar y experimentar eso que es idéntico en lo diferente a través de un <i>arte holístico.</i></h1>
     </header>
     <video poster="/img/cover3.jpg" loop playsinline controls="controls">
         <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />

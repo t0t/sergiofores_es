@@ -91,7 +91,7 @@
                 <p>Ups! Su navegador no soporta vídeos HTML5.</p>
             </video>
             <figcaption class="MainFeature__caption">
-                <small>Artefactos concebidos e imprimidos en 3D que finalmente entran en fase de acabado final en la que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
+                <small><i>Creaturas</i> concebidas e impresas en 3D que finalmente entran en una fase de acabado con diferentes materiales (arenas, resinas, óxidos, etc.)</small>
             </figcaption>
         </figure>
     </article>
@@ -99,7 +99,7 @@
         <figure class="MainFeature">
             <img src="img/grafico-nueve.jpg" alt="">
             <figcaption class="MainFeature__caption">
-                <small>Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.</small>
+                <small>Todo son formas de arte simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.</small>
                 <Button variante={2} text="Portafolio" url="https://docs.google.com/presentation/d/1ZIZl5yvhs7ScW4BU9_Cj59YTcA01eiMr5oMEgb_Yr9Y/edit?usp=sharing" />
             </figcaption>   
         </figure>

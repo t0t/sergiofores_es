@@ -14,15 +14,15 @@
     justify-items: center;
 
     @include media(s2) {
-      grid-template-columns: .5fr 1.5fr;
+      grid-template-columns: 1fr 1fr;
       justify-items: center;
     }
     
     img {
       justify-self: start;
       align-self: center;
-      width: $h5;
-      border-radius: 50%;
+      width: 50%;
+      /* border-radius: 50%; */
       margin-right: $h2;
       margin-bottom: $h2;
       opacity: .7;
@@ -58,8 +58,8 @@
 
 <section class="About">
   <main class="Bio">
-    <img src="/img/avatar.jpg" alt="Imagen">
-    <p>Me he formado en Bellas Artes, Arte Electrónico y Diseño Digital. He ejercido desde 1999 como Diseñador Gráfico y Web. Desde 2010 especializado en Prototipado Frontend y UID. En 2020 adopto el mundo de la impresión 3D en mi proceso creativo. También desarrollo una <i>hermenéutica holística de la Creación</i>, como vía de autoconocimiento, que denomino TODH, Función TOT ó +0+1234.</p>
+    <img src="/img/logo-footer.svg" alt="Imagen">
+    <p><strong>Sergio Forés Raga</strong><br> Se forma en Bellas Artes, Arte Electrónico y Diseño Digital. Ha ejercido desde 1999 como Diseñador Gráfico y Web. Desde 2010 especializado en Prototipado Frontend y UID. En 2020 adopta el mundo de la impresión 3D en su proceso creativo. Paralelamente desarrolla una <i>Hermenéutica Holística de la Creación</i>, como vía de autoconocimiento, que denomina TODH, Función TOT ó +0+1234.</p>
   </main>
 
   <aside class="Links">
