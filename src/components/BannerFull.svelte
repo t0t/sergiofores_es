@@ -24,6 +24,10 @@
 
         h1 {
             color: $dark_2;
+            font-weight: bold;
+            @include media(s4) {
+                font-weight: inherit;
+            }
         }
 
         .BannerFullText {

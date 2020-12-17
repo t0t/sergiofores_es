@@ -5,56 +5,72 @@
     @import "../sass/_main.scss";
 
     .VideoContainer {
-        @include gradient(left, $list1);
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: start;
-        padding: $h2;
         gap: $h2;
+        grid-template-areas: 
+            "video"
+            "textocontainer"
+        ;
+        padding-top: $h2;
+        padding-right: $h2;
+        padding-left: $h2;
         text-align: left;
-
-        main {
+        @include gradient(left, $list1);
+        
+        @include media(s2) {
+            padding-bottom: $h2;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "textocontainer video"
+            ;
+            gap: $h3;
+        }
+        .TextoContainer {
             display: grid;
-            padding-bottom: $h1;
-            a {
-                align-items: end;
-            }
-            header {
-                padding-bottom: $h2;
-            }
-
-            @include media(s1) {
-                /* background-color: red; */
-            }
-
+            grid-template-columns: 1fr;
+            justify-items: end;
+            grid-area: textocontainer;
+            
             @include media(s2) {
-                gap: $h4;
-                grid-template-columns: 1fr 1fr;
-                main {
-                    padding-left: $h3;
-                    padding-bottom: $h3;
-                    /* align-self: center; */
-                }
+                justify-items: start;
             }
         }
-       
-
         video {
+            grid-area: video;
             width: 100%;
             object-fit: cover;
             mix-blend-mode: luminosity;
             border-radius: $h2;
         }
     }
+    .boton {
+        display: none;
+        @include media(s2) {
+            display: inherit;
+        }
+    }
+    .parrafo {
+        text-align: center;
+        padding-bottom: $h1;
+        @include media(s2) {
+            text-align: inherit;
+            display: inherit;
+        }
+    }    
+
 </style>
 
 <section class="VideoContainer">
-    <main>
-        <header>
+    <main class="TextoContainer">
+        <header class="parrafo">
             <h1>La Creación se fundamenta, esencialmente, en base a un mismo orden arquetípico universal; <i>+0+1234</i>. Detectarlo, interpretarlo, descifrarlo y experimentarlo son funciones de un <i>arte holístico</i> que crea desde el reconocimiento de que lo idéntico atraviesa a lo diferente.</h1>
         </header>
+        <footer class="boton">
             <Button variante={2} text="Chat-Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
+        </footer>
     </main>
     <video poster="/img/cover3.jpg" loop playsinline controls="controls">
         <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />

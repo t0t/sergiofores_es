@@ -29,7 +29,7 @@
             padding-bottom: $h2;
         }
         @include media(s2) {
-            padding-left: $h4;
+            /* padding-left: $h4; */
         }
 
         .SiteBrand {
