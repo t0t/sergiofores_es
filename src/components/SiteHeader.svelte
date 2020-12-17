@@ -1,3 +1,7 @@
+<script>
+    import SiteLogo from './SiteLogo.svelte';
+</script>
+
 <style lang="scss">
     @import "../sass/_main.scss";
     header {
@@ -5,31 +9,42 @@
         background-position: right center;
         background-size: cover;
         background-repeat: no-repeat;
-        /* background-attachment: fixed; */
-        align-items: start;
+        
         display: grid;
-        grid-template-columns: 1fr;
-        /* @include padding-top(3);
-        @include padding-bottom(3); */
+        grid-template-areas: 
+        "brand"
+        "slogan"
+        ;
+        align-items: center;
+        justify-items: start;
         padding-top: $h1;
         padding-bottom: $h1;
+
+        .SiteBrand {
+            grid-area: brand;
+            /* text-align: center; */
+        }
+        .SiteSlogan {
+            grid-area: slogan;
+        }
+
+        @include media(s1) {
+            padding-left: $h2;
+            padding-top: $h3;
+            padding-bottom: $h3;
+        }
         @include media(s2) {
-            /* margin-bottom: 0; */
+            padding-left: $h4;
         }
     }
-
-    h1 {
-        color: $light;
-        align-self: center;
-        margin-left: $h4;
-        /* justify-self: center; */
-        /* em {
-            color: $tertiary;
-            font-weight: normal;
-        } */
-    }
 </style>
+
 <header>
-    <h1>Sergio Forés
-    <i>sentir orden es crear conexión</i></h1>
+    <div class="SiteBrand">
+        <SiteLogo/>
+        <h1>Sergio Forés</h1>
+    </div>
+    <div class="SiteSlogan">
+        <i>Sentir Orden y Crear Conexión</i>
+    </div>
 </header>

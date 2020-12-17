@@ -19,7 +19,7 @@
         "texto"
         ;
         
-        padding: $s0;
+        padding: $h1;
         img {
             width: 100%;
         }

@@ -19,10 +19,10 @@
   }
 
   .Content {
-    padding: $s0;
+    padding: $h1;
     
     @include media(s1) {
-      padding: $s1;
+      padding: $h2;
     }
     
     p, h5 {

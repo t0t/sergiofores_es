@@ -9,22 +9,23 @@
         @include gradient(left, $list1);
         display: grid;
         grid-template-columns: 1fr;
-        gap: $h2;
         justify-items: center;
-        align-items: center;
+        align-items: start;
         padding: $h2;
+        gap: $h2;
         
         @include media(s1) {
-            header {
-                padding-left: $h3;
-            }
             text-align: left;
             p {
                 text-align: left;
             }
         }
         @include media(s2) {
+            gap: $h5;
             grid-template-columns: 1fr 1fr;
+            header {
+                padding-left: $h3;
+            }
         }
 
         video {
@@ -38,8 +39,7 @@
 
 <section class="VideoContainer">
     <header>
-        <h1>Todo opera desde un mismo orden universal (+0+1234)</h1> <br>
-        <p>Desde su esencia el Arte, el prototipado web, la impresión 3D y toda la Creación son lo mismo. Eso es lo que he venido a recordar.</p>
+        <h1>Todo opera desde un mismo orden universal (+0+1234). Desde su esencia el Arte, el prototipado web, la impresión 3D y toda la Creación son lo mismo. Eso es lo que he venido a recordar.</h1>
     </header>
     <video poster="/img/cover3.jpg" loop playsinline controls="controls">
         <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />

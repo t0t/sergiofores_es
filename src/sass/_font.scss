@@ -1,8 +1,21 @@
+// ****************************************
+// @TODH FONT
+// ****************************************
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,400;1,500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@100;300;400;500;600;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap');
 
 $secondary_font: 'Montserrat', sans-serif;
+
+// ****************************************
+// @TODH GLOBAL SIZES
+// ****************************************
+
+$basesize: 16;
+
+// ****************************************
+// @TODH VERTICAL RHYTHM
+// ****************************************
+$base_font_size: $basesize * 1px;
+$base_line_height: $base_font_size * 1.62;
 
 // 5 Escalas de tamaño
 $size-scales: (
@@ -22,22 +35,33 @@ $size-scales: (
 
 // 5 Escalas de alto de linea
 $line-heights: (
-  -2: $base-line-height / 2.618,
-  -1: $base-line-height / 1.618,
+  -2: $base-line-height / 2.62,
+  -1: $base-line-height / 1.62,
   0: $base-line-height,
-  1: $base-line-height * 1.618,
-  2: $base-line-height * 2.618,
+  1: $base-line-height * 1.62,
+  2: $base-line-height * 2.62,
   3: $base-line-height * 4.236,
   4: $base-line-height * 4.236,
   5: $base-line-height * 6.854,
   6: $base-line-height * 6.854
 );
+
 @function line-height($level) {
   @return map-get($line-heights, $level);
 }
 
+// Funcion magica :)))
+@mixin type-setting($level: 0) {
+  font-size: font-scale($level);
+  line-height: line-height($level);
+}
+
+@function size($level) {
+  @return map-get($size-scales, $level);
+}
+
 main,
-h1 {
+header {
   font-family: $secondary_font;
   // letter-spacing: 0px;
 }
