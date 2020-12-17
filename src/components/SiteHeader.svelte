@@ -5,7 +5,7 @@
         background-position: right center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: $dark_grey;
+        /* background-attachment: fixed; */
         text-align: center;
         display: grid;
         grid-template-columns: 1fr;
@@ -14,7 +14,7 @@
         
         @include media(s2) {
             margin-bottom: 0;
-            margin-right: $h2;
+            /* margin-right: $h2; */
         }
     }
 

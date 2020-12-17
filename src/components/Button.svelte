@@ -5,7 +5,8 @@
     let modificador = [
         "Light",
         "Dark",
-        "Colored"
+        "Colored",
+        "ColoredInvert"
     ];
 </script>
 
@@ -19,7 +20,7 @@
     }
 
     .Dark {
-        color: $secondary;
+        color: $quaternary;
         border-color: $quaternary;
         &:hover {
             color: $light;
@@ -39,6 +40,15 @@
     .Colored {
         color: $light_grey;
         border-color: $light_grey;
+        &:hover {
+            color: $dark;
+            background-color: $light;
+            border-color: $light;
+        }
+    }
+    .ColoredInvert {
+        color: $dark_grey;
+        border-color: $dark_grey;
         &:hover {
             color: $dark;
             background-color: $light;

@@ -52,10 +52,15 @@
             }
 
         }
+
+        video {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: $h2;
+        }
     }
     .MainFeature__caption {
-        /* padding-left: $h2;
-        padding-right: $h2; */
         padding-bottom: $h2;
         border-bottom: none;
         margin-bottom: $h2;
@@ -76,10 +81,22 @@
 <section class="MainFeatures">
     <article>
         <figure class="MainFeature">
+            <video loop playsinline autoplay>
+                <source src="/img/cuadro-anim.webm" type="video/webm" />
+                <source src="/img/cuadro-anim.mp4" type="video/mp4" />
+                <p>Ups! Su navegador no soporta vídeos HTML5.</p>
+            </video>
+            <figcaption class="MainFeature__caption">
+                <small>Artefactos concebidos e imprimidos en 3D que finalmente entran en fase de acabado final en la que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
+            </figcaption>
+        </figure>
+    </article>
+    <article>
+        <figure class="MainFeature">
             <img src="img/grafico-nueve.jpg" alt="">
             <figcaption class="MainFeature__caption">
                 <small>Las obras de arte son formas simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.</small>
-                <Button variante={2} text="Curators Portafolio" url="https://docs.google.com/presentation/d/1ZIZl5yvhs7ScW4BU9_Cj59YTcA01eiMr5oMEgb_Yr9Y/edit?usp=sharing" />
+                <Button variante={2} text="Portafolio" url="https://docs.google.com/presentation/d/1ZIZl5yvhs7ScW4BU9_Cj59YTcA01eiMr5oMEgb_Yr9Y/edit?usp=sharing" />
             </figcaption>   
         </figure>
     </article>
@@ -89,15 +106,7 @@
             <figcaption class="MainFeature__caption">
                 <small><strong>¡Nueva obra disponible!</strong> <br> 
                     Showroom en Mediona, Barcelona.</small>
-                <Button variante={2} text="Consultar por Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
-            </figcaption>
-        </figure>
-    </article>
-    <article>
-        <figure class="MainFeature">
-            <img src="img/malla2.gif" alt="">
-            <figcaption class="MainFeature__caption">
-                <small>Artefactos concebidos e imprimidos en 3D que finalmente entran en fase de acabado final en la que aplico diferentes materiales como arenas, resinas, óxidos, etc.</small>
+                <Button variante={2} text="Chat-Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
             </figcaption>
         </figure>
     </article>

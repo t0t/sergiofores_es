@@ -84,7 +84,7 @@
   <BannerHalf
     text="Haciendo mis pinitos como Youtuber :) Vuelco mis reflexiones en cápsulas en torno a metafísica, arte, símbolos, etc. Y, por supuesto desde la Hermenéutica +0+1234."
   >
-    <Button text="Visita mi canal" url="https://www.youtube.com/channel/UC9C6HRn2RDG3bmWC4Soxtcw" />
+    <Button variante={3} text="Canal Youtube" url="https://www.youtube.com/channel/UC9C6HRn2RDG3bmWC4Soxtcw" />
     
     <div slot="hasvideo">
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/7BtDRQuPjDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -96,7 +96,7 @@
     text="Disfruto prototipando productos digitales porque son análogos al Universo, son sistemas holísticos en si mismos. El Diseño Frontend es arte simbólico también. Mi workflow: SvelteJS, Git, Sass, CSSGrid, Vercel, etc."
     img="../img/frontend.jpg"
   >
-    <Button variante={1} text="Mi repo en Github" url="https://github.com/t0t/sergiofores_es" />
+    <Button variante={1} text="Repo en Github" url="https://github.com/t0t/sergiofores_es" />
   </BannerHalf>
 
   <About/>

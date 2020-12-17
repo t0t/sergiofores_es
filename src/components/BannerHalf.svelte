@@ -38,6 +38,8 @@
         }
 
         .BannerHalfText {
+            display: grid;
+            justify-items: start;
             align-self: center;
             justify-self: center;
             margin-bottom: $h2;
@@ -51,13 +53,17 @@
 
             p {
                 @include margin-top(1);
-                @include margin-bottom(2);
+                @include margin-bottom(1);
             }
         }
     }
     .Light {
-        background-color: $light;
-        color: $dark;
+        background-color: $light_grey;
+        color: $dark_grey;
+        p {
+            color: $dark_grey;
+            font-weight: 500;
+        }
     }
     .Dark {
         background-color: $dark_grey;
