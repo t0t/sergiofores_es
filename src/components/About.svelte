@@ -59,7 +59,7 @@
 <section class="About">
   <main class="Bio">
     <img src="/img/avatar.jpg" alt="Imagen">
-    <p><strong>Sergio Forés Raga</strong> <br> me he formado en Bellas Artes, Arte Electrónico y Diseño Digital. He ejercido desde 1999 como Diseñador Gráfico y Web. Desde 2010 especializado en Prototipado Frontend y UID. En 2020 adopto el mundo de la impresión 3D en mi proceso creativo. También desarrollo una <i>hermenéutica holística de la Creación</i> como via de autoconocimiento que denomino TODH, Función TOT ó +0+1234.</p>
+    <p><strong>Sergio Forés Raga</strong> <br> me he formado en Bellas Artes, Arte Electrónico y Diseño Digital. He ejercido desde 1999 como Diseñador Gráfico y Web. Desde 2010 especializado en Prototipado Frontend y UID. En 2020 adopto el mundo de la impresión 3D en mi proceso creativo. También desarrollo una <i>hermenéutica holística de la Creación</i>, como vía de autoconocimiento, que denomino TODH, Función TOT ó +0+1234.</p>
   </main>
 
   <aside class="Links">

@@ -5,7 +5,6 @@
     @import "../sass/_main.scss";
 
     .VideoContainer {
-        /* min-height: $h8; */
         background-color: $dark;
         @include gradient(left, $list1);
         display: grid;
@@ -13,28 +12,26 @@
         gap: $h2;
         justify-items: center;
         align-items: center;
-        /* padding-bottom: $h2; */
         padding: $h2;
-
+        
+        @include media(s1) {
+            header {
+                padding-left: $h3;
+            }
+            text-align: left;
+            p {
+                text-align: left;
+            }
+        }
         @include media(s2) {
             grid-template-columns: 1fr 1fr;
         }
 
         video {
             width: 100%;
-            /* height: 100%; */
             object-fit: cover;
             mix-blend-mode: luminosity;
-            @include media(s1) {
-                border-radius: $h2;
-                /* width: 50%; */
-            }
-        }
-        
-        p {
-            text-align: center;
-            /* padding-top: $h1; */
-            color: $light;
+            border-radius: $h2;
         }
     }
 </style>
@@ -42,7 +39,7 @@
 <section class="VideoContainer">
     <header>
         <h1>Todo opera desde un mismo orden universal (+0+1234)</h1> <br>
-        <p>Desde su esencia el Arte, el prototipado web, la impresión 3D y la Creación son lo mismo. Eso es lo que he venido a recordar.</p>
+        <p>Desde su esencia el Arte, el prototipado web, la impresión 3D y toda la Creación son lo mismo. Eso es lo que he venido a recordar.</p>
     </header>
     <video poster="/img/cover3.jpg" loop playsinline controls="controls">
         <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />

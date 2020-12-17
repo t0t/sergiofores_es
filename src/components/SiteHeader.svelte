@@ -9,26 +9,27 @@
         align-items: start;
         display: grid;
         grid-template-columns: 1fr;
-        @include padding-top(3);
-        @include padding-bottom(3);
-        
+        /* @include padding-top(3);
+        @include padding-bottom(3); */
+        padding-top: $h1;
+        padding-bottom: $h1;
         @include media(s2) {
-            margin-bottom: 0;
-            /* margin-right: $h2; */
+            /* margin-bottom: 0; */
         }
     }
 
     h1 {
         color: $light;
         align-self: center;
-        justify-self: center;
-        em {
+        margin-left: $h4;
+        /* justify-self: center; */
+        /* em {
             color: $tertiary;
             font-weight: normal;
-        }
+        } */
     }
 </style>
 <header>
-    <h1>Sergio Forés<br>
-    <em>sentir orden es crear conexión</em></h1>
+    <h1>Sergio Forés
+    <i>sentir orden es crear conexión</i></h1>
 </header>

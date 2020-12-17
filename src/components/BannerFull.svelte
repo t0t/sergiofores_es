@@ -23,13 +23,13 @@
         }
 
         h1 {
-            color: $quaternary;
+            color: $dark_2;
         }
 
         .BannerFullText {
             align-self: center;
             p {
-                color: $quaternary;
+                color: $dark_2;
                 text-align: center;
                 margin-left: $h1;
                 margin-right: $h1;
@@ -51,7 +51,7 @@
     <img class="BannerFullImg" src="../img/libro.svg" alt="Portada de mi libro">
     <div class="BannerFullText">
         <h1>Hermenéutica Universal</h1>
-        <p>Es un Libro work in progress sobre mi Cosmovisión y el proyecto <em>+0+1234.</em> Aún no sé si finalmente será en formato ebook, en papel o un audiolibro. El tiempo dirá...</p>
+        <p>Es un Libro "work in progress" que explica mi cosmovisión y el proyecto <em>+0+1234.</em> Aún no sé si finalmente será en formato ebook, en papel o un audiolibro. El tiempo dirá...</p>
         <Button variante={3} text="Leer libro" url="https://docs.google.com/document/d/15oUQRghNb_lihCFGJ9Ls0z1PyihD_a18v1V3AohVqQ4/edit?usp=sharing" />
     </div>
 </section>

@@ -39,7 +39,7 @@ $line-heights: (
 main,
 h1 {
   font-family: $secondary_font;
-  letter-spacing: 0px;
+  // letter-spacing: 0px;
 }
 
 i {
@@ -48,7 +48,7 @@ i {
 }
 
 em {
-  color: $secondary;
+  color: $dark;
   font-style: italic;
   font-weight: bold;
 }
@@ -57,9 +57,12 @@ strong {
   font-weight: 800;
 }
 
+// h1 {
+//   line-height: 19px;
+// }
 h1, 
 h2 {
-  font-weight: 800;
+  font-weight: 500;
   @include type-setting(0);
   @include media(s1) {
     @include type-setting(1);
