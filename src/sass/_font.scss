@@ -81,10 +81,16 @@ strong {
   font-weight: 800;
 }
 
-// h1 {
-//   line-height: 19px;
-// }
-h1, 
+h1 {
+  @include type-setting(0);
+  @include media(s4) {
+    @include type-setting(1);
+  }
+  @include media(s5) {
+    @include type-setting(2);
+  }
+}
+ 
 h2 {
   font-weight: 500;
   @include type-setting(0);

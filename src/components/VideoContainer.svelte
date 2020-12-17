@@ -5,7 +5,6 @@
     @import "../sass/_main.scss";
 
     .VideoContainer {
-        background-color: $dark;
         @include gradient(left, $list1);
         display: grid;
         grid-template-columns: 1fr;
@@ -13,20 +12,33 @@
         align-items: start;
         padding: $h2;
         gap: $h2;
-        
-        @include media(s1) {
-            text-align: left;
-            p {
-                text-align: left;
+        text-align: left;
+
+        main {
+            display: grid;
+            padding-bottom: $h1;
+            a {
+                align-items: end;
             }
-        }
-        @include media(s2) {
-            gap: $h5;
-            grid-template-columns: 1fr 1fr;
             header {
-                padding-left: $h3;
+                padding-bottom: $h2;
+            }
+
+            @include media(s1) {
+                /* background-color: red; */
+            }
+
+            @include media(s2) {
+                gap: $h4;
+                grid-template-columns: 1fr 1fr;
+                main {
+                    padding-left: $h3;
+                    padding-bottom: $h3;
+                    /* align-self: center; */
+                }
             }
         }
+       
 
         video {
             width: 100%;
@@ -38,9 +50,12 @@
 </style>
 
 <section class="VideoContainer">
-    <header>
-        <h1>Toda la Creación, en su esencia, opera en base a un mismo orden arquetípico universal; <i>+0+1234</i>. Detectarlo, interpretarlo, descifrarlo y experimentarlo son funciones de mi <i>arte holístico.</i>, un arte que crea desde el reconocimiento de lo idéntico en lo diferente.</h1>
-    </header>
+    <main>
+        <header>
+            <h1>La Creación se fundamenta, esencialmente, en base a un mismo orden arquetípico universal; <i>+0+1234</i>. Detectarlo, interpretarlo, descifrarlo y experimentarlo son funciones de un <i>arte holístico</i> que crea desde el reconocimiento de que lo idéntico atraviesa a lo diferente.</h1>
+        </header>
+            <Button variante={2} text="Chat-Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
+    </main>
     <video poster="/img/cover3.jpg" loop playsinline controls="controls">
         <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />
         <source src="/img/desdelapoesiadelamateria.mp4" type="video/mp4" />

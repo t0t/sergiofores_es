@@ -5,10 +5,12 @@
 <style lang="scss">
     @import "../sass/_main.scss";
     header {
-        background-image: url("../img/cover1.jpg");
-        background-position: right center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        /* background-image: url("../img/cover1.png");
+        background-position: top right;
+        background-size: contain;
+        background-repeat: no-repeat; */
+        position: relative;
+        background-color: $quaternary;
         
         display: grid;
         grid-template-areas: 
@@ -19,22 +21,35 @@
         justify-items: start;
         padding-top: $h1;
         padding-bottom: $h1;
+        overflow: hidden;
+        padding-left: $h2;
+
+        @include media(s1) {
+            padding-top: $h2;
+            padding-bottom: $h2;
+        }
+        @include media(s2) {
+            padding-left: $h4;
+        }
 
         .SiteBrand {
             grid-area: brand;
-            /* text-align: center; */
+            z-index: 0;
         }
         .SiteSlogan {
             grid-area: slogan;
         }
 
-        @include media(s1) {
-            padding-left: $h2;
-            padding-top: $h3;
-            padding-bottom: $h3;
-        }
-        @include media(s2) {
-            padding-left: $h4;
+        img {
+            right: 0;
+            object-fit: cover;
+            position: absolute;
+            mix-blend-mode: luminosity;
+            opacity: .6;
+
+            &:hover {
+                animation: none;
+            }
         }
     }
 </style>
@@ -47,4 +62,5 @@
     <div class="SiteSlogan">
         <i>Sentir Orden y Crear Conexión</i>
     </div>
+    <img src="../img/cover1.png" alt="">
 </header>
