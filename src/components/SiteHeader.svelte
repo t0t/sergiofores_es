@@ -6,7 +6,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
-        text-align: center;
+        align-items: start;
         display: grid;
         grid-template-columns: 1fr;
         @include padding-top(3);

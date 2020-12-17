@@ -3,11 +3,10 @@
 
   .About {
     background-color: $grey;
-    padding: $h2;
-
-    h1 {
-      font-weight: 800;
-    }
+    padding-top: $h5;
+    padding-right: $h2;
+    padding-bottom: $h2;
+    padding-left: $h2;
   }
   .Bio {
     display: grid;
@@ -57,7 +56,7 @@
 <section class="About">
   <main class="Bio">
     <img src="/img/avatar.jpg" alt="Imagen">
-    <p><strong>Sergio Forés Raga</strong> se ha formado en Bellas Artes, Arte Electrónico y Diseño Digital. Ha ejercido desde 1999 como Diseñador gráfico y web. Desde 2010 especializado en Prototipado Frontend y UID. En 2020 adopta el mundo de la impresión 3D en su proceso creativo. También desarrolla una hermenéutica holística de la Creación como via de autoconocimiento que denomina TODH, Función TOT o +0+1234.</p>
+    <p><strong>Sergio Forés Raga</strong> <br> se ha formado en Bellas Artes, Arte Electrónico y Diseño Digital. Ha ejercido desde 1999 como Diseñador gráfico y web. Desde 2010 especializado en Prototipado Frontend y UID. En 2020 adopta el mundo de la impresión 3D en su proceso creativo. También desarrolla una hermenéutica holística de la Creación como via de autoconocimiento que denomina TODH, Función TOT o +0+1234.</p>
   </main>
 
   <aside class="Links">

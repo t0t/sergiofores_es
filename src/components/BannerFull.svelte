@@ -22,12 +22,14 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .BannerFullImg {}
+        h1 {
+            color: $quaternary;
+        }
 
         .BannerFullText {
             align-self: center;
             p {
-                color: $black;
+                color: $quaternary;
                 text-align: center;
                 margin-left: $h1;
                 margin-right: $h1;

@@ -22,7 +22,7 @@
         video {
             width: 100%;
             object-fit: cover;
-            /* mix-blend-mode: soft-light; */
+            mix-blend-mode: overlay;
             @include media(s2) {
                 border-radius: $h2;
                 width: 50%;
