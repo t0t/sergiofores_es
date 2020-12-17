@@ -71,7 +71,7 @@
   </main>
 
   <aside class="Links">
-    <small>PERFILES DONDE COMPARTO:</small>
+    <small>REDES DONDE COMPARTE:</small>
     <ul>
       <li>
         <a href="https://www.instagram.com/t.o.d.h/" target="_blank" rel="noopener">

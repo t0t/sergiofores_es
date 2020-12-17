@@ -39,7 +39,7 @@
 
 <section class="VideoContainer">
     <header>
-        <h1>La Creación opera desde un mismo orden universal siempre: <i>+0+1234</i>, de modo que lo que hago es básicamente detectar, interpretar, descifrar y experimentar eso que es idéntico en lo diferente a través de un <i>arte holístico.</i></h1>
+        <h1>Toda la Creación, en su esencia, opera en base a un mismo orden arquetípico universal; <i>+0+1234</i>. Detectarlo, interpretarlo, descifrarlo y experimentarlo son funciones de mi <i>arte holístico.</i>, un arte que crea desde el reconocimiento de lo idéntico en lo diferente.</h1>
     </header>
     <video poster="/img/cover3.jpg" loop playsinline controls="controls">
         <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />
