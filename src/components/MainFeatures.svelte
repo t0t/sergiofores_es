@@ -6,14 +6,17 @@
     @import "../sass/_main.scss";
     
     .MainFeatures {
-        padding-top: $h2;
-        padding-right: $h2;
-        padding-left: $h2;
-        padding-bottom: 0;
+        padding: $h2;
         background-color: $quaternary;
+        display: grid;
+        gap: $h2;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            ;
         
         @include media(s1) {
-            display: grid;
             gap: $h2;
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas:
@@ -21,23 +24,17 @@
             "b b b"
             "c c c"
             ;
-            /* align-items: center;
-            justify-items: center; */
         }
         
         @include media(s2) {
             grid-template-areas:
             "a b c"
             ;
-            padding-top: $h4;
-            padding-right: $h4;
-            padding-left: $h4;
         }
 
         > article {
             img {
                 border-radius: 50%;
-                margin-bottom: $h2;
                 width: 100%;
                 mix-blend-mode: exclusion; 
                 &:hover {
@@ -61,23 +58,41 @@
             width: 100%;
             object-fit: cover;
             border-radius: 50%;
-            margin-bottom: $h2;
+        }
+    }
+
+    .MainFeature {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $h2;
+        justify-items: center;
+        
+        @include media(s1) {
+            align-items: center;
+            justify-items: start;
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media(s2) {
+            grid-template-columns: 1fr;
         }
     }
     .MainFeature__caption {
-        padding-bottom: $h2;
         border-bottom: none;
-        margin-bottom: $h2;
         display: grid;
         justify-items: center;
         
+        @include media(s1) {
+            justify-items: start;
+        }
         @include media(s2) {
             justify-items: start;
-            padding-bottom: $h2;
         }
-        
         small {
-            @include margin-bottom(1);
+            text-align: center;
+        
+            @include media(s1) {
+                text-align: inherit;
+            }
         }
     }
 </style>

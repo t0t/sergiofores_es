@@ -11,7 +11,7 @@
         
         @include media(s1) {
             display: grid;
-            gap: $h1;
+            gap: $h3;
             grid-template-columns: 1fr;
             justify-items: center;
             @include padding-top(4);
@@ -32,19 +32,21 @@
 
         .BannerFullText {
             align-self: center;
+            display: grid;
+            justify-items: center;
             p {
                 color: $dark_2;
                 text-align: center;
                 margin-left: $h1;
                 margin-right: $h1;
-                @include margin-bottom(2);
+                /* @include margin-bottom(2); */
                 @include media(s1) {
-                    margin-left: $h3;
-                    margin-right: $h3;
+                    /* margin-left: $h3;
+                    margin-right: $h3; */
                 }
                 @include media(s2) {
-                    margin-left: $h4;
-                    margin-right: $h4;
+                    /* margin-left: $h4;
+                    margin-right: $h4; */
                 }
             }
         }

@@ -19,7 +19,7 @@
         "texto"
         ;
         
-        padding: $h1;
+        padding: $h2;
         img {
             width: 100%;
         }
@@ -29,12 +29,11 @@
             grid-template-areas: 
             "texto video"
             ;
-            /* @include padding-top(3);
-            @include padding-bottom(3); */
         }
 
         .BannerMedia {
             grid-area: video;
+            background-color: $dark_2;
         }
 
         .BannerHalfText {
@@ -53,7 +52,6 @@
 
             p {
                 @include margin-top(1);
-                @include margin-bottom(1);
             }
         }
     }

@@ -54,10 +54,11 @@
     }
     .parrafo {
         text-align: center;
-        padding-bottom: $h1;
+        @include margin-bottom(1);
         @include media(s2) {
+            margin-bottom: inherit;
             text-align: inherit;
-            display: inherit;
+            /* display: inherit; */
         }
     }    
 

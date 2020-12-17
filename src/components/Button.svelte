@@ -13,10 +13,14 @@
 <style lang="scss">
     @import "../sass/_main.scss";
     a {
+        display: inherit;
         padding: $h1;
         text-decoration: none;
         border-width: 1px;
         border-style: solid;
+        @include margin-top(1);
+        @include margin-bottom(1);
+        max-width: $h7;
     }
 
     .Dark {
