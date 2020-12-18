@@ -36,10 +36,10 @@
             img {
                 border-radius: 50%;
                 width: 100%;
-                mix-blend-mode: exclusion; 
-                &:hover {
+                /* mix-blend-mode: exclusion;  */
+                /* &:hover {
                     mix-blend-mode: inherit; 
-                }
+                } */
             }
 
             &:nth-child(1) {
@@ -100,11 +100,12 @@
 <section class="MainFeatures">
     <article>
         <figure class="MainFeature">
-            <video loop playsinline autoplay>
+            <img src="img/malla2.gif" alt="">
+            <!-- <video loop playsinline autoplay>
                 <source src="/img/cuadro-anim.webm" type="video/webm" />
                 <source src="/img/cuadro-anim.mp4" type="video/mp4" />
                 <p>Ups! Su navegador no soporta vídeos HTML5.</p>
-            </video>
+            </video> -->
             <figcaption class="MainFeature__caption">
                 <small><i>Creaturas</i> concebidas e impresas en 3D que finalmente entran en una fase de acabado con diferentes materiales (arenas, resinas, óxidos, etc.)</small>
             </figcaption>

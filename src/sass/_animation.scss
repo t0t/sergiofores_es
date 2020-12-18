@@ -24,6 +24,6 @@ a:hover {
     @include animation;
 }
 
-img:hover {
-  @include animation(fade);
-}
+// img:hover {
+//   @include animation(fade);
+// }
