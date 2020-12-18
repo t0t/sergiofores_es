@@ -1,4 +1,5 @@
 <script>
+    import SiteNav from './SiteNav.svelte';
     import SiteLogo from './SiteLogo.svelte';
 </script>
 
@@ -57,6 +58,7 @@
     <div class="SiteBrand">
         <h1>Sergio Forés</h1>
         <i>Sentir Orden y Crear Conexión</i>
+        <SiteNav/>
     </div>
     <img src="../img/cover1.png" alt="">
 </header>
