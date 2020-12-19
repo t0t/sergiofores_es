@@ -50,7 +50,7 @@
       border-radius: 50%;
       border: 1px solid $dark;
       padding: $h2;
-      
+
       &:nth-child(2) {
         grid-column-end: span 2;
       }
@@ -107,7 +107,7 @@
     <a href="/obras/{producto.id}">
     <article class="Obra">
       <figure>
-          <img src="{producto.thumb}" alt="{producto.title}">
+          <img src="../{producto.thumb}" alt="{producto.title}">
           <figcaption>
             {producto.title}
           </figcaption>

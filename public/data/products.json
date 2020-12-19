@@ -2,7 +2,6 @@
   {
     "id": 0,
     "referencia": "071120",
-    "excerpt": "xxx",
     "title": "Tiempo cristalizado",
     "imagen": "img/obra/img0.jpg",
     "thumb": "img/obra/img0.jpg",
@@ -11,7 +10,6 @@
   {
     "id": 1,
     "referencia": "020320",
-    "excerpt": "xxx",
     "title": "Océano de leche primordial",
     "description": "3D Print ø100cm.",
     "imagen": "img/obra/img1.jpg",
@@ -20,7 +18,6 @@
   {
     "id": 2,
     "referencia": "110120",
-    "excerpt": "xxx",
     "title": "Lámpara de oscuridad",
     "description": "Arena y vinilo sobre lienzo. ø100cm.",
     "imagen": "img/obra/img2.jpg",
@@ -29,7 +26,6 @@
   {
     "id": 3,
     "referencia": "170720",
-    "excerpt": "xxx",
     "title": "Cuaternario 3-1",
     "description": "Técnica Mixta sobre lienzo. ø100cm.",
     "imagen": "img/obra/img3.jpg",
@@ -38,7 +34,6 @@
   {
     "id": 4,
     "referencia": "220520",
-    "excerpt": "xxx",
     "title": "Corriente de formas",
     "description": "Arenas y óxidos. ø100cm.",
     "imagen": "img/obra/img4.jpg",
@@ -47,7 +42,6 @@
   {
     "id": 5,
     "referencia": "30120",
-    "excerpt": "xxx",
     "title": "Sin título",
     "description": "3D Print + beach sand ø100cm.",
     "imagen": "img/obra/img5.jpg",
@@ -56,7 +50,6 @@
   {
     "id": 6,
     "referencia": "100220",
-    "excerpt": "xxx",
     "title": "Sin título",
     "description": "3D Print + beach sand ø100cm.",
     "imagen": "img/obra/img6.jpg",

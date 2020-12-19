@@ -10,10 +10,17 @@
   onMount(async () => {
     const response = await fetch(apiUrl);
     data = await response.json();
-    
     obra = data[params.id];
-    console.log(data[params.id]);
   });
+
+	let index = params.id;
+	
+	const next = () => {
+    index = (index + 1) % data.length;
+    data[index];
+    obra = data[index];
+  };
+  
 </script>
 
 <style lang="scss">
@@ -23,7 +30,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: $h2;
-    background-color: $dark;
+    background-color: $quaternary;
     grid-template-areas: 
     "imagen"
     "texto"
@@ -42,9 +49,10 @@
     grid-template-columns: 1fr 2.62fr;
     align-items: center;
     border-radius: 50%;
+    border-left: 1px solid $dark;
     grid-area: texto;
     @include media(s1) {
-      background-color: $dark_2;
+      /* background-color: $dark_2; */
     }
   }
   .ObraSingle {
@@ -58,9 +66,10 @@
       display: grid;
       align-items: center;
       justify-items: center;
-      width: $h4;
-      height: $h4;
-      /* border: 1px solid $light; */
+      width: 52px;
+      height: 52px;
+      background-color: $dark;
+      /* border: 1px solid $salmon; */
       border-radius: 50%;
       color: $light;
       text-decoration: none;
@@ -88,7 +97,7 @@
 <section class="LayoutObras">
 
   <div class="ObraDescription">
-    <a class="backbutton" href="/obras">Back</a>
+    <a class="backbutton" href="/obras/">&#8592;</a>
     <p>
       <strong>{obra.title}</strong><br>
       {obra.description} <br>
@@ -96,6 +105,6 @@
     </p>
   </div>
 
-  <img class="ObraSingle" src="/{obra.imagen}" alt="{obra.title}">
+  <img on:click={next} class="ObraSingle" src="/{obra.imagen}" alt="{obra.title}">
 
 </section>
