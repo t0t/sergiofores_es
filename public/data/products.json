@@ -1,30 +1,65 @@
 [
   {
     "id": 0,
-    "slug": "product0",
+    "referencia": "071120",
     "excerpt": "xxx",
-    "title": "Vesica Holística ",
-    "imagen": "img/obra/th-img12.jpg",
-    "thumb": "img/obra/th-img12.jpg",
-    "description": "Arena negra y latex. 100cm ø 2019",
-    "content": {
-      "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!",
-      "h1": "El viento colocó la arena",
-      "img1": "/img/detalle2.jpg"
-    }
+    "title": "Tiempo cristalizado",
+    "imagen": "img/obra/img0.jpg",
+    "thumb": "img/obra/img0.jpg",
+    "description": "Arenas y óxidos. ø100cm."
   },
   {
     "id": 1,
-    "slug": "product1",
+    "referencia": "020320",
     "excerpt": "xxx",
-    "title": "Sand's frecuency prototype",
-    "description": "3D Print + beach sand",
+    "title": "Océano de leche primordial",
+    "description": "3D Print ø100cm.",
+    "imagen": "img/obra/img1.jpg",
+    "thumb": "img/obra/img1.jpg"
+  },
+  {
+    "id": 2,
+    "referencia": "110120",
+    "excerpt": "xxx",
+    "title": "Lámpara de oscuridad",
+    "description": "Arena y vinilo sobre lienzo. ø100cm.",
+    "imagen": "img/obra/img2.jpg",
+    "thumb": "img/obra/img2.jpg"
+  },
+  {
+    "id": 3,
+    "referencia": "170720",
+    "excerpt": "xxx",
+    "title": "Cuaternario 3-1",
+    "description": "Técnica Mixta sobre lienzo. ø100cm.",
+    "imagen": "img/obra/img3.jpg",
+    "thumb": "img/obra/img3.jpg"
+  },
+  {
+    "id": 4,
+    "referencia": "220520",
+    "excerpt": "xxx",
+    "title": "Corriente de formas",
+    "description": "Arenas y óxidos. ø100cm.",
+    "imagen": "img/obra/img4.jpg",
+    "thumb": "img/obra/img4.jpg"
+  },
+  {
+    "id": 5,
+    "referencia": "30120",
+    "excerpt": "xxx",
+    "title": "Sin título",
+    "description": "3D Print + beach sand ø100cm.",
+    "imagen": "img/obra/img5.jpg",
+    "thumb": "img/obra/img5.jpg"
+  },
+  {
+    "id": 6,
+    "referencia": "100220",
+    "excerpt": "xxx",
+    "title": "Sin título",
+    "description": "3D Print + beach sand ø100cm.",
     "imagen": "img/obra/img6.jpg",
-    "thumb": "img/obra/th-img6.jpg",
-    "content": {
-      "h1": "Ondas de arena",
-      "img1": "/img/detalle1.jpg",
-      "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
-    }
+    "thumb": "img/obra/img6.jpg"
   }
 ]

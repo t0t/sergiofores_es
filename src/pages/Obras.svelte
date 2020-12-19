@@ -50,13 +50,7 @@
       border-radius: 50%;
       border: 1px solid $dark;
       padding: $h2;
-
-      &:nth-child(1) {
-        /* grid-column: 1/3;
-        grid-row: 1/3; */
-        /* background-color: $light; */
-        /* width: 100%; */
-      }
+      
       &:nth-child(2) {
         grid-column-end: span 2;
       }

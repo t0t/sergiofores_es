@@ -89,8 +89,11 @@
 
   <div class="ObraDescription">
     <a class="backbutton" href="/obras">Back</a>
-    <p><strong>{obra.title}</strong><br>
-      {obra.description}</p>
+    <p>
+      <strong>{obra.title}</strong><br>
+      {obra.description} <br>
+      Ref: {obra.referencia}
+    </p>
   </div>
 
   <img class="ObraSingle" src="/{obra.imagen}" alt="{obra.title}">
