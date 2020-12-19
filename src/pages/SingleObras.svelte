@@ -1,5 +1,7 @@
 <script>
   import { onMount } from "svelte";
+  import BannerHalf from '../components/BannerHalf.svelte';
+  import Button from '../components/Button.svelte';
 
   export let params;
 
@@ -46,10 +48,10 @@
 
   .ObraDescription {
     display: grid;
-    grid-template-columns: 1fr 2.62fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
     border-radius: 50%;
-    border-left: 1px solid $dark;
+    border: 1px solid $dark;
     grid-area: texto;
     @include media(s1) {
       /* background-color: $dark_2; */
@@ -61,6 +63,9 @@
     border-radius: 50%;
     width: 100%;
     grid-area: imagen;
+    &:hover {
+      cursor: e-resize;
+    }
   }
   .backbutton {
       display: grid;
@@ -108,3 +113,10 @@
   <img on:click={next} class="ObraSingle" src="/{obra.imagen}" alt="{obra.title}">
 
 </section>
+
+<BannerHalf  variante={1}
+  text="Todo son formas de arte simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia."
+  img="../img/cover4.jpg"
+>
+<Button variante={1} text="Chat-Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
+</BannerHalf>

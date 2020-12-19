@@ -1,15 +1,10 @@
 <script>
   import { onMount } from "svelte";
-
-  // const apiUrl = "/data/products.json";
-  // let data = [];
-
-  // onMount(async () => {
-  //   const response = await fetch(apiUrl);
-  //   data = await response.json();
-  // });
+  import BannerHalf from '../components/BannerHalf.svelte';
+  import Button from '../components/Button.svelte';
 
   let productos = [];
+
   onMount(async () => {
     const res = await fetch("/data/products.json");
     productos = [...await res.json()];
@@ -100,7 +95,7 @@
 
 <section class="LayoutObras">
   
-  <h1>Galería de cuadros</h1>
+  <h2>Galería de cuadros</h2>
 
   <div class="ObrasContainer">
     {#each productos as producto}
@@ -117,3 +112,10 @@
     {/each}
   </div>
 </section>
+
+<BannerHalf  variante={1}
+  text="Todo son formas de arte simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia."
+  img="../img/cover4.jpg"
+>
+<Button variante={1} text="Chat-Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
+</BannerHalf>
