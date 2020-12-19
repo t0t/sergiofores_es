@@ -51,10 +51,10 @@
     grid-template-columns: 1fr 3fr;
     align-items: center;
     border-radius: 50%;
-    border: 1px solid $dark;
+    border: none;
     grid-area: texto;
     @include media(s1) {
-      /* background-color: $dark_2; */
+      border: 1px solid $dark;
     }
   }
   .ObraSingle {

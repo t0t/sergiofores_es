@@ -15,6 +15,11 @@
   @import "../sass/_main.scss";
 
   .LayoutObras {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: $h2;
+    width: 100%;
     padding: $h2;
     background-color: $quaternary;
     h1 {
@@ -26,40 +31,65 @@
     opacity: .55;
     border-radius: 50%;
     object-fit: cover;
-    max-width: 100px;
-    &:hover {
+    max-width: 100%;
+    z-index: 100;
+
+    a:hover & {
       opacity: 1;
     }
   }
 
   .ObrasContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    justify-items: center;
-    grid-auto-flow: dense;
-    max-width: 99%;
-    gap: $h2;
-    padding: $h2;
+    grid-template-columns: 1fr 1fr;
+    gap: $h1;
+    
+    @include media(s2) {
+      gap: $h2;
+      width: 100%;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr;
+      grid-auto-rows: 1fr;
+      padding: $h3;
+      justify-items: center;
+      align-items: center;
+    }
 
     .Obra {
-      border-radius: 50%;
+      /* border-radius: 50%; */
       border: 1px solid $dark;
-      padding: $h2;
+      padding: $h0;
+      @include media(s2) {
+        padding: $h3;
+      }
+      &:hover {
+        background: $dark_grey;
+      }
 
-      &:nth-child(2) {
-        grid-column-end: span 2;
+      &:nth-child(1) {
+        /* grid-column: 1/2; */
+        /* grid-column: 1/4; */
+        grid-column: 1/3;
+        /* grid-row: 1/2; */
+        /* @include media(s2) {
+          grid-column: 1/3;
+        } */
       }
       &:nth-child(3) {
           /* background-color: #fff; */
       }
-      &:nth-child(5) {
-        grid-column-end: span 2;
-        /* grid-row: 3/5; */
-          /* background-color: #fff; */
+      &:nth-child(4) {
+        grid-column: 1/3;
+        /* grid-column: span 1/3; */
+        @include media(s2) {
+          grid-column: 2/4;
+        }
       }
-      &:nth-child(9) {
-        /* grid-column: 1/3;
-        grid-row: 5/7; */
+      &:nth-child(5) {
+        grid-column: 1/3;
+        /* grid-column: span 1/3; */
+        /* grid-row: 5/7; */
+        /* background-color: #fff; */
       }
     }
 
@@ -67,18 +97,7 @@
       display: grid;
       justify-items: center;
       position: relative;
-
-      /* &:hover figcaption {
-        display: inherit;
-      } */
     }
-  }
-  .Obra .figure a:hover {
-    z-index: 100;
-        background-color: $light;
-  }
-  a {
-    color: $dark;
   }
 
   figcaption {
@@ -86,8 +105,9 @@
     display: none;
     position: absolute;
     bottom: $h4;
-    /* padding: $h1; */
-    /* background-color: $light; */
+  }
+  h2 {
+    text-align: center;
   }
 
 </style>
@@ -99,8 +119,8 @@
 
   <div class="ObrasContainer">
     {#each productos as producto}
-    <a href="/obras/{producto.id}">
-    <article class="Obra">
+    <a class="Obra" href="/obras/{producto.id}">
+    <article>
       <figure>
           <img src="../{producto.thumb}" alt="{producto.title}">
           <figcaption>
