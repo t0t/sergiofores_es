@@ -1,6 +1,7 @@
 <script>
     export let text = "Name";
     export let url = "url";
+    export let target = "_blank";
     export let variante = 0;
     let modificador = [
         "Light",
@@ -61,6 +62,6 @@
     }
 </style>
 
-<a href="{url}" target="_blank" class="{modificador[variante]}">
+<a href="{url}" target="{target}" class="{modificador[variante]}">
     {text}
 </a>

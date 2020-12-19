@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "slug": "product0",
+    "excerpt": "xxx",
+    "title": "Vesica Holística ",
+    "imagen": "img/obra/th-img12.jpg",
+    "thumb": "img/obra/th-img12.jpg",
+    "description": "Arena negra y latex. 100cm ø 2019",
+    "content": {
+      "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!",
+      "h1": "El viento colocó la arena",
+      "img1": "/img/detalle2.jpg"
+    }
+  },
+  {
+    "id": 1,
+    "slug": "product1",
+    "excerpt": "xxx",
+    "title": "Sand's frecuency prototype",
+    "description": "3D Print + beach sand",
+    "imagen": "img/obra/img6.jpg",
+    "thumb": "img/obra/th-img6.jpg",
+    "content": {
+      "h1": "Ondas de arena",
+      "img1": "/img/detalle1.jpg",
+      "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
+    }
+  }
+]

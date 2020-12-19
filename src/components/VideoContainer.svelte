@@ -31,7 +31,7 @@
         .TextoContainer {
             display: grid;
             grid-template-columns: 1fr;
-            justify-items: end;
+            justify-items: center;
             grid-area: textocontainer;
             
             @include media(s2) {
@@ -46,15 +46,10 @@
             border-radius: $h2;
         }
     }
-    .boton {
-        display: none;
-        @include media(s2) {
-            display: inherit;
-        }
-    }
+
     .parrafo {
         text-align: center;
-        @include margin-bottom(1);
+        /* @include margin-bottom(1); */
         @include media(s2) {
             margin-bottom: inherit;
             text-align: inherit;
@@ -70,7 +65,7 @@
             <h1>La Creación se fundamenta, esencialmente, en base a un mismo orden arquetípico universal; <i>+0+1234</i>. Detectarlo, interpretarlo, descifrarlo y experimentarlo son funciones de un <i>arte holístico</i> que crea desde el reconocimiento de que lo idéntico atraviesa a lo diferente.</h1>
         </header>
         <footer class="boton">
-            <Button variante={2} text="Chat-Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
+            <Button variante={2} target="_self" text="Catálogo de Obras" url="/obras" />
         </footer>
     </main>
     <video poster="/img/cover3.jpg" loop playsinline controls="controls">

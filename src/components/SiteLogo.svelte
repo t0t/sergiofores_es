@@ -14,6 +14,7 @@
         }
     }
 </style>
+
 <svg class="logo" width="51" height="51">
     <g>
         <circle cx="25" cy="25" r="25" />

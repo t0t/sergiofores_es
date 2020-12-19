@@ -60,6 +60,15 @@ $line-heights: (
   @return map-get($size-scales, $level);
 }
 
+
+
+// a {
+//   color: $dark;
+//   &:hover {
+//       color: $light;
+//   }
+// }
+
 main,
 header {
   font-family: $secondary_font;

@@ -1,5 +1,5 @@
 <script>
-    import SiteNav from './SiteNav.svelte';
+    // import SiteNav from './SiteNav.svelte';
     import SiteLogo from './SiteLogo.svelte';
 </script>
 
@@ -35,6 +35,7 @@
         }
         .SiteLogo {
             grid-area: logo;
+            z-index: 101;
         }
 
         img {
@@ -51,14 +52,16 @@
     }
 </style>
 
+
 <header>
     <div class="SiteLogo">
-        <SiteLogo/>
+        <a href="/">
+            <SiteLogo/>
+        </a>
     </div>
     <div class="SiteBrand">
         <h1>Sergio Forés</h1>
         <i>Sentir Orden y Crear Conexión</i>
-        <SiteNav/>
     </div>
     <img src="../img/cover1.png" alt="">
 </header>
