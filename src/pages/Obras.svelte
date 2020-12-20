@@ -21,7 +21,7 @@
     gap: $h2;
     width: 100%;
     padding: $h2;
-    background-color: $quaternary;
+    background-color: $grey;
     h1 {
       @include margin-bottom(1);
     }
@@ -41,26 +41,26 @@
 
   .ObrasContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: $h1;
+    grid-template-columns: 1.62fr 1fr;
+    /* gap: $h1; */
     
     @include media(s2) {
-      gap: $h2;
+      /* gap: $h2; */
       width: 100%;
-      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 1.62fr 1fr;
       grid-template-rows: 1fr;
       grid-auto-rows: 1fr;
-      padding: $h3;
+      /* padding: $h3; */
       justify-items: center;
-      align-items: center;
+      /* align-items: center; */
     }
 
     .Obra {
       /* border-radius: 50%; */
       border: 1px solid $dark;
-      padding: $h0;
+      /* padding: $h0; */
       @include media(s2) {
-        padding: $h3;
+        /* padding: $h3; */
       }
       &:hover {
         background: $dark_grey;

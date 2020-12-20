@@ -32,7 +32,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: $h2;
-    background-color: $quaternary;
+    background-color: $grey;
     grid-template-areas: 
     "imagen"
     "texto"
@@ -40,7 +40,7 @@
     gap: $h3;
     
     @include media(s1) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.62fr;
       grid-template-areas: "texto imagen";
       gap: 0;
     }
@@ -48,19 +48,22 @@
 
   .ObraDescription {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1.62fr;
     align-items: center;
+    /* justify-items: start; */
+
     border-radius: 50%;
     border: none;
     grid-area: texto;
-    @include media(s1) {
+    /* @include media(s1) {
       border: 1px solid $dark;
-    }
+    } */
   }
   .ObraSingle {
     display: grid;
     grid-template-columns: 1fr;
     border-radius: 50%;
+    
     width: 100%;
     grid-area: imagen;
     &:hover {
@@ -84,7 +87,7 @@
     }
   figcaption {
     h1 {
-      font-weight: bold;
+      /* font-weight: bold; */
     }
   }
   p {

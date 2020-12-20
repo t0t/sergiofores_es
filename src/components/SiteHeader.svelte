@@ -7,7 +7,7 @@
     @import "../sass/_main.scss";
     header {
         position: relative;
-        background-color: $quaternary;  
+        background-color: $dark_grey;  
         display: grid;
         grid-template-columns: $h4 1fr;
         grid-template-areas: 
@@ -23,15 +23,15 @@
         @include media(s1) {
             padding-top: $h2;
             padding-bottom: $h2;
-            height: $h6;
+            /* height: $h6; */
         }
 
         .SiteBrand {
             grid-area: brand;
             z-index: 2;
-            h1 {
+            /* h1 {
                 line-height: inherit;
-            }
+            } */
         }
         .SiteLogo {
             grid-area: logo;
@@ -61,7 +61,7 @@
     </div>
     <div class="SiteBrand">
         <h1>Sergio Forés</h1>
-        <i>Sentir Orden y Crear Conexión</i>
+        <em>Sentir Orden y Crear Conexión</em>
     </div>
-    <img src="../img/cover1.png" alt="">
+    <!-- <img src="../img/cover1.png" alt=""> -->
 </header>

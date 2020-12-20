@@ -70,7 +70,8 @@
         @include media(s1) {
             align-items: center;
             justify-items: start;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.62fr 1fr;
+            /* background-color: #fff; */
         }
         @include media(s2) {
             grid-template-columns: 1fr;

@@ -18,7 +18,7 @@
     justify-items: center;
 
     @include media(s2) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.62fr;
       justify-items: center;
     }
     

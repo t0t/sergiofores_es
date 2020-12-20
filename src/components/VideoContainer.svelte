@@ -22,7 +22,7 @@
         
         @include media(s2) {
             padding-bottom: $h2;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.62fr;
             grid-template-areas: 
                 "textocontainer video"
             ;

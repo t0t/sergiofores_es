@@ -25,7 +25,7 @@
         }
         
         @include media(s2) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.62fr;
             grid-template-areas: 
             "texto video"
             ;
@@ -60,7 +60,7 @@
         color: $dark_grey;
         p {
             color: $dark_grey;
-            font-weight: 500;
+            /* font-weight: 500; */
         }
     }
     .Dark {
