@@ -62,7 +62,7 @@
 <section class="VideoContainer">
     <main class="TextoContainer">
         <header class="parrafo">
-            <h1>La Creación se fundamenta, esencialmente, en base a un mismo orden arquetípico universal; <i>+0+1234</i>. Detectarlo, interpretarlo, descifrarlo y experimentarlo son funciones de un <i>arte holístico</i> que crea desde el reconocimiento de que lo idéntico atraviesa a lo diferente.</h1>
+            <h1>La Creación se fundamenta, esencialmente, en un orden arquetípico universal. <i>+0+1234.</i> Busco reconocer lo idéntico en lo diferente.</h1>
         </header>
         <footer class="boton">
             <Button variante={2} target="_self" text="Catálogo de Obras" url="/obras" />
