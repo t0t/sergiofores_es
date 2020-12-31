@@ -20,7 +20,18 @@
 
   <MainFeatures></MainFeatures>
 
-	<BannerFull></BannerFull>
+  <BannerFull></BannerFull>
+  
+  <BannerHalf
+    text="Una presentación resumida del proyecto +0+1234. +0+1234 es una *hermenéutica de la Creación que observa experiencialmente sus principios universales"
+  >
+    <Button variante={3} text="Canal de Presentaciones" url="https://slides.com/sergiofores/" />
+    
+    <div slot="hasvideo">
+      <iframe src="https://slides.com/sergiofores/01234/embed?byline=hidden&share=hidden" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+      
+  </BannerHalf>
 
   <BannerHalf
     text="Haciendo mis pinitos como Youtuber :) Vuelco mis reflexiones en cápsulas en torno a metafísica, arte, símbolos, etc. Y, por supuesto desde la Hermenéutica +0+1234."
@@ -33,10 +44,11 @@
       
   </BannerHalf>
   
+  
+  
   <BannerHalf  variante={1}
-    text="Un producto digital es un sistema orgánico con un orden que que evoluciona análogamente al Universo. El Diseño Frontend es Arte y es holístico. Mi workflow: SvelteJS, Git, Sass, CSSGrid, Vercel, etc."
-    img="../img/frontend.jpg"
+  text="Un producto digital es un sistema orgánico con un orden que que evoluciona análogamente al Universo. El Diseño Frontend es Arte y es holístico. Mi workflow: SvelteJS, Git, Sass, CSSGrid, Vercel, etc."
+  img="../img/frontend.jpg"
   >
-    <Button variante={1} text="Repo en Github" url="https://github.com/t0t/sergiofores_es" />
-  </BannerHalf>
-
+  <Button variante={1} text="Repo en Github" url="https://github.com/t0t/sergiofores_es" />
+</BannerHalf>
