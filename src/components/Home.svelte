@@ -1,6 +1,7 @@
 <script>
   // import { onMount } from "svelte";
   // import Layout from "./Layout.svelte";
+  import Nav from "./Nav.svelte";
   import Cover from "./modulos/Cover.svelte";
   import ProductGallery from "./modulos/ProductGallery.svelte";
   import ThreeBanner from "./modulos/ThreeBanner.svelte";
@@ -13,7 +14,7 @@
 </script>
 
 <svelte:head>
-  <title>Sergio Forés - Home page</title>
+  <title>Sergio Forés - Hermenéutica Holística +0+1234</title>
 </svelte:head>
 
 <style lang="scss">
@@ -22,17 +23,19 @@
   :global(img) {
     width: 100%;
   }
-
-</style>
-
+  
+  </style>
+<Nav></Nav>
 <!-- <Layout> -->
   <!-- <div slot="header"></div> -->
-  <Cover 
-  title="Sergio Forés" 
-  subtitle="Hermenéutica Holística +0+1234" 
-  text="Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Sentir orden forma conexión." />
-  
-  <BannerFull title="+0+1234" text='El fundamento de la Creación radica en un orden arquetípico universal. Percibir ese orden conforma la conexión trascendental.' img="02234-14.jpg"><h2>⟁</h2></BannerFull>
+  <div id="+0+1234">  
+    <Cover 
+    title="Hermenéutica Holística +0+1234" 
+    subtitle="Sergio Forés Raga" 
+    text="Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Sentir orden forma conexión." />
+  </div>
+    
+    <BannerFull title="+0+1234" text='El fundamento de la Creación radica en un orden arquetípico universal. Percibir ese orden conforma la conexión trascendental.' img="02234-14.jpg"><h2>⟁</h2></BannerFull>
 
   <BannerHalf variante={1} 
   title="Desde la poesía de la materia" 
@@ -46,7 +49,9 @@
     </span>
   </BannerHalf>
 
-  <ProductGallery titulo="Art works" texto="Cuadros tridimensionales de 1 metro de diámetro que representan fuerzas y vibraciones aplicadas sobre la superficie del agua. Me interesa recrear las condiciones necesarias para que las leyes de la física y el tiempo puedan quedar atrapadas en una forma." />
+  <div id="Artwork">
+    <ProductGallery titulo="Art works" texto="Cuadros tridimensionales de 1 metro de diámetro que representan fuerzas y vibraciones aplicadas sobre la superficie del agua. Me interesa recrear las condiciones necesarias para que las leyes de la física y el tiempo puedan quedar atrapadas en una forma." />
+  </div>
 
   <BannerHalf variante={1} title="¿Deseas más información?" text="Puedes ponerte en contacto conmigo por Whatsapp e indicarme la referencia de la pieza que te gusta" img="../img/cover4.jpg">
     <Button variante={0} text="Chat-Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
@@ -104,8 +109,10 @@
     </div>
   </BannerHalf>
 
+<div id="About">
   <BannerTexto header="About me" texto="Me dedico al 'arte de descifrar el proceso de la Creación'. Me encuentro en la intersección de ciertos tipos de Artes, tecnologías y conocimientos ancestrales. Cursé estudios de Artes Aplicadas y procedimientos pictóricos, luego Arte Electrónico y Diseño Digital. Desde 1999 empecé ejerciendo como Diseñador Gráfico y Web. Desde 2010 me centré en Prototipado Frontend y desarrollo de UI. En 2020 incorporo la impresión 3D en mi proceso creativo y desarrollo una Hermenéutica Holística de la Creación, como vía de autoconocimiento, que denomino +0+1234."> 
   </BannerTexto>
+</div>
   
   <Links />
   <!-- <p>⟶ <small>Sergio Forés</small></p> -->

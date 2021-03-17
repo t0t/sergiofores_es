@@ -46,12 +46,12 @@ $line-heights: (
   -2: $base-line-height / 2.62,
   -1: $base-line-height / 1.62,
   0: $base-line-height,
-  1: $base-line-height * 1.62,
-  2: $base-line-height * 2.3,
-  3: $base-line-height * 4.236,
-  4: $base-line-height * 4.236,
-  5: $base-line-height * 6.854,
-  6: $base-line-height * 6.854
+  1: $base-line-height * 1.42,
+  2: $base-line-height * 2,
+  3: $base-line-height * 3,
+  4: $base-line-height * 5,
+  5: $base-line-height * 5,
+  6: $base-line-height * 6
 );
 
 @function line-height($level) {

@@ -73,7 +73,7 @@
     .active + figcaption {
         transform-style: preserve-3d;
         transform: scale(1);
-        transition: 0.5s;
+        transition: 0.25s;
         opacity: 1;
         z-index: 100;
         cursor: revert;
@@ -83,7 +83,7 @@
         align-items: center;
         justify-items: center;
         padding: $h3;
-        transition: 0.5s;
+        transition: 0.2s;
         opacity: 0;
         transform: scale(0.7);
         width: 100%;

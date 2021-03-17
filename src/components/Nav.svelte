@@ -1,15 +1,43 @@
-<script context="module">
-    import Home from './Home.svelte';
-    import Artwork from './Artwork.svelte';
-    import About from './About.svelte';
-    // import Blog from './Blog.svelte';
-    
-    // these are our 'pages' to navigate through (in order for this export to work the script tag MUST include context="module")
-    export const navOptions = [
-        { page: '+0+1234',   component: Home },
-        { page: 'About',   component: About },
-        { page: 'Artwork',   component: Artwork }
-        // { page: 'Blog',   component: Blog },
-        // other navigation pages can go here
+<script>
+    const navOptions = [
+        {
+            name: 'ↂ',
+            href: '+0+1234'
+        },
+        {
+            name: 'About',
+            href: 'About'
+        },
+        {
+            name: 'Artwork',
+            href: 'Artwork'
+        }
     ];
 </script>
+
+<style lang="scss">
+	@import '../sass/_global.scss';
+
+    .MainNav {
+        position: fixed;
+        z-index: 1000;
+        list-style: none;
+        padding: $h3;
+        @include type-setting(0);
+        a {
+            text-decoration: none;
+            color: $light_2;
+            &:hover {
+                color: $light;
+            }
+        }
+    }
+</style>
+
+<ul class="MainNav">
+    {#each navOptions as link}
+        <li>
+            <a href="#{link.href}">{link.name}</a>
+        </li>
+    {/each}
+</ul>

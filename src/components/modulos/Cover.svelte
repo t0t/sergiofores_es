@@ -5,10 +5,12 @@
     let innerWidth, 
         innerHeight,
         scrollY,
-        topescroll;
+        alphascroll,
+        topescroll,
+        y;
 
-    $: if ( scrollY < (innerWidth/2) ) {
-        topescroll = -scrollY
+    $: if ( scrollY < (innerHeight / 2) ) {
+        topescroll = scrollY + 75
     }
 </script>
 
@@ -17,19 +19,23 @@
 
     .Cover {
         height: 100vh;
-        padding: $h2;
+        padding: $h3;
         color: $white;
-        background-size: cover;
-        background-image: url("../img/01234-7.jpg");
+        background-size: 100%;
+        background-image: url("../img/cover3.jpg");
         background-attachment: fixed;
-        background-repeat: no-repeat;
-        /* text-align: left; */
+        background-position: center;
+        position: relative;
+        background-color: #010101;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
-
+        
         @include media(s1) {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75vw;
             display: grid;
             align-items: end;
             grid-template-areas: 
@@ -37,11 +43,10 @@
             "text";
             text-align: center;
         }
-        > * {
-            padding: $h2;
-        }
+        /* > * {} */
         
         .CoverTitle {
+            /* text-shadow: 0px 0px $h3 $dark_2; */
             @include media(s1) {
                 grid-area: title;
                 display: flex;
@@ -52,9 +57,12 @@
             @include media(s3) {
                 margin-top: $h1;
             }
+            color: $light;
+            text-shadow: none;
         }
         .CoverText {
             @include media(s1) {
+                padding-top: $h2;
                 grid-area: text;
                 border-top: 1px dotted $light;
             }
@@ -65,14 +73,14 @@
 <svelte:window bind:innerWidth bind:innerHeight bind:scrollY />
 
 <section class="Cover" style="
-background-position: {topescroll}px;
-background-color:rgba(0, 0, 0, 0.{scrollY});
+background-size: {topescroll}vw;
+opacity: {1 - Math.max(0, scrollY / (innerHeight/2))};
 ">
     <h1 class="CoverTitle">
         {title} <br>
         <span>
             <h2 class="CoverSubTitle">
-                {subtitle}
+                {subtitle} 
             </h2>
         </span>
     </h1>
