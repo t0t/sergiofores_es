@@ -32,7 +32,7 @@
     <Cover 
     title="Hermenéutica Holística +0+1234" 
     subtitle="Sergio Forés Raga" 
-    text="Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Trato de sentir un cierto tipo de orden conforma un cierto tipo de conexión." />
+    text="Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Trato de sentir un cierto tipo de orden que conforma un cierto tipo de conexión." />
   </div>
     
     <BannerFull title="+0+1234" text='El fundamento de la Creación radica en un orden arquetípico universal. Percibir ese orden conforma la conexión trascendental.' img="02234-14.jpg"><h2>⟁</h2></BannerFull>
@@ -110,7 +110,7 @@
   </BannerHalf>
 
 <div id="About">
-  <BannerTexto header="About me" texto="Me dedico al 'arte de descifrar el proceso de la Creación'. Me encuentro en la intersección de ciertos tipos de Artes, tecnologías y conocimientos ancestrales. Cursé estudios de Artes Aplicadas y procedimientos pictóricos, luego Arte Electrónico y Diseño Digital. Desde 1999 empecé ejerciendo como Diseñador Gráfico y Web. Desde 2010 me centré en Prototipado Frontend y desarrollo de UI. En 2020 incorporo la impresión 3D en mi proceso creativo y desarrollo una Hermenéutica Holística de la Creación, como vía de autoconocimiento, que denomino +0+1234."> 
+  <BannerTexto header="About me" texto="Cursé estudios de Artes Aplicadas y procedimientos pictóricos, luego Arte Electrónico y Diseño Digital. Desde 1999 ejerciendo como Diseñador Gráfico y Web. En 2010 me centré en Prototipado Frontend y desarrollo de UI. En 2020 incorporo la impresión 3D en mi proceso creativo y desarrollo una Hermenéutica Holística de la Creación (+0+1234) como vía trascendental y de autorealización.">
   </BannerTexto>
 </div>
   

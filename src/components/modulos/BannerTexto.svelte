@@ -26,9 +26,14 @@
             } */
         }
     }
+    .Avatar {
+        max-width: 200px;
+        border-radius: 50%;
+    }
 </style>
 
 <section class="BannerTexto">
+    <img class="Avatar" src="../img/avatar.jpg" alt="">
     <h2 class="BannerTextoHeader">
         {header} <br>
         <span class="BannerTextoText">{texto}</span>
