@@ -17,11 +17,8 @@
   </svelte:head>
 
   <VideoContainer></VideoContainer>
-
   <MainFeatures></MainFeatures>
-
   <BannerFull></BannerFull>
-  
   <BannerHalf
     text="Una presentación resumida del proyecto +0+1234. +0+1234 es una *hermenéutica de la Creación que observa experiencialmente sus principios universales"
   >
@@ -41,11 +38,7 @@
     <div slot="hasvideo">
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/7BtDRQuPjDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-      
   </BannerHalf>
-  
-  
-  
   <BannerHalf  variante={1}
   text="Un producto digital es un sistema orgánico con un orden que que evoluciona análogamente al Universo. El Diseño Frontend es Arte y es holístico. Mi workflow: SvelteJS, Git, Sass, CSSGrid, Vercel, etc."
   img="../img/frontend.jpg"
