@@ -32,7 +32,7 @@
     <Cover 
     title="Hermenéutica Holística +0+1234" 
     subtitle="Sergio Forés Raga" 
-    text="Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Sentir orden forma conexión." />
+    text="Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Trato de sentir un cierto tipo de orden conforma un cierto tipo de conexión." />
   </div>
     
     <BannerFull title="+0+1234" text='El fundamento de la Creación radica en un orden arquetípico universal. Percibir ese orden conforma la conexión trascendental.' img="02234-14.jpg"><h2>⟁</h2></BannerFull>

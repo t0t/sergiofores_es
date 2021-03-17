@@ -14,6 +14,7 @@
         align-items: center;
         justify-items: center;
         text-align: center;
+        padding: $h3;
         
         /* .BannerTextoHeader {
             z-index: 1;
