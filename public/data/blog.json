@@ -5,15 +5,15 @@
       "slug": "post0",
       "title": "Todo viene de un prototipo",
       "subtitle": "01234",
-      "thumb": "img/grafico-2.svg",
+      "thumb": "img/grafico-4.jpg",
       "excerpt": "Te propongo una <em>incursión más profunda</em>, darle una vuelta de tuerca más a esta idea de 'molde original con el que se fabrican' las cosas. ¿Puede existir un molde más original que la Creación?",
-      "imagen": "img/grafico-4.svg",
+      "imagen": "img/grafico-4.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque neque quos amet, incidunt quo, ipsam vero nostrum maiores temporibus molestiae quae? Officiis eos commodi cumque obcaecati, iure similique temporibus.",
       "content": 
         {
           "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
           "img1":"img/detalle1.jpg",
-          "img2":"img/grafico-4.svg",
+          "img2":"img/detalle1.jpg",
           "p":"<p class='p'>Según la Wikipedia es un primer ejemplar que se fabrica de una figura, un invento u otra cosa, y que sirve de modelo para fabricar otras iguales. Es el molde original con el que se fabrica. También es una Persona o cosa que reúne en grado máximo las características principales de cierto tipo de cosas y puede representarlas.<br>Estupenda definición ¿no?. Pensando en esto, llegué a preguntarme; ¿puede existir un molde más original que la Creación? ¿Puede ser que el ser humano y las cosas que hace procedan de un molde prototípico anterior?</p>",
           "blockquote":"<blockquote>Todo según el número</blockquote>",
           
@@ -39,7 +39,7 @@
       "slug": "post1",
       "title": "Todo viene de un prototipo (2)",
       "subtitle": "Parte 2",
-      "imagen": "img/grafico-5.svg",
+      "imagen": "img/grafico-4.jpg",
       "thumb": "img/grafico-5.svg",
       "excerpt": "Un prototipo, por lo tanto, no es sólo una herramienta transitoria para algo que ha de venir en el futuro, sino que es ya de algún modo ese 'algo' latente que andamos buscando.",
       "description": "Lgggggg",

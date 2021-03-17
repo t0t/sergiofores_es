@@ -1,25 +1,23 @@
-$global_scale_unit: rem;
+
 //PHI based scaling ratio
-$h13: 321.916#{$global_scale_unit};
-$h12: 198.959#{$global_scale_unit};
-$h11: 122.966#{$global_scale_unit};
-$h10: 75.999#{$global_scale_unit};
-$h9: 46.971#{$global_scale_unit};
-$h8: 29.03#{$global_scale_unit};
-$h7: 17.942#{$global_scale_unit};
-$h6: 11.089#{$global_scale_unit};
-$h5: 6.854#{$global_scale_unit};
-$h4: 4.236#{$global_scale_unit};
-$h3: 2.618#{$global_scale_unit};
-$h2: 1.618#{$global_scale_unit};
-$h1: 1#{$global_scale_unit};
-$h0: 0.618#{$global_scale_unit};
-$h-1: 0.382#{$global_scale_unit};
-$h-2: 0.236#{$global_scale_unit};
-$h-3: 0.146#{$global_scale_unit};
-$h-4: 0.09#{$global_scale_unit};
-
-
+$h13: 321.916rem;
+$h12: 198.959rem;
+$h11: 122.966rem;
+$h10: 75.999rem;
+$h9: 46.971rem;
+$h8: 29.03rem;
+$h7: 17.942rem;
+$h6: 11.089rem;
+$h5: 6.854rem;
+$h4: 4.236rem;
+$h3: 2.618rem;
+$h2: 1.618rem;
+$h1: 1rem;
+$h0: 0.618rem;
+$h-1: 0.382rem;
+$h-2: 0.236rem;
+$h-3: 0.146rem;
+$h-4: 0.09rem;
 
 // Padding top
 @mixin padding-top($level: 0) {
@@ -30,7 +28,7 @@ $h-4: 0.09#{$global_scale_unit};
     padding-bottom: size($level);
 }
 // Margin top
-@mixin margin-top($level: 0) {
+@mixin margin-top($level:0) {
     margin-top: size($level);
 }
 // Margin bottom
