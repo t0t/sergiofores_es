@@ -5,9 +5,15 @@
     @import "../../sass/_global.scss";
     svg {
         fill: $black;
+        &:hover {
+            fill: $white;
+            circle {
+                stroke: $black;
+            }
+        }
     }
     circle {
-        stroke: $light;
+        stroke: $light_2;
     }
 </style>
 <svg class="logo" width="51" height="51">

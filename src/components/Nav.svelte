@@ -5,15 +5,15 @@
 
     const navOptions = [
         {
-            name: 'ↂ Wellcome',
+            name: '⨀ Cover',
             href: '#01234'
         },
         {
-            name: '༆ About',
+            name: '⧰ About',
             href: '#about'
         },
         {
-            name: 'ᆅ Artwork',
+            name: '➥ Art Works',
             href: '#artwork'
         }
     ];
@@ -36,49 +36,57 @@
     .MainNav {
         display: none;
         position: fixed;
-        top: $h3*2;
-        left: 0;
+        top: $h4 + $h1;
+        left: $h0;
         z-index: 500;
         list-style: none;
-        padding: $h2;
+        padding-top: $h0;
+        padding-bottom: $h0;
         @include type-setting(0);
+        background-color: rgba(0,0,0,0.75);
 
         .NavItem {
             text-decoration: none;
-            color: $black;
-            padding: 3px 5px;
+            user-select: none;
+            padding: $h0 $h2;
+            display: block;
             &:hover {
-                color: $grey;
+                color: $white;
             }
         }
     }
     .MainNavVisible {
-        display: block;
-        background-color: $light_2;
+        display: flex;
+        flex-wrap: wrap;
+        /* min-height: 150px; */
+        justify-content: space-between;
+        flex-direction: column;
+        @include animation(slide);
     }
     .ButtonNav {
         position: fixed;
         z-index: 1000;
-        top: $h3;
-        left: $h3;
+        top: $h2;
+        left: $h2;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .active {
         color: $white;
-        background-color: $black;
-        border-radius: 4px;
+    }
+    a {
+        color: $light_2;
     }
 </style>
 
 <svelte:window bind:scrollY={y} />
 
-<div use:clickOutside on:click_outside={contraeMainMenu}
->
+<div use:clickOutside on:click_outside={contraeMainMenu}>
 
 <div class="ButtonNav"
-    on:click={(event)=>{
-        console.log(event)
+    on:click={() => {
         activemenu = !activemenu
-        console.log(activemenu)
     }}>
     <SiteLogo />
 </div>
