@@ -28,7 +28,7 @@
 <Nav></Nav>
 <!-- <Layout> -->
   <!-- <div slot="header"></div> -->
-  <div id="+0+1234">  
+  <div id="01234">  
     <Cover 
     title="Hermenéutica Holística +0+1234" 
     subtitle="Sergio Forés Raga" 
@@ -49,7 +49,7 @@
     </span>
   </BannerHalf>
 
-  <div id="Artwork">
+  <div id="artwork">
     <ProductGallery titulo="Art works" texto="Cuadros tridimensionales de 1 metro de diámetro que representan fuerzas y vibraciones aplicadas sobre la superficie del agua. Me interesa recrear las condiciones necesarias para que las leyes de la física y el tiempo puedan quedar atrapadas en una forma." />
   </div>
 
@@ -109,7 +109,7 @@
     </div>
   </BannerHalf>
 
-<div id="About">
+<div id="about">
   <BannerTexto header="About me" texto="Cursé estudios de Artes Aplicadas y procedimientos pictóricos, luego Arte Electrónico y Diseño Digital. Desde 1999 ejerciendo como Diseñador Gráfico y Web. En 2010 me centré en Prototipado Frontend y desarrollo de UI. En 2020 incorporo la impresión 3D en mi proceso creativo y desarrollo una Hermenéutica Holística de la Creación (+0+1234) como vía trascendental y de autorealización.">
   </BannerTexto>
 </div>

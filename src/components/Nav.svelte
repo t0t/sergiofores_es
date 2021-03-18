@@ -1,70 +1,89 @@
 <script>
     import { afterUpdate } from 'svelte';
+    import {clickOutside} from './clickOutside.js';
+    import SiteLogo from './modulos/SiteLogo.svelte'
+
     const navOptions = [
         {
-            name: 'ↂ',
-            href: '#+0+1234'
+            name: 'ↂ Wellcome',
+            href: '#01234'
         },
         {
-            name: 'About',
-            href: '#About'
+            name: '༆ About',
+            href: '#about'
         },
         {
-            name: 'Artwork',
-            href: '#Artwork'
+            name: 'ᆅ Artwork',
+            href: '#artwork'
         }
     ];
-    let currentitem,
-        y;
+    let currentitem, y;
+    let activemenu = false;
     
-    afterUpdate(() => {
-        if ( y > 100 && y < 500 ) {
-            currentitem = ""
-        } else if (y < 6000 || y > 1700) {
-            console.log(`ARTWORK ${y}`)
-        } else if ( y > 7600) {
-            console.log(`ABOUT ${y}`)
-        }
-	});
+    afterUpdate(() => { if ( y > 100 && y < 500 ) { currentitem = "" }});
     
     function cuandoClick(event) {
         currentitem = event.path[0].hash
-        // windowscroll = event.view.scrollY
-        // console.log(`Window scrollY: ${event.view.scrollY}`)
-        // console.log(event.path[0].outerHTML)
-        // console.log(currentitem)
     }
-
+    function contraeMainMenu() {
+		activemenu = false
+	}
 </script>
 
 <style lang="scss">
 	@import '../sass/_global.scss';
 
     .MainNav {
+        display: none;
         position: fixed;
-        z-index: 1000;
+        top: $h3*2;
+        left: 0;
+        z-index: 500;
         list-style: none;
-        padding: $h3;
+        padding: $h2;
         @include type-setting(0);
 
         .NavItem {
             text-decoration: none;
-            color: $light_2;
+            color: $black;
             padding: 3px 5px;
             &:hover {
-                color: $light;
+                color: $grey;
             }
         }
     }
+    .MainNavVisible {
+        display: block;
+        background-color: $light_2;
+    }
+    .ButtonNav {
+        position: fixed;
+        z-index: 1000;
+        top: $h3;
+        left: $h3;
+    }
     .active {
-        color: $black;
+        color: $white;
         background-color: $black;
+        border-radius: 4px;
     }
 </style>
 
 <svelte:window bind:scrollY={y} />
 
-<ul class="MainNav">{y}
+<div use:clickOutside on:click_outside={contraeMainMenu}
+>
+
+<div class="ButtonNav"
+    on:click={(event)=>{
+        console.log(event)
+        activemenu = !activemenu
+        console.log(activemenu)
+    }}>
+    <SiteLogo />
+</div>
+
+<ul class="{activemenu ? "MainNav MainNavVisible" : "MainNav"}">
     {#each navOptions as link,i}
         <li>
             {#if y == i }
@@ -75,5 +94,5 @@
             {/if}
         </li>
     {/each}
-
 </ul>
+</div>

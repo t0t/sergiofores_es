@@ -1,3 +1,15 @@
+<script>
+
+</script>
+<style lang="scss">
+    @import "../../sass/_global.scss";
+    svg {
+        fill: $black;
+    }
+    circle {
+        stroke: $light;
+    }
+</style>
 <svg class="logo" width="51" height="51">
     <g>
         <circle cx="25" cy="25" r="25" />
