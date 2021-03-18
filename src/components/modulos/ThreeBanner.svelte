@@ -103,7 +103,7 @@
     
     <div class="ThreeBannerText">
         <h2>{title}</h2>
-        <p>{text}</p>
+        <p>{@html text}</p>
         <slot></slot>
     </div>
 

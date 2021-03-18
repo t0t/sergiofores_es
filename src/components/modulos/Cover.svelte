@@ -6,8 +6,8 @@
         innerHeight,
         scrollY,
         alphascroll,
-        topescroll,
-        y;
+        topescroll;
+        
 
     $: if ( scrollY < (innerHeight / 2) ) {
         topescroll = scrollY + 75

@@ -105,7 +105,7 @@
     
     <div class="BannerHalfText">
         <h2>{title}</h2>
-        <p>{text}</p>
+        <p>{@html text}</p>
         <slot></slot>
     </div>
 

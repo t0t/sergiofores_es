@@ -39,7 +39,7 @@
 
   <BannerHalf variante={1} 
   title="Desde la poesía de la materia" 
-  text='Todo son formas de arte simbólicas en si mismas y, como tales, cumplen una función mediadora capaz de abrirle lo real a la conciencia.'>
+  text='Todo son formas de arte simbólicas en si mismas y, como tales, cumplen una <strong>función mediadora capaz de abrirle lo real a la conciencia.</strong>'>
     <span slot="hasvideo">
       <video poster="/img/cover3.jpg" loop playsinline controls="controls">
         <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />
@@ -83,7 +83,7 @@
 
   <ThreeBanner variante={3}
   title="Impresión 3D de datos." 
-  text ="¿Podemos tocar los datos? En este proyecto me interesa explorar la mejor manera de traducir datos (JSON) a mallas 3D para poder ser impresos en el mundo real. Por medio de Three.js topografiamos los datos como coordenadas sobre un plano que luego se exporta a un archivo 3D" />
+  text ="<strong>¿Podemos tocar los datos?</strong> En este proyecto me interesa explorar la mejor manera de traducir datos <code>JSON</code> a mallas 3D para poder ser impresos en el mundo real. Por medio de Three.js topografiamos los datos como coordenadas sobre un plano que luego se exporta a un archivo 3D" />
 
   <BannerHalf variante={3} title="Gematria App" text="He desarrollado una sencilla aplicación que traduce palabras en hebreo a su equivalente numérico. Creado en JS, Html, Sass y Svelte" img="../img/gematria.gif">
     <Button variante={1} text="Abrir App" url="https://gematriaapp.vercel.app/" />
