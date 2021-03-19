@@ -38,9 +38,7 @@
             cursor: pointer;
         }
     }
-    a[target="_blank"]:after {
-        content: " ⤤";
-    }
+    
     .Dark {
         color: $dark;
         border-color: $dark;

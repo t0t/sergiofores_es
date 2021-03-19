@@ -3,6 +3,7 @@
   // import Layout from "./Layout.svelte";
   import Nav from "./Nav.svelte";
   import Cover from "./modulos/Cover.svelte";
+  import T0T from "./modulos/T0T.svelte";
   import Slider from "./modulos/Slider.svelte";
   import ProductGallery from "./modulos/ProductGallery.svelte";
   import ThreeBanner from "./modulos/ThreeBanner.svelte";
@@ -36,7 +37,7 @@
     text="Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Trato de sentir un cierto tipo de orden que conforma un cierto tipo de conexión." />
   </div>
     
-    <BannerFull title="+0+1234" text='El fundamento de la Creación radica en un orden arquetípico universal. Percibir ese orden conforma la conexión trascendental.' img="02234-14.jpg"><h2>⟁</h2></BannerFull>
+  <BannerFull title="+0+1234" text='El fundamento de la Creación radica en un orden arquetípico universal. ...Percibir ese orden conforma la conexión trascendental.' img="02234-14.jpg"><h2>⟁</h2></BannerFull>
 
   <BannerHalf variante={1} 
   title="Desde la poesía de la materia" 
@@ -60,28 +61,17 @@
     <Button variante={0} text="Chat-Whatsapp" url="https://api.whatsapp.com/send?phone=+34619549032" />
   </BannerHalf>
 
-  <BannerHalf variante={2} 
-  title="¿Qué es +0+1234?" 
-  text="En esta presentación te resumo de qué va +0+1234: Una hermenéutica de la Creación que observa experiencialmente sus principios universales">
-    <Button variante={0} text="Presentaciones" url="https://slides.com/sergiofores/" />
-    <div slot="hasvideo">
-      <iframe
-        src="https://slides.com/sergiofores/01234/embed?byline=hidden&share=hidden"
-        width="100%"
-        height="420"
-        scrolling="no"
-        frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen
-      />
-    </div>
-  </BannerHalf>
+  <BannerHalf variante={2}
+  title="Meta-Mapa +0+1234" 
+  text='+0+1234 consiste en una hermenéutica de la Creación que observa experiencialmente sus principios universales. Ancestralmente estos 5 símbolos numéricos representan las partes del Todo.'>
+  
+  <nav>
+    <a href="https://slides.com/sergiofores/" target="_blank">Slides</a>
+    <a href="https://docs.google.com/document/d/15oUQRghNb_lihCFGJ9Ls0z1PyihD_a18v1V3AohVqQ4/edit?usp=sharing" target="_blank">Libro</a>
+  </nav>
 
-  <BannerHalf 
-  title="Hermenéutica Universal" 
-  text='Libro "work in progress" que explica mi cosmovisión y el proyecto +0+1234.' img="../img/libro.svg">
-    <Button variante={3} text="Leer libro" url="https://docs.google.com/document/d/15oUQRghNb_lihCFGJ9Ls0z1PyihD_a18v1V3AohVqQ4/edit?usp=sharing" />
+  <span slot="hasSVG"><T0T /></span>
+
   </BannerHalf>
 
   <ThreeBanner variante={3}

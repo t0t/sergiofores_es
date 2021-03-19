@@ -42,6 +42,10 @@
             display: grid;
             justify-items: center;
             padding-bottom: $h2;
+            .title {
+                font-weight: normal;
+                color: inherit;
+            }
             h2 {
                 color: $dark;
                 margin-left: $h4;
@@ -62,11 +66,7 @@
     ></div>
     <div class="BannerFullText">
         <slot />
-        <h2>{title}</h2>
+        <h2 class="title">{title}</h2>
         <h2>{text}</h2>
-        <nav>
-            <h3>⟹</h3>
-            <!-- ⟸ -->
-        </nav>
     </div>
 </section>

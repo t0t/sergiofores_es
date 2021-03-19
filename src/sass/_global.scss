@@ -10,3 +10,17 @@
 @import "_forms.scss";
 // @import "_svg.scss";
 @import "_animation.scss";
+
+nav {
+    padding-top: $h2;
+    a {
+        padding: $h0;
+        text-decoration: none;
+        color: $secondary;
+        border: 1px solid $secondary;
+    }
+    
+}
+a[target="_blank"]:after {
+    content: " ⤤";
+}

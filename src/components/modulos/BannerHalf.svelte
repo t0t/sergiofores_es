@@ -41,6 +41,8 @@
         }
 
         .BannerMedia {
+            display: grid;
+            place-content: center;
             grid-area: media;
         }
 
@@ -79,7 +81,9 @@
         background-color: $dark_grey;
     }
     .Colored {
-        background-color: $dark;
+        color: $black;
+        background-color: $tertiary;
+        min-height: 100vh;
     }
     .Light2 {
         background-color: $light;
@@ -98,8 +102,8 @@
             <img src="{img}" alt="Imagen">
         </slot>
         {/if}
-        
         <slot name="hasvideo"></slot>
+        <slot name="hasSVG"></slot>
     </div>
     
     <div class="BannerHalfText">

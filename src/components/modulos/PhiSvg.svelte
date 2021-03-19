@@ -20,7 +20,6 @@
     ];
 
     $: $tweenedCount=numDots
-    // $: svgHeight = (innerHeight/3);
 
 </script>
 
