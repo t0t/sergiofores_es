@@ -20,7 +20,11 @@
     let currentitem, y;
     let activemenu = false;
     
-    afterUpdate(() => { if ( y > 100 && y < 500 ) { currentitem = "" }});
+    afterUpdate(() => { 
+        if ( y > 100 && y < 500 ) { 
+            currentitem = "" 
+        }
+    });
     
     function cuandoClick(event) {
         currentitem = event.path[0].hash

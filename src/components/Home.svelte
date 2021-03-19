@@ -3,6 +3,7 @@
   // import Layout from "./Layout.svelte";
   import Nav from "./Nav.svelte";
   import Cover from "./modulos/Cover.svelte";
+  import Slider from "./modulos/Slider.svelte";
   import ProductGallery from "./modulos/ProductGallery.svelte";
   import ThreeBanner from "./modulos/ThreeBanner.svelte";
   import BannerFull from "./modulos/BannerFull.svelte";
@@ -48,6 +49,8 @@
       </video>
     </span>
   </BannerHalf>
+
+  <Slider />
 
   <div id="artwork">
     <ProductGallery titulo="Art works" texto="Cuadros tridimensionales de 1 metro de diámetro que representan fuerzas y vibraciones aplicadas sobre la superficie del agua. Me interesa recrear las condiciones necesarias para que las leyes de la física y el tiempo puedan quedar atrapadas en una forma." />

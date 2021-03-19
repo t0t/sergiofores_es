@@ -1,14 +1,14 @@
 <script>
     export let title = ""
     export let text = ""
-    export let img;
+    export let img;   
 </script>
 
 <style lang="scss">
     @import "../../sass/_global.scss";
 
     .BannerFull {
-        background-color: $light;
+        background-color: $dark_grey;
         
         @include media(s1) {
             height: 100vh;
@@ -42,11 +42,10 @@
             display: grid;
             justify-items: center;
             padding-bottom: $h2;
-            p {
+            h2 {
                 color: $dark;
-                text-align: center;
-                margin-left: $h1;
-                margin-right: $h1;
+                margin-left: $h4;
+                margin-right: $h4;
 
                 @include media(s2) {
                     @include type-setting(1);
@@ -57,12 +56,17 @@
 </style>
 
 <section class="BannerFull">
+
     <div class="BannerFullImg"
     style="background-image:url('../img/{img}');"
     ></div>
     <div class="BannerFullText">
-        <h2>{title}</h2>
-        <p>{text}</p>
         <slot />
+        <h2>{title}</h2>
+        <h2>{text}</h2>
+        <nav>
+            <h3>⟹</h3>
+            <!-- ⟸ -->
+        </nav>
     </div>
 </section>
