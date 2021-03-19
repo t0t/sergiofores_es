@@ -92,7 +92,7 @@
     <Button variante={1} text="Abrir App" url="https://gematriaapp.vercel.app/" />
   </BannerHalf>
   
-  <PhiSvg variante={2} title="Phi SVG" text="Basado en una demo de Tan Li Hau. Diseño generativo en JS y SVG" />
+  <PhiSvg variante={2} title="La Divina Proporción" text="Sentir el Orden da Forma a la Conexión. Diseño generativo en <code>JS</code> y <code>SVG</code> de la proporción áurea. <br> <small><i>Basado en una demo de Tan Li Hau.</i></small>" />
 
   <BannerHalf 
   title="Videos" 

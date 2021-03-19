@@ -1,14 +1,14 @@
 <script>
+    import Button from "./Button.svelte";
+    import {tweened} from "svelte/motion";
     export let title = ""
     export let text = ""
-    // let imagen = "img/01234-7.jpg"
-    import {tweened} from "svelte/motion";
 	let angle = 0.618033988749;
-	let count = 0;
-	let numDots = 600;
-	let tweenedCount = tweened(0, {
-		duration: 1000,
-		interpolate: (a, b) => (t) => Math.round(((b-a)*t)+a)
+	let numDots = 360;
+    let dotsize = 1.62 * 1.62;
+	let tweenedCount = tweened( 0, {
+		duration: 500,
+		interpolate: (a, b) => (t) => Math.round( ( (b-a) * t ) + a )
 	})
     let innerWidth, innerHeight, svgWidth;
     export let variante = 0;
@@ -18,20 +18,9 @@
         "Colored",
         "Light2"
     ];
-    import Button from "./Button.svelte";
 
-    // let styles = {
-	// 	'size': "50px",
-	// 	'position': "0px",
-	// 	'bg': '#AAAAAA',
-	// 	'alpha': 0.5
-	// };
-    // $: cssVarStyles = Object.entries(styles)
-    // .map(([key, value]) => `--${key}:${value}`)
-    // .join(';');
-
-    $: svgWidth = (innerWidth/2);
-    $: svgHeight = (innerHeight/3);
+    $: $tweenedCount=numDots
+    // $: svgHeight = (innerHeight/3);
 
 </script>
 
@@ -39,12 +28,11 @@
     @import "../../sass/_global.scss";
     svg {
         circle {
-            fill: $light_2;
+            fill: $secondary;
         }
         g {
-            transform: translate(60%, 50%);
+            transform: translate(50%, 50%);
         }
-        fill: red;
     }
     .PhiSvg {
         display: grid;
@@ -64,7 +52,14 @@
 
         .BannerMedia {
             grid-area: media;
-            background-color: $dark_2;
+        }
+
+        .controls {
+            margin-top: $h2;
+            margin-bottom: $h2;
+            width: 100%;
+            display: grid;
+            gap: $h3;
         }
 
         .PhiSvgText {
@@ -102,7 +97,7 @@
         background-color: $dark_grey;
     }
     .Colored {
-        background-color: $dark;
+        background-color: $dark_2;
     }
     .Light2 {
         background-color: $light;
@@ -119,13 +114,12 @@
 <section class="PhiSvg {modificador[variante]}">
 
     <div class="BannerMedia">
-        <input type="number" bind:value={angle}>
-	    <input type="range" bind:value={$tweenedCount} min={0} max={numDots}>
+
         <slot name="hasvideo">
-            <svg style="width: {svgWidth}; height: {svgHeight};">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <g>
                     {#each { length: $tweenedCount } as _, index(index)}
-                        <circle r="2.3" 
+                        <circle r="{dotsize}" 
                         cx={Math.cos(index * angle * 2 * Math.PI) * index * 0.2} 
                         cy={Math.sin(index * angle * 2 * Math.PI) * index * 0.2} />
                     {/each}
@@ -136,8 +130,11 @@
     
     <div class="PhiSvgText">
         <h2>{title}</h2>
-        <p>{text}</p>
-        
+        <p>{@html text}</p>
+        <div class="controls">
+            <input type="number" bind:value={angle} step="0.001">
+            <input type="range" bind:value={$tweenedCount} min={0} max={numDots}>
+        </div>
         <Button variante={0} text="Play" on:click={() => {$tweenedCount = $tweenedCount > 0 ? 0 : numDots; }} />
     </div>
 

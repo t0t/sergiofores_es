@@ -42,7 +42,6 @@
 
         .BannerMedia {
             grid-area: media;
-            background-color: $dark_2;
         }
 
         .BannerHalfText {
