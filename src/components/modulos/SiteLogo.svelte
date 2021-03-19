@@ -13,7 +13,7 @@
         }
     }
     circle {
-        stroke: $light_2;
+        stroke: $grey_1;
     }
 </style>
 <svg class="logo" width="51" height="51">

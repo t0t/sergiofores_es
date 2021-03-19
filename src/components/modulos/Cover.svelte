@@ -46,7 +46,7 @@
         /* > * {} */
         
         .CoverTitle {
-            /* text-shadow: 0px 0px $h3 $dark_2; */
+            /* text-shadow: 0px 0px $h3 $grey_4; */
             @include media(s1) {
                 grid-area: title;
                 display: flex;
@@ -57,14 +57,14 @@
             @include media(s3) {
                 margin-top: $h1;
             }
-            color: $light;
+            color: $grey_0;
             text-shadow: none;
         }
         .CoverText {
             @include media(s1) {
                 padding-top: $h2;
                 grid-area: text;
-                border-top: 1px dotted $light;
+                border-top: 1px dotted $grey_0;
             }
         }
     }

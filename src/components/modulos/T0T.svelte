@@ -7,13 +7,17 @@
     text {
         fill: $black;
         font-family: $secondary_font;
-        @include type-setting(6);
+        @include type-setting(4);
         font-weight: bold;
     }
     circle {
         fill: none;
         stroke: $quaternary;
         stroke-width: 4;
+    }
+    .controls {
+        padding: 4px;
+        border: 1px dotted $grey_0;
     }
 </style>
 
@@ -45,10 +49,32 @@
     </text>
   </svg>
 
-<input bind:value={arjes[0]}>
-<input bind:value={arjes[1]}>
-<input bind:value={arjes[2]}>
-<input bind:value={arjes[3]}>
-<input bind:value={arjes[4]}>
+<div class="controls">
+    <input 
+        type="text" 
+        placeholder="0,infinitud..." 
+        bind:value={arjes[0]}
+    >
+    <input 
+        type="text" 
+        placeholder="1, espíritu..." 
+        bind:value={arjes[1]}
+    >
+    <input 
+        type="text" 
+        placeholder="2, alma..." 
+        bind:value={arjes[2]}
+    >
+    <input 
+        type="text" 
+        placeholder="3, mente..." 
+        bind:value={arjes[3]}
+    >
+    <input 
+        type="text" 
+        placeholder="4, cuerpo..." 
+        bind:value={arjes[4]}
+    >
+</div>
 
 <slot></slot>

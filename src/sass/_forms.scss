@@ -3,12 +3,18 @@ input{
   font-family: inherit;
   @include type-setting(0);
   font-weight: inherit;
-  color: $primary;
+  color: $grey_3;
 }
 
 label {
   // padding-bottom: $h0;
 }
+
+// Tipo TEXT
+input[type=text] {
+  padding: $h0;
+  background-color: $grey_0;
+} 
 
 // Tipo NUMBER
 input[type=number] {
@@ -35,15 +41,14 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 1px;
   cursor: pointer;
   // animate: 0.2s;
-  background: $light_2;
+  background: $grey_1;
   border-radius: 0px;
 }
 input[type=range]::-webkit-slider-thumb {
-  border: 0px solid $light_2;
   height: 30px;
   width: 30px;
   border-radius: 50px;
-  background: $secondary;
+  background: $grey_1;
   cursor: grab;
   -webkit-appearance: none;
   margin-top: -14.5px;

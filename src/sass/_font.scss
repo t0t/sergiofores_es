@@ -74,7 +74,7 @@ small {
   font-family: $secondary_font;
   letter-spacing: $base_letter_spacing;
   font-weight: $weight_normal;
-  color: $light_2;
+  color: $grey_1;
 }
 
 i {
@@ -88,7 +88,7 @@ i {
 // }
 
 em {
-  color: $light_grey;
+  color: $grey_2;
   font-weight: $weight_normal;
 }
 
@@ -168,7 +168,7 @@ blockquote {
   }
 }
 sub {
-  color: $dark;
+  color: $grey_5;
   font-weight: $weight_normal;
   padding-left: 2px;
   padding-top: 0px;

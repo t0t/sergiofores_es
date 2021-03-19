@@ -80,7 +80,7 @@
         color: $white;
     }
     a {
-        color: $light_2;
+        color: $grey_1;
     }
 </style>
 

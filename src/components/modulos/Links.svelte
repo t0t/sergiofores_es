@@ -1,17 +1,21 @@
 <style lang="scss">
-    @import '../../sass/_global.scss';
+  @import '../../sass/_global.scss';
 
-    .Links {
-      padding-top: $h4;
-      padding-bottom: $h4;
-      background-color: $light;
-      display: grid;
-      justify-items: center;
-      align-content:center;
+  .Links {
+    padding-top: $h5;
+    padding-bottom: $h5;
+    background-color: $grey_0;
+    display: grid;
+    justify-items: center;
+    align-content:center;
 
     ul {
       width: 100%;
       text-align: center;
+    }
+
+    a[target="_blank"]:after {
+      content: "";
     }
 
     svg {
@@ -21,7 +25,7 @@
       margin-right: $h-1;
       fill: $primary;
       &:hover {
-        fill: $primary;
+        fill: $grey_3;
       }
       @include media(s2) {
         margin-left: $h1;
@@ -29,13 +33,13 @@
       }
     }
     small {
-      color: $primary;
+      color: $grey_3;
     }
   }
 </style>
 
 <aside class="Links">
-    <small>REDES DONDE COMPARTE:</small>
+    <small>Follow me at:</small>
     <ul>
       <li>
         <a href="https://www.instagram.com/t.o.d.h/" target="_blank" rel="noopener">

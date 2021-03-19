@@ -1,44 +1,37 @@
-$light: #e5e5e5;
-$light_2: #b4b4b4;
-$light_grey: #6c6c6c;
-$grey: #222;
-$grey_2: #5a5a5a;
-$dark_grey: #0b0b0b;
-$dark_2: #212121;
-$dark: #39322d;
+// B/N
 $black: black;
 $white: white;
 
-$primary: $light_2;
+// Greys
+$grey_0: #e5e5e5;
+$grey_1: #b4b4b4;
+$grey_2: #6c6c6c;
+$grey_3: #414141;
+$grey_4: #2a2929;
+$grey_5: hsl(0, 0%, 9%);
+
+// Main colors
+$primary: $grey_1;
 $secondary: $grey_2;
-$tertiary: $light_2;
-$quaternary: #414141;
-$salmon: #d5896d;
+$tertiary: $grey_3;
+$quaternary: $grey_5;
 
-$highlight: $salmon;
-
-/* COLOR VARIABLES
-============================================= */
-$color_1: $grey;
-$color_2: $dark_grey;
-$color_3: $dark_grey;
+// Specials
+$highlight: #e5e9d8;
 
 
 /* GRADIENT LISTS
 ============================================= */
 
-$list1: $color_1, $color_2, $color_3; 
+$list1: $primary, $secondary, $tertiary; 
 
-$list2: $color_1 0%,$color_1 33%,$color_2 33%,$color_2 66%, $color_3 66%, $color_3 100%; 
+$list2: $primary 0%,$primary 33%,$secondary 33%,$secondary 66%, $tertiary 66%, $tertiary 100%; 
 
-$list3: $color_1 0%,$color_1 10%,$color_2 25%,$color_2 39%,$color_3 79%,$color_3 100%; 
+$list3: $primary 0%,$primary 10%,$secondary 25%,$secondary 39%,$tertiary 79%,$tertiary 100%; 
 
-$list4: $color_1, $color_2, $color_3, $color_1, $color_2, $color_3, $color_1, $color_2, $color_3; 
+$list4: $primary, $secondary, $tertiary, $primary, $secondary, $tertiary, $primary, $secondary, $tertiary; 
 
 @mixin gradient($direction, $list) { 
-  background: -webkit-linear-gradient($direction, $list);
-  background: -moz-linear-gradient($direction, $list);
-  background: -o-linear-gradient($direction, $list);
   background: linear-gradient($direction, $list);  
 }
 

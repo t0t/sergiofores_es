@@ -40,39 +40,39 @@
     }
     
     .Dark {
-        color: $dark;
-        border-color: $dark;
+        color: $grey_5;
+        border-color: $grey_5;
         &:hover {
-            color: $light;
+            color: $grey_0;
             background-color: $quaternary;
             border-color: $quaternary;
         }
     }
     .Light {
-        color: $light_2;
-        border-color: $light_2;
+        color: $grey_1;
+        border-color: $grey_1;
         &:hover {
-            color: $dark;
-            background-color: $light_2;
-            border-color: $light_2;
+            color: $grey_5;
+            background-color: $grey_1;
+            border-color: $grey_1;
         }
     }
     .Colored {
-        color: $light_grey;
-        border-color: $light_grey;
+        color: $grey_2;
+        border-color: $grey_2;
         &:hover {
-            color: $dark;
-            background-color: $light;
-            border-color: $light;
+            color: $grey_5;
+            background-color: $grey_0;
+            border-color: $grey_0;
         }
     }
     .ColoredInvert {
-        color: $dark_grey;
-        border-color: $dark_grey;
+        color: $grey_3;
+        border-color: $grey_3;
         &:hover {
-            color: $dark;
-            background-color: $light;
-            border-color: $light;
+            color: $grey_5;
+            background-color: $grey_0;
+            border-color: $grey_0;
         }
     }
 </style>

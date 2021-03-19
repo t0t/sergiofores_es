@@ -26,7 +26,7 @@
         gap: $h2;
         width: 100%;
         padding: $h2;
-        background-color: $grey;
+        background-color: $grey_0;
         h1 {
             @include margin-bottom(1);
         }
@@ -63,7 +63,7 @@
         background: $black;
       } */
       &:hover {
-        background: $dark_grey;
+        background: $grey_3;
       }
 
       &:nth-child(1) {

@@ -36,8 +36,8 @@
             z-index: 2;
             padding: $h4 $h4 $h4 $h4;
             margin-left: $h6;
-            color: $light_2;
-            background-color: $dark_2;
+            color: $grey_1;
+            background-color: $grey_4;
         }
 
         .SliderNav {

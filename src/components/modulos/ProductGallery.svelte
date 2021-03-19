@@ -27,7 +27,8 @@
         gap: $h2;
         width: 100%;
         padding: $h3;
-        background-color: $grey;
+        color: $grey_5;
+        background-color: $grey_2;
         
         p {
             @include margin-bottom(0);
@@ -40,7 +41,7 @@
         z-index: 100;
 
         a:hover & {
-            opacity: 1;
+            opacity: .5;
         }
     }
 
@@ -56,11 +57,11 @@
     .Obra {
         border-radius: 50%;
         object-fit: cover;
-        padding: $h2;
+        padding: $h3;
 
       &:hover {
         cursor: zoom-in;
-        background: $dark_grey;
+        background: $grey_1;
       }
     }
     
@@ -91,20 +92,18 @@
         text-align: center;
         position: absolute;
         top: 0;
-        background-color: $dark_grey;
+        background-color: $grey_1;
         border-radius: 50%;
         text-align: center;
         > img {
-            ;
             border-radius: 50%;
-            width: $h4;
-            height: $h4;
+            width: $h5;
+            height: $h5;
             align-self: end;
             mix-blend-mode: luminosity;
         }
         h3 {
             font-weight: bold;
-            /* color: $black; */
         }
         p {
             font-style: italic;
@@ -118,7 +117,7 @@
 <section class="LayoutObras">
   
     <h2>{titulo}</h2>
-    <p>{texto}</p>
+    <p>{@html texto}</p>
   
     <div class="ObrasContainer">
         {#each productos as producto, i}

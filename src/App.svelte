@@ -7,7 +7,7 @@
 	
 	:global(body) {
 		margin: 0;
-		background-color: $dark_2;
+		background-color: $grey_4;
 	}
 	:global(html) {
 		font-size: $base_font_size;

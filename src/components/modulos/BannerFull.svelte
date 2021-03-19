@@ -8,7 +8,7 @@
     @import "../../sass/_global.scss";
 
     .BannerFull {
-        background-color: $dark_grey;
+        background-color: $grey_4;
         
         @include media(s1) {
             height: 100vh;
@@ -20,13 +20,6 @@
         @include media(s2) {
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
-        }
-
-        h2 {
-            color: $light_grey;
-            font-weight: $weight_strong;
-            @include margin-bottom(0);
-            @include margin-top(0);
         }
 
         .BannerFullImg {
@@ -41,16 +34,19 @@
             align-self: center;
             display: grid;
             justify-items: center;
+            padding-top: $h2;
             padding-bottom: $h2;
             .title {
                 font-weight: normal;
                 color: inherit;
             }
             h2 {
-                color: $dark;
+                color: $grey_2;
                 margin-left: $h4;
                 margin-right: $h4;
-
+                
+                @include margin-bottom(0);
+                @include margin-top(0);
                 @include media(s2) {
                     @include type-setting(1);
                 }

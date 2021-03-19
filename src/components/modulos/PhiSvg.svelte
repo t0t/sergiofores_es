@@ -27,7 +27,7 @@
     @import "../../sass/_global.scss";
     svg {
         circle {
-            fill: $secondary;
+            fill: $grey_2;
         }
         g {
             transform: translate(50%, 50%);
@@ -86,23 +86,23 @@
         }
     }
     .Light {
-        background-color: $light_2;
-        color: $dark_grey;
+        background-color: $grey_1;
+        color: $grey_3;
         p {
-            color: $dark_grey;
+            color: $grey_3;
         }
     }
     .Dark {
-        background-color: $dark_grey;
+        background-color: $grey_3;
     }
     .Colored {
-        background-color: $dark_2;
+        background-color: $grey_4;
     }
     .Light2 {
-        background-color: $light;
-        color: $dark;
+        background-color: $grey_0;
+        color: $grey_5;
         p {
-            color: $dark;
+            color: $grey_5;
         }
     }
 
