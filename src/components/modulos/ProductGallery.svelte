@@ -1,25 +1,17 @@
 <script>
-    import { onMount } from "svelte";
-    let productos = [];
+    export let productos = [];
     let active = false;
-    let selected = productos[0];
-    let intSelected;
-
+    console.log(productos[0])
+    let elementId;
     function showInfo(event) {
-        selected = productos[event.srcElement.id];
-        intSelected = event.srcElement.id;
+        elementId = event.srcElement.id;
     };
-    onMount(async () => {
-        const res = await fetch("/data/products.json");
-        productos = [...await res.json()];
-    });
     export let titulo = "";
     export let texto = "";
 </script>
 
 <style lang="scss">
     @import "../../sass/_global.scss";
-
     .LayoutObras {
         display: grid;
         grid-template-columns: 1fr;
@@ -39,26 +31,21 @@
         object-fit: cover;
         max-width: 100%;
         z-index: 100;
-
         a:hover & {
             opacity: .5;
         }
     }
-
   .ObrasContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
-
     @include media(s3) {
       justify-items: center;
       gap: $h3;
     }
-
     .Obra {
         border-radius: 50%;
         object-fit: cover;
         padding: $h3;
-
       &:hover {
         cursor: zoom-in;
         background: $grey_1;
@@ -110,7 +97,6 @@
             align-self: start;
             text-align: center;
         }
-
     }
 </style>
 
@@ -124,7 +110,7 @@
         <article>
           <figure>
             <img src="../{producto.thumb}" alt="{producto.title}"
-            class={intSelected==i ? "Obra active" : "Obra"}
+            class={elementId==i ? "Obra active" : "Obra"}
             on:click={showInfo} id={i}>
             <figcaption>
                 <img src="../{producto.thumb}">

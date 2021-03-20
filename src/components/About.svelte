@@ -8,9 +8,7 @@
 	@import '../sass/_global.scss';
 </style>
 
-<svelte:head>
-    <title>Sergio Forés - About</title>
-</svelte:head>
+<svelte:head><title>Sergio Forés - About</title></svelte:head>
 
 <Layout>
     <div slot="header">

@@ -1,6 +1,7 @@
 <script>
     export let header = ""
     export let texto = ""
+    export let img = ""
 </script>
 
 <style lang="scss">
@@ -33,7 +34,7 @@
 </style>
 
 <section class="BannerTexto">
-    <img class="Avatar" src="../img/avatar.jpg" alt="">
+    <img class="Avatar" src={img} alt="">
     <h2 class="BannerTextoHeader">
         {header} <br>
         <span class="BannerTextoText">{texto}</span>

@@ -13,6 +13,7 @@
   import Links from './modulos/Links.svelte';
   import PhiSvg from './modulos/PhiSvg.svelte';
   import Button from "./modulos/Button.svelte";
+  
   let data = [
     {
       id: "0",
@@ -45,7 +46,9 @@
       block: "Chat-Whatsapp",
       title: "¿Deseas más información?",
       subtitle: "Puedes ponerte en contacto conmigo por Whatsapp e indicarme la referencia de la pieza que te gusta",
-      buttontext: "Chat-Whatsapp"
+      buttontext: "Chat-Whatsapp",
+      buttonurl: "https://api.whatsapp.com/send?phone=+34619549032",
+      img: "../img/cover4.jpg"
     },
     {
       id: "5",
@@ -65,7 +68,8 @@
       title: "Gematria App",
       subtitle: "He desarrollado una sencilla aplicación que traduce palabras en hebreo a su equivalente numérico. Creado en JS, Html, Sass y Svelte",
       img: "../img/gematria.gif",
-      button: "Abrir App"
+      button: "Abrir App",
+      buttonurl: "https://gematriaapp.vercel.app/"
     },
     {
       id: "8",
@@ -85,8 +89,59 @@
       id: "10",
       block: "aboutme",
       title: "About me",
-      subtitle: "Cursé estudios de Artes Aplicadas y procedimientos pictóricos, luego Arte Electrónico y Diseño Digital. Desde 1999 ejerciendo como Diseñador Gráfico y Web. En 2010 me centré en Prototipado Frontend y desarrollo de UI. En 2020 incorporo la impresión 3D en mi proceso creativo y desarrollo una Hermenéutica Holística de la Creación (+0+1234) como vía trascendental y de autorealización."
+      subtitle: "Cursé estudios de Artes Aplicadas y procedimientos pictóricos, luego Arte Electrónico y Diseño Digital. Desde 1999 ejerciendo como Diseñador Gráfico y Web. En 2010 me centré en Prototipado Frontend y desarrollo de UI. En 2020 incorporo la impresión 3D en mi proceso creativo y desarrollo una Hermenéutica Holística de la Creación (+0+1234) como vía trascendental y de autorealización.",
+      img: "../img/avatar.jpg"
+    }
+  ]
+  let productos = [
+    {
+      "id": 0,
+      "referencia": "071120",
+      "title": "Tiempo cristalizado",
+      "imagen": "img/obra/img0.jpg",
+      "thumb": "img/obra/img0.jpg",
+      "description": "Arenas y óxidos. ø100cm."
     },
+    {
+      "id": 1,
+      "referencia": "020320",
+      "title": "Océano de leche primordial",
+      "description": "3D Print ø100cm.",
+      "imagen": "img/obra/img1.jpg",
+      "thumb": "img/obra/img1.jpg"
+    },
+    {
+      "id": 2,
+      "referencia": "110120",
+      "title": "Lámpara de oscuridad",
+      "description": "Arena y vinilo sobre lienzo. ø100cm.",
+      "imagen": "img/obra/img2.jpg",
+      "thumb": "img/obra/img2.jpg"
+    },
+    {
+      "id": 4,
+      "referencia": "220520",
+      "title": "Corriente de formas",
+      "description": "Arenas y óxidos. ø100cm.",
+      "imagen": "img/obra/img4.jpg",
+      "thumb": "img/obra/img4.jpg"
+    },
+    {
+      "id": 5,
+      "referencia": "30120",
+      "title": "Sin título",
+      "description": "3D Print + beach sand ø100cm.",
+      "imagen": "img/obra/img5.jpg",
+      "thumb": "img/obra/img5.jpg"
+    },
+    {
+      "id": 6,
+      "referencia": "100220",
+      "title": "Sin título",
+      "description": "3D Print + beach sand ø100cm.",
+      "imagen": "img/obra/img6.jpg",
+      "thumb": "img/obra/img6.jpg"
+    }
   ]
 </script>
 
@@ -100,73 +155,72 @@
   }
   
   </style>
-<Nav></Nav>
-<!-- <Layout> -->
-  <!-- <div slot="header"></div> -->
-  <div id="01234">  
-    <Cover title={data[0].title} subtitle={data[0].subtitle} text={data[0].text} />
-  </div>
+
+<Nav />
+
+<div id="01234">  
+  <Cover title={data[0].title} subtitle={data[0].subtitle} text={data[0].text} />
+</div>
     
-  <BannerFull title={data[1].title} text={data[1].subtitle} img={data[1].img}>
-    <h2>⟁</h2>
-  </BannerFull>
+<BannerFull title={data[1].title} text={data[1].subtitle} img={data[1].img}>
+  <h2>⟁</h2>
+</BannerFull>
 
-  <BannerHalf variante={1} title={data[2].title} text={data[2].text}>
-    <span slot="hasvideo">
-      <video poster="/img/cover3.jpg" loop playsinline controls="controls">
-        <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />
-        <source src="/img/desdelapoesiadelamateria.mp4" type="video/mp4" />
-        <p>Ups! Su navegador no soporta vídeos HTML5.</p>
-      </video>
-    </span>
-  </BannerHalf>
+<BannerHalf variante={1} title={data[2].title} text={data[2].subtitle}>
+  <span slot="hasvideo">
+    <video poster="/img/cover3.jpg" loop playsinline controls="controls">
+      <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />
+      <source src="/img/desdelapoesiadelamateria.mp4" type="video/mp4" />
+      <p>Ups! Su navegador no soporta vídeos HTML5.</p>
+    </video>
+  </span>
+</BannerHalf>
 
-  <Slider />
+<Slider />
 
-  <div id="artwork">
-    <ProductGallery titulo={data[3].title} texto={data[3].subtitle} />
-  </div>
+<div id="artwork">
+  <ProductGallery 
+    titulo={data[3].title} 
+    texto={data[3].subtitle}
+    productos={productos}/>
+</div>
 
-  <BannerHalf variante={1} title={data[4].title} text={data[4].subtitle} img="../img/cover4.jpg">
-    <Button variante={0} text={data[4].buttontext} url="https://api.whatsapp.com/send?phone=+34619549032" />
-  </BannerHalf>
+<BannerHalf variante={1} title={data[4].title} text={data[4].subtitle} img={data[4].img}>
+  <Button variante={0} text={data[4].buttontext} url={data[4].buttonurl} />
+</BannerHalf>
 
-  <BannerHalf variante={2} title={data[5].title} text={data[5].subtitle}>
+<BannerHalf variante={2} title={data[5].title} text={data[5].subtitle}>
   <nav>
     <a href="https://slides.com/sergiofores/" target="_blank">Slides</a>
     <a href="https://docs.google.com/document/d/15oUQRghNb_lihCFGJ9Ls0z1PyihD_a18v1V3AohVqQ4/edit?usp=sharing" target="_blank">Libro</a>
   </nav>
-  <div slot="hasSVG"><T0T /></div>
-  </BannerHalf>
+<div slot="hasSVG"><T0T /></div>
+</BannerHalf>
 
-  <ThreeBanner variante={3} title={data[6].title} text ={data[6].subtitle} />
+<ThreeBanner variante={3} title={data[6].title} text ={data[6].subtitle} />
 
-  <BannerHalf variante={3} title={data[7].title} text={data[7].subtitle} img={data[7].img}>
-    <Button variante={1} text="{data[7].button}" url="https://gematriaapp.vercel.app/" />
-  </BannerHalf>
-  
-  <PhiSvg variante={2} title={data[8].title} text="{data[8].subtitle}" />
+<BannerHalf variante={3} title={data[7].title} text={data[7].subtitle} img={data[7].img}>
+  <Button variante={1} text="{data[7].button}" url="{data[7].buttonurl}" />
+</BannerHalf>
 
-  <BannerHalf title={data[9].title} text={data[9].subtitle}>
-    <Button variante={1} text={data[9].buttontext} url={data[9].buttonurl} />
-    <div slot="hasvideo">
-      <iframe
-        width="100%"
-        height="315"
-        src="https://www.youtube.com/embed/7BtDRQuPjDg"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
-    </div>
-  </BannerHalf>
+<PhiSvg variante={2} title={data[8].title} text="{data[8].subtitle}" />
+
+<BannerHalf title={data[9].title} text={data[9].subtitle}>
+  <Button variante={1} text={data[9].buttontext} url={data[9].buttonurl} />
+  <div slot="hasvideo">
+    <iframe
+      width="100%"
+      height="315"
+      src="https://www.youtube.com/embed/7BtDRQuPjDg"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    />
+  </div>
+</BannerHalf>
 
 <div id="about">
-  <BannerTexto header={data[10].title} texto={data[10].subtitle}>
-  </BannerTexto>
+<BannerTexto header={data[10].title} texto={data[10].subtitle} img={data[10].img}/>
 </div>
-  
-  <Links />
-  <!-- <p>⟶ <small>Sergio Forés</small></p> -->
-  <!-- <div slot="footer"></div> -->
-<!-- </Layout> -->
+
+<Links />
