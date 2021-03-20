@@ -1,13 +1,23 @@
 <script>
+    import ProductItem from "./ProductItem.svelte"
     export let productos = [];
-    let active = false;
-    console.log(productos[0])
-    let elementId;
-    function showInfo(event) {
-        elementId = event.srcElement.id;
-    };
     export let titulo = "";
     export let texto = "";
+
+    // let selectedId;
+    // let productId;
+    // function showInfo(event) {
+    //     selectedId = event.srcElement.id;
+    //     productId = productos[selectedId].id
+    //     console.log(event.srcElement)
+    //     // console.log(event.srcElement.toElement.classList)
+    //     // console.log(event.toElement.className)
+    //     // console.log(event.toElement.classList[0])
+    //     // console.log(productos)
+    //     // console.log(productos[selectedId])
+    //     // console.log(`event.srcElement.id ${selectedId}`)
+    //     // console.log(`productId ${productId}`)
+    // };
 </script>
 
 <style lang="scss">
@@ -101,16 +111,28 @@
 </style>
 
 <section class="LayoutObras">
-  
+    
     <h2>{titulo}</h2>
     <p>{@html texto}</p>
-  
+
     <div class="ObrasContainer">
+    {#each productos as producto, i}
+        <ProductItem 
+            title= {producto.title}
+            description= {producto.description}
+            imagen= {producto.imagen}
+            referencia= {producto.referencia}
+            id={i}
+            />
+    {/each}
+    </div>
+    
+    <!-- <div class="ObrasContainer">
         {#each productos as producto, i}
         <article>
           <figure>
             <img src="../{producto.thumb}" alt="{producto.title}"
-            class={elementId==i ? "Obra active" : "Obra"}
+            class={selectedId==i ? "Obra active" : "Obra"}
             on:click={showInfo} id={i}>
             <figcaption>
                 <img src="../{producto.thumb}">
@@ -123,5 +145,5 @@
           </figure>
         </article>
         {/each}
-    </div>
+    </div> -->
   </section>

@@ -182,7 +182,7 @@
   <ProductGallery 
     titulo={data[3].title} 
     texto={data[3].subtitle}
-    productos={productos}/>
+    {productos} />
 </div>
 
 <BannerHalf variante={1} title={data[4].title} text={data[4].subtitle} img={data[4].img}>
