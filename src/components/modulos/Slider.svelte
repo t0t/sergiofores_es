@@ -1,5 +1,5 @@
 <script>
-    import {fade} from 'svelte/transition'
+    // import {fade} from 'svelte/transition'
 	
 	const carouselPhotos = [
 		'../img/0810.jpg',
@@ -19,15 +19,18 @@
     @import "../../sass/_global.scss";
 
     .Slider {
-        height: 71vh;
+        height: 100vh;
         position: relative;
         overflow: hidden;
         
-        img {
-            position: absolute;
-            top: $h2;
+        .img {
             z-index: 1;
-            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* object-fit: cover; */
         }
 
         .Texto {
@@ -60,12 +63,10 @@
     <div class="Texto">
         <h2>El fundamento de la Creación radica en un orden arquetípico universal. Percibir ese orden conforma la conexión trascendental.</h2>
     </div>
-    <div class="SliderNav" on:click={next}>
-        ⟹
-    </div>
+    <div class="SliderNav" on:click={next}>⟹</div>
     
-    {#each [carouselPhotos[index]] as src (index)}
-        <img transition:fade {src} alt="" />	
+    {#each [carouselPhotos[index]] as src, index}
+        <div class="img" style="background-image:url({src});"></div>
     {/each}
     
 </section>
