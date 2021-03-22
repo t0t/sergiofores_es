@@ -2,10 +2,18 @@
     // import {fade} from 'svelte/transition'
 	
 	const carouselPhotos = [
-		'../img/0810.jpg',
-		'../img/01234-7.jpg',
-		'../img/0877.jpg',
-		'../img/02234-14.jpg'
+		{
+            href: "../img/0810.jpg",
+            text: "'Aquel que sabe contar hasta cuatro puede conocer el universo entero' __Pitágoras"
+        },
+		{
+            href: "../img/01234-7.jpg",
+            text: "Del griego hermeneutikos; Hermeneuo (Yo descifro) y Tekné (Arte, técnica, tejer). La Hermenéutica nace como 'el arte o la técnica de explicar, descifrar o interpretar'"
+        },
+		{
+            href: "../img/02234-14.jpg",
+            text: "'Lo que la realidad es, es su símbolo; el es, es el símbolo de lo real' __Raimon Panikkar"
+        }
 	]
 	
 	let index = 0
@@ -22,6 +30,8 @@
         height: 100vh;
         position: relative;
         overflow: hidden;
+        display: grid;
+        place-items: center;
         
         .img {
             z-index: 1;
@@ -34,39 +44,37 @@
         }
 
         .Texto {
-            @include type-setting(2);
+            @include type-setting(3);
             position: absolute;
             z-index: 2;
-            padding: $h4 $h4 $h4 $h4;
-            margin-left: $h6;
-            color: $grey_1;
-            background-color: $grey_4;
+            padding: $h3;
+            color: $white;
         }
 
         .SliderNav {
             @include type-setting(2);
             position: absolute;
-            top: 151px;
-            right: 10%;
+            top: 60%;
             z-index: 30;
             color: antiquewhite;
             padding: $h2;
+            user-select: none;
+            transition: all 0.5s ease-out;
             &:hover {
                 cursor: pointer;
-                text-indent: $h0;
+                transform: translateX($h2) scale(1.2);
             }
         }
     }
 </style>
 
 <section class="Slider">
+{#each [carouselPhotos[index]] as slide, index}
     <div class="Texto">
-        <h2>El fundamento de la Creación radica en un orden arquetípico universal. Percibir ese orden conforma la conexión trascendental.</h2>
+        <blockquote>{@html slide.text}</blockquote>
     </div>
-    <div class="SliderNav" on:click={next}>⟹</div>
-    
-    {#each [carouselPhotos[index]] as src, index}
-        <div class="img" style="background-image:url({src});"></div>
-    {/each}
-    
+    <div class="img" style="background-image:url({slide.href});">
+    </div>
+{/each}
+<div class="SliderNav" on:click={next}> ⟹ </div>
 </section>
