@@ -5,6 +5,9 @@
     export let referencia;
     export let id;
     let active = false
+    import viewport from "../useViewportAction";
+    let opacity_effect; //efecto de use function on enter viewport
+    let transform_effect; //efecto de use function on enter viewport
 </script>
 
 <style lang="scss">
@@ -57,7 +60,20 @@
     
 </style>
 
-<article>
+<article
+use:viewport 
+on:enterViewport={ () => {
+  console.log("enter")
+  console.log(opacity_effect)
+  opacity_effect = 1
+  transform_effect = 0
+}} 
+on:exitViewport={ () => {
+  console.log("exit")
+  opacity_effect = 0
+  transform_effect = -10
+}}
+style="opacity:{opacity_effect}; transition: all 0.3s ease-out; transform: translateX({transform_effect}rem)">
     <figure on:click={() => active = !active}>
         <img 
         src="../{imagen}" alt="{title}" 

@@ -3,21 +3,6 @@
     export let productos = [];
     export let titulo = "";
     export let texto = "";
-
-    // let selectedId;
-    // let productId;
-    // function showInfo(event) {
-    //     selectedId = event.srcElement.id;
-    //     productId = productos[selectedId].id
-    //     console.log(event.srcElement)
-    //     // console.log(event.srcElement.toElement.classList)
-    //     // console.log(event.toElement.className)
-    //     // console.log(event.toElement.classList[0])
-    //     // console.log(productos)
-    //     // console.log(productos[selectedId])
-    //     // console.log(`event.srcElement.id ${selectedId}`)
-    //     // console.log(`productId ${productId}`)
-    // };
 </script>
 
 <style lang="scss">
@@ -45,67 +30,19 @@
             opacity: .5;
         }
     }
-  .ObrasContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
-    @include media(s3) {
-      justify-items: center;
-      gap: $h3;
-    }
-    .Obra {
-        border-radius: 50%;
-        object-fit: cover;
-        padding: $h3;
-      &:hover {
-        cursor: zoom-in;
-        background: $grey_1;
-      }
-    }
-    
-    figure {
-      display: grid;
-      justify-items: center;
-      position: relative;
-    }
-}
-    .active + figcaption {
-        transform-style: preserve-3d;
-        transform: scale(1);
-        transition: 0.25s;
-        opacity: 1;
-        z-index: 100;
-        cursor: revert;
-    }
-    figcaption {
+    .ObrasContainer {
         display: grid;
-        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
+
+        @include media(s3) {
+            justify-items: center;
+            gap: $h3;
+        }
+    
+        figure {
+        display: grid;
         justify-items: center;
-        padding: $h3;
-        transition: 0.2s;
-        opacity: 0;
-        transform: scale(0.7);
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        position: absolute;
-        top: 0;
-        background-color: $grey_1;
-        border-radius: 50%;
-        text-align: center;
-        > img {
-            border-radius: 50%;
-            width: $h5;
-            height: $h5;
-            align-self: end;
-            mix-blend-mode: luminosity;
-        }
-        h3 {
-            font-weight: bold;
-        }
-        p {
-            font-style: italic;
-            align-self: start;
-            text-align: center;
+        position: relative;
         }
     }
 </style>
@@ -126,24 +63,4 @@
             />
     {/each}
     </div>
-    
-    <!-- <div class="ObrasContainer">
-        {#each productos as producto, i}
-        <article>
-          <figure>
-            <img src="../{producto.thumb}" alt="{producto.title}"
-            class={selectedId==i ? "Obra active" : "Obra"}
-            on:click={showInfo} id={i}>
-            <figcaption>
-                <img src="../{producto.thumb}">
-                <h3>{producto.title}</h3>
-                <p>
-                    {producto.description} <br>
-                    <span>Ref: {producto.referencia}</span>
-                </p>
-            </figcaption>
-          </figure>
-        </article>
-        {/each}
-    </div> -->
   </section>

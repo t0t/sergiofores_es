@@ -21,7 +21,7 @@
     }
 </style>
 
-<svg viewBox="0 0 6886 4363">
+<svg viewBox="0 0 6886 4363" id="lienzo">
     <circle 
     cx="102436" cy="13939" r="550" 
     transform="matrix(2.90714 0 0 2.90721 -294363 -38341)"/>

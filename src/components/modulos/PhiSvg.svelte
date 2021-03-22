@@ -19,7 +19,7 @@
         "Light2"
     ];
 
-    $: $tweenedCount=numDots
+    $: $tweenedCount = numDots
 
 </script>
 

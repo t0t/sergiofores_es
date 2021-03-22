@@ -143,7 +143,8 @@
       "thumb": "img/obra/img6.jpg"
     }
   ]
-</script>
+ 
+  </script>
 
 <svelte:head> <title>Sergio Forés - Hermenéutica Holística +0+1234</title></svelte:head>
 
@@ -178,11 +179,8 @@
 
 <Slider />
 
-<div id="artwork">
-  <ProductGallery 
-    titulo={data[3].title} 
-    texto={data[3].subtitle}
-    {productos} />
+<div id="artwork" >
+  <ProductGallery titulo={data[3].title} texto={data[3].subtitle} {productos} />
 </div>
 
 <BannerHalf variante={1} title={data[4].title} text={data[4].subtitle} img={data[4].img}>
