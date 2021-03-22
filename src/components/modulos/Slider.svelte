@@ -1,5 +1,5 @@
 <script>
-    import {fade, slide, scale} from 'svelte/transition'
+    import {fade} from 'svelte/transition'
     import Button from "./Button.svelte";
 	
 	const carouselPhotos = [
@@ -16,11 +16,9 @@
             text: "El fundamento de la Creación radica en un orden arquetípico universal. ...Percibir ese orden conforma un tipo de conexión trascendental."
         }
 	]
-	let visible=true;
 	let index = 0
-	
 	const next = () => {
-		index = (index + 1) % carouselPhotos.length
+        index = (index + 1) % carouselPhotos.length
 	}
 </script>
 
@@ -61,19 +59,21 @@
 </style>
 
 <section class="SliderContainer">
-{#if visible}
+    
     {#each [carouselPhotos[index]] as slide, index}
-        <article class="Slider" transition:fade
-        style="
-        background-image:url({slide.href});
+        <article class="Slider" 
+        style="background-image:url({slide.href});
         ">
-            <main class="Caption">
+            <main class="Caption"
+            transition:slide
+            >
                 <blockquote>{@html slide.text}</blockquote>
             </main>
             <nav class="SliderNav">
                 <Button variante={0} text="⟹" on:click={next} />
             </nav>
         </article>
-    {/each}
-{/if}
+        {/each}
+        
+
 </section>
