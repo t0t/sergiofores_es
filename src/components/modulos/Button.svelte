@@ -21,7 +21,6 @@
             outline: none;
             border-color: $grey_0;
             border-style: dashed;
-
         }
     }
 

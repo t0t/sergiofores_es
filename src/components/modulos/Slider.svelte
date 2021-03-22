@@ -1,5 +1,5 @@
 <script>
-    import {fade} from 'svelte/transition'
+    import {fade, slide, scale} from 'svelte/transition'
     import Button from "./Button.svelte";
 	
 	const carouselPhotos = [
