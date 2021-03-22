@@ -162,10 +162,6 @@
 <div id="01234">  
   <Cover title={data[0].title} subtitle={data[0].subtitle} text={data[0].text} />
 </div>
-    
-<BannerFull title={data[1].title} text={data[1].subtitle} img={data[1].img}>
-  <h2>⟁</h2>
-</BannerFull>
 
 <BannerHalf variante={1} title={data[2].title} text={data[2].subtitle}>
   <span slot="hasvideo">

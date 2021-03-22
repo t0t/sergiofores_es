@@ -1,21 +1,22 @@
 <script>
-    // import {fade} from 'svelte/transition'
+    import {fade} from 'svelte/transition'
+    import Button from "./Button.svelte";
 	
 	const carouselPhotos = [
 		{
-            href: "../img/0810.jpg",
-            text: "'Aquel que sabe contar hasta cuatro puede conocer el universo entero' __Pitágoras"
+            href: "../img/bg1.jpg",
+            text: "'Aquel que sabe contar hasta cuatro puede conocer el universo entero' <br> __Pitágoras"
         },
 		{
-            href: "../img/01234-7.jpg",
-            text: "Del griego hermeneutikos; Hermeneuo (Yo descifro) y Tekné (Arte, técnica, tejer). La Hermenéutica nace como 'el arte o la técnica de explicar, descifrar o interpretar'"
+            href: "../img/bg2.jpg",
+            text: "Del griego hermeneutikos; <strong>Hermeneuo</strong> <i>(Yo descifro)</i> y <strong>Tekné</strong> <i>(Arte, técnica, tejer)</i>. La Hermenéutica nace como 'el arte o la técnica de explicar, descifrar o interpretar'"
         },
 		{
-            href: "../img/02234-14.jpg",
-            text: "'Lo que la realidad es, es su símbolo; el es, es el símbolo de lo real' __Raimon Panikkar"
+            href: "../img/bg3.jpg",
+            text: "El fundamento de la Creación radica en un orden arquetípico universal. ...Percibir ese orden conforma un tipo de conexión trascendental."
         }
 	]
-	
+	let visible=true;
 	let index = 0
 	
 	const next = () => {
@@ -25,56 +26,54 @@
 
 <style lang="scss">
     @import "../../sass/_global.scss";
-
-    .Slider {
-        height: 100vh;
+    .SliderContainer {
         position: relative;
+    }
+    .Slider {
+        width: 100%;
         overflow: hidden;
+        min-height: 400px;
         display: grid;
         place-items: center;
+        background-color: $grey_5;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         
-        .img {
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* object-fit: cover; */
+        @include media(s2) {
+            height: 100vh;
         }
 
-        .Texto {
-            @include type-setting(3);
-            position: absolute;
+        .Caption {
+            align-self: end;
+            @include type-setting(1);
             z-index: 2;
-            padding: $h3;
-            color: $white;
+            padding-left: $h3;
+            padding-right: $h3;
+            color: $grey_0;
         }
-
-        .SliderNav {
-            @include type-setting(2);
-            position: absolute;
-            top: 60%;
-            z-index: 30;
-            color: antiquewhite;
-            padding: $h2;
-            user-select: none;
-            transition: all 0.5s ease-out;
-            &:hover {
-                cursor: pointer;
-                transform: translateX($h2) scale(1.2);
-            }
-        }
+    }
+    .SliderNav {
+        align-self: start;
+        padding-top: 0;
     }
 </style>
 
-<section class="Slider">
-{#each [carouselPhotos[index]] as slide, index}
-    <div class="Texto">
-        <blockquote>{@html slide.text}</blockquote>
-    </div>
-    <div class="img" style="background-image:url({slide.href});">
-    </div>
-{/each}
-<div class="SliderNav" on:click={next}> ⟹ </div>
+<section class="SliderContainer">
+{#if visible}
+    {#each [carouselPhotos[index]] as slide, index}
+        <article class="Slider" transition:fade
+        style="
+        background-image:url({slide.href});
+        ">
+            <main class="Caption">
+                <blockquote>{@html slide.text}</blockquote>
+            </main>
+            <nav class="SliderNav">
+                <Button variante={0} text="⟹" on:click={next} />
+            </nav>
+        </article>
+    {/each}
+{/if}
 </section>

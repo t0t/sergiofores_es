@@ -151,9 +151,9 @@ h4 {
 }
 
 blockquote {
-  @include type-setting(-1);
+  @include type-setting(0);
   @include media(s1) {
-    @include type-setting(0);
+    @include type-setting(1);
   }
 }
 blockquote {

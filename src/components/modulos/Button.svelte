@@ -13,9 +13,18 @@
 
 <style lang="scss">
     @import "../../sass/_global.scss";
+
     button {
         background-color: transparent;
+        user-select: none;
+        &:focus {
+            outline: none;
+            border-color: $grey_0;
+            border-style: dashed;
+
+        }
     }
+
     a,
     button {
         font-size: inherit;
