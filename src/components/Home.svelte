@@ -3,7 +3,7 @@
   // import Layout from "./Layout.svelte";
   import Nav from "./Nav.svelte";
   import Cover from "./modulos/Cover.svelte";
-  import T0T from "./modulos/T0T.svelte";
+  import T0T from "./modulos/T0T/T0T.svelte";
   import Slider from "./modulos/Slider.svelte";
   import ProductGallery from "./modulos/ProductGallery.svelte";
   import ThreeBanner from "./modulos/ThreeBanner.svelte";
@@ -54,7 +54,7 @@
       id: "5",
       block: "Meta-Mapa",
       title: "Meta-Mapa +0+1234",
-      subtitle: "+0+1234 consiste en una hermenéutica de la Creación que observa experiencialmente sus principios universales. Ancestralmente estos 5 símbolos numéricos representan las partes del Todo."
+      subtitle: "+0+1234 consiste en una hermenéutica de la Creación que observa experiencialmente sus principios universales. Ancestralmente 5 símbolos numéricos representan las partes de Todo. Cualquier palabra que escribas se ordena naturalmente en una de estas zonas."
     },
     {
       id: "6",

@@ -46,8 +46,6 @@
             cursor: pointer;
         }
 
-        user
-
         h3 {
             font-weight: bold;
         }
@@ -63,13 +61,10 @@
 <article
 use:viewport 
 on:enterViewport={ () => {
-  console.log("enter")
-  console.log(opacity_effect)
   opacity_effect = 1
   transform_effect = 0
 }} 
 on:exitViewport={ () => {
-  console.log("exit")
   opacity_effect = 0
   transform_effect = -10
 }}

@@ -90,7 +90,7 @@
         {text}
     </a>
 {:else}
-    <button on:click class="{modificador[variante]}">
+    <button on:click type="submit" class="{modificador[variante]}">
         {text}
     </button>
 {/if}
