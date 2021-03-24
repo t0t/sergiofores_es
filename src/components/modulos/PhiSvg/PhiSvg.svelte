@@ -1,5 +1,5 @@
 <script>
-    import Button from "./Button.svelte";
+    import Button from "../Button.svelte";
     import {tweened} from "svelte/motion";
     export let title = ""
     export let text = ""
@@ -24,7 +24,7 @@
 </script>
 
 <style lang="scss">
-    @import "../../sass/_global.scss";
+    @import "../../../sass/_global.scss";
     svg {
         circle {
             fill: $grey_2;

@@ -4,16 +4,23 @@
   import Nav from "./Nav.svelte";
   import Cover from "./modulos/Cover.svelte";
   import T0T from "./modulos/T0T/T0T.svelte";
-  import Slider from "./modulos/Slider.svelte";
-  import ProductGallery from "./modulos/ProductGallery.svelte";
+  import Slider from "./modulos/Slider/Slider.svelte";
+  import ProductGallery from "./modulos/ProductGallery/ProductGallery.svelte";
   import ThreeBanner from "./modulos/ThreeBanner.svelte";
   import BannerFull from "./modulos/BannerFull.svelte";
   import BannerHalf from "./modulos/BannerHalf.svelte";
   import BannerTexto from "./modulos/BannerTexto.svelte";
   import Links from './modulos/Links.svelte';
-  import PhiSvg from './modulos/PhiSvg.svelte';
+  import PhiSvg from './modulos/PhiSvg/PhiSvg.svelte';
   import Button from "./modulos/Button.svelte";
-  
+
+  // import { onMount } from "svelte";
+
+  // onMount(async () => {
+  //   const res = await fetch("/data/products.json");
+  //   productos = [...await res.json()];
+  // });
+
   let data = [
     {
       id: "0",

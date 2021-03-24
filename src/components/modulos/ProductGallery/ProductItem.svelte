@@ -5,13 +5,13 @@
     export let referencia;
     export let id;
     let active = false
-    import viewport from "../useViewportAction";
+    import viewport from "./useViewportAction";
     let opacity_effect; //efecto de use function on enter viewport
     let transform_effect; //efecto de use function on enter viewport
 </script>
 
 <style lang="scss">
-    @import "../../sass/_global.scss";
+    @import "../../../sass/_global.scss";
 
     .Obra {
         border-radius: 50%;

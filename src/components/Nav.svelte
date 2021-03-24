@@ -96,15 +96,15 @@
 </div>
 
 <ul class="{activemenu ? "MainNav MainNavVisible" : "MainNav"}">
-    {#each navOptions as link,i}
-        <li>
-            {#if y == i }
-                <a href="{link.href}" class="NavItem active">{link.name}</a>
-            {:else }
-                <a on:click="{(event)=>cuandoClick(event)}" class="{
-                link.href == currentitem ? 'NavItem active' : 'NavItem'}" href="{link.href}" id={i}>{link.name}</a>
-            {/if}
-        </li>
+    {#each navOptions as link, i}
+    <li>
+        { #if y == i }
+            <a href="{link.href}" class="NavItem active">{link.name}</a>
+        { :else }
+            <a on:click="{(event)=>cuandoClick(event)}" class="{
+            link.href == currentitem ? 'NavItem active' : 'NavItem'}" href="{link.href}" id={i}>{link.name}</a>
+        { /if }
+    </li>
     {/each}
 </ul>
 </div>

@@ -6,7 +6,7 @@
 </script>
 
 <style lang="scss">
-    @import "../../sass/_global.scss";
+    @import "../../../sass/_global.scss";
     .LayoutObras {
         display: grid;
         grid-template-columns: 1fr;
