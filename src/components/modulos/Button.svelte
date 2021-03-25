@@ -7,7 +7,8 @@
         "Light",
         "Dark",
         "Colored",
-        "ColoredInvert"
+        "ColoredInvert",
+        "UnicodeIcon"
     ];
 </script>
 
@@ -18,9 +19,10 @@
         background-color: transparent;
         user-select: none;
         &:focus {
-            outline: none;
-            border-color: $grey_0;
-            border-style: dashed;
+            /* outline-width: 1px;
+            outline-style: dotted;
+            outline-color: unset;             */
+            border: none;
         }
     }
 
@@ -81,6 +83,15 @@
             color: $grey_5;
             background-color: $grey_0;
             border-color: $grey_0;
+        }
+    }
+    .UnicodeIcon {
+        color: $grey_1;
+        border: none;
+        
+        @include type-setting(3);
+        &:hover {
+            color: $grey_0;
         }
     }
 </style>

@@ -11,3 +11,18 @@
 @import "_nav.scss";
 // @import "_svg.scss";
 @import "_animation.scss";
+
+// Accesibility
+*:focus {
+    outline-color: $grey_2;
+    outline-style: dashed;
+    outline-width: 1px;
+    outline-style: dotted;
+}
+
+::selection { 
+    color: $black; 
+    background-color: $white; 
+    text-shadow: none;
+}
+

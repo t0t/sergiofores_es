@@ -19,20 +19,8 @@ export const slides = [
   },
   {
     id: 3,
-    href: "../img/bg3.jpg",
+    href: "../img/bg4.jpg",
     text:
-      "El fundamento de la Creación radica en un orden arquetípico universal. ...Percibir ese orden conforma un tipo de conexión trascendental."
-  },
-  // {
-  //   id: 4,
-  //   href: "../img/bg3.jpg",
-  //   text:
-  //     "El fundamento de la Creación radica en un orden arquetípico universal. ...Percibir ese orden conforma un tipo de conexión trascendental."
-  // },
-  // {
-  //   id: 5,
-  //   href: "../img/bg3.jpg",
-  //   text:
-  //     "El fundamento de la Creación radica en un orden arquetípico universal. ...Percibir ese orden conforma un tipo de conexión trascendental."
-  // }
+      ""
+  }
 ];
