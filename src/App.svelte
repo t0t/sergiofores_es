@@ -8,9 +8,15 @@
 	:global(body) {
 		margin: 0;
 		background-color: $grey_4;
+		box-sizing: border-box;
+		position: relative;
+		width: 100%;
 	}
 	:global(html) {
 		font-size: $base_font_size;
+		position: relative;
+		width: 100%;
+		height: 100%;
 	}
 
 </style>

@@ -26,45 +26,46 @@
     .SliderContainer {
         position: relative;
         background-color: $grey_5;
-        height: 600px;
-        overflow: hidden;
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
     }
     .SlidesGroup {
-        display: grid;
-        grid-column: span 1;
-        grid-template-columns: repeat(4,1fr);
-        -webkit-mask: linear-gradient(to right,transparent, black 40%,black 70%,transparent);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        mask: linear-gradient(to right,transparent, black 40%,black 70%,transparent);
         > figure {
         }
     }
     .Slide {
+        width: 500px;
         height: 600px;
+        position: relative;
         display: grid;
-        place-items: center;
+        place-content: center;
+        background-size: cover;
+        background-position: center;
 
-        img {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            object-fit: cover;
-            // height: -webkit-fill-available;
-            // left: 0;
-            z-index:-1;
-        }
         .Caption {
-            p {
-                text-align: center;
-                padding-left: $h3;
-                padding-right: $h3;
-            }
+            text-align: center;
+            padding-left: $h3;
+            padding-right: $h3;
         }
     }
     .SliderNav {
         position: absolute;
-        top: 36%;
-        width: 100%;
+        top: 0;
+        right: 0;
+        width: 240px;
         display: flex;
         flex-wrap: nowrap;
+        // align-items: center;
         justify-content: space-between;
         padding-top: 0;
         padding: 0 $h3;
@@ -75,11 +76,12 @@
     <div class="SlidesGroup">
         {#each slides as slide (slide.id)}
     
-        <figure class="Slide"
-            animate:flip={{duration: speed}}>
-            <img src={slide.href} alt={slide.id} id={slide.id}>
-            <caption class="Caption"><p>{@html slide.text}</p></caption>
-        </figure>
+        <div class="Slide"
+        style="background-image: url({slide.href});"
+        animate:flip={{duration: speed}}>
+            <div class="Caption">{@html slide.text}</div>
+            <!-- <img src={slide.href} alt={slide.id} id={slide.id}> -->
+        </div>
         
         {/each}
     </div>
