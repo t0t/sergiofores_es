@@ -1,9 +1,11 @@
 <script>
     import { flip } from "svelte/animate";
+    // import { fade } from "svelte/transition";
     import Button from "../Button.svelte";
 
     export let slides;
-    export let speed;
+    let speed= 500;
+    let ancho_slides;
     
     const rotateLeft = () => {
         // const elemento_movido = slides[slides.length - 1]; // coge ultimo elemento
@@ -34,9 +36,9 @@
         width: 100%;
         overflow-x: hidden;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         flex-wrap: nowrap;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
     }
 
@@ -48,7 +50,6 @@
     }
 
     .Slide {
-        width: 500px;
         height: 600px;
         position: relative;
         display: grid;
@@ -59,20 +60,29 @@
         -webkit-mask: linear-gradient(to right,transparent, black 40%,black 70%,transparent); */
 
         .Caption {
-            text-align: center;
-            padding-left: $h3;
-            padding-right: $h3;
             user-select: none;
+            padding-left: $h4;
+            padding-right: $h4;
+            @include media(s0) {
+                text-align: center;
+            }
+            @include media(s1) {
+                max-width: 50vw;
+                padding-left: $h2;
+                padding-right: $h2;
+            }
         }
     }
 
     .SliderNav {
         position: absolute;
-        bottom: 0;
+        right: 0;
         padding-top: 0;
         z-index: 1;
     }
 </style>
+
+<svelte:window bind:innerWidth={ancho_slides}/>
 
 <div class="SliderContainer">
     <div class="SlidesGroup">
@@ -80,15 +90,20 @@
     
         <div class="Slide"
         id={slide.id}
-        style="background-image: url({slide.href});"
+        style="
+        background-image: url({slide.href});
+        width: {ancho_slides}px;
+        "
         animate:flip={{duration: speed}}>
-            <p class="Caption">{@html slide.text}</p>
+            <h2 class="Caption">
+                {@html slide.text}
+            </h2>
         </div>
         
     {/each}
     </div>
     <nav class="SliderNav">
-        <Button variante={4} text="➦" 
+        <Button variante={4} text="☞" 
         on:click={rotateLeft} />
         <!-- <Button variante={0} text="Right" 
         on:click={rotateRight} /> -->

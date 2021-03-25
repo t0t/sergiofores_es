@@ -44,7 +44,7 @@
   </span>
 </BannerHalf>
 
-<Slider {slides} speed={500} />
+<Slider {slides} />
 
 <div id="artwork" >
   <ProductGallery titulo={data[3].title} texto={data[3].subtitle} {productos} />
