@@ -26,10 +26,16 @@
       opacity: 1;
     }
 }
+@keyframes loading {
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
 
 @mixin animation($anim-name: fade) {
     animation-name: $anim-name;
-    animation-duration: .2s;
+    animation-duration: .3s;
     // animation-fill-mode: forwards;
     // animation-iteration-count: 1;
 }

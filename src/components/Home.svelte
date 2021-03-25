@@ -3,6 +3,8 @@
 	import { productos } from"../data/productos.js";
 	import { slides } from"../data/slider.js";
 
+  // import Loading from './modulos/Loading.svelte';
+
   import Nav from "./Nav.svelte";
   import Cover from "./modulos/Cover.svelte";
   import T0T from "./modulos/T0T/T0T.svelte";
@@ -29,6 +31,8 @@
   </style>
 
 <Nav />
+
+  <!-- <Loading /> -->
 
 <div id="01234">  
   <Cover title={data[0].title} subtitle={data[0].subtitle} text={data[0].text} />

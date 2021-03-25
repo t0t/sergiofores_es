@@ -1,13 +1,25 @@
 <script>
+	// import { onMount } from 'svelte';
+	import Loading from '../Loading.svelte';
+    import viewport from "./useViewportAction";
+    
     export let title;
     export let description;
     export let imagen;
     export let referencia;
     export let id;
+    
     let active = false
-    import viewport from "./useViewportAction";
     let opacity_effect; //efecto de use function on enter viewport
     let transform_effect; //efecto de use function on enter viewport
+    
+    let loaded = false;
+    
+    const loading = () => {
+        loaded = true;
+        console.log("imagenes cargadas")
+    };
+    
 </script>
 
 <style lang="scss">
@@ -58,6 +70,8 @@
     
 </style>
 
+<svelte:window on:load={loading} />
+
 <article
 use:viewport 
 on:enterViewport={ () => {
@@ -69,11 +83,15 @@ on:exitViewport={ () => {
   transform_effect = -10
 }}
 style="opacity:{opacity_effect}; transition: all 0.3s ease-out; transform: translateX({transform_effect}rem)">
-    <figure on:click={() => active = !active}>
+<figure on:click={() => active = !active}>
+    {#if loaded}
         <img 
         src="../{imagen}" alt="{title}" 
         class="Obra" 
         {id}>
+    {:else}
+    <Loading />
+    {/if}
         <h2>{active ? '-' : '+'}</h2>
         {#if active}
         <figcaption>
@@ -81,4 +99,6 @@ style="opacity:{opacity_effect}; transition: all 0.3s ease-out; transform: trans
         </figcaption>
         {/if}
     </figure>
-</article>
+    
+    </article>
+ 

@@ -76,7 +76,10 @@
 
     .SliderNav {
         position: absolute;
-        right: 0;
+        width: 100%;
+        display: grid;
+        bottom: 0;
+        place-content: center;
         padding-top: 0;
         z-index: 1;
     }
@@ -103,7 +106,7 @@
     {/each}
     </div>
     <nav class="SliderNav">
-        <Button variante={4} text="☞" 
+        <Button variante={4} text="➥" 
         on:click={rotateLeft} />
         <!-- <Button variante={0} text="Right" 
         on:click={rotateRight} /> -->
