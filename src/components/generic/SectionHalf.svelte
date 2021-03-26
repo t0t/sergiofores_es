@@ -6,18 +6,18 @@
     let modificador = ['Light', 'Dark', 'Colored', 'Light2'];
 </script>
 
-<section class="BannerHalf {modificador[variante]}">
+<section class="SectionHalf {modificador[variante]}">
     <div class="BannerMedia">
         {#if img}
             <slot name="hasimage">
                 <img src={img} alt="Imagen" />
             </slot>
         {/if}
-        <slot name="hasvideo" />
-        <slot name="hasSVG" />
+        <slot name="hasvideo"></slot>
+        <slot name="hasSVG"></slot>
     </div>
 
-    <div class="BannerHalfText">
+    <div class="SectionHalfText">
         <h2>{title}</h2>
         <p>{@html text}</p>
         <slot />
@@ -27,7 +27,7 @@
 <style lang="scss">
     @use "../../sass/_index.scss" as *;
 
-    .BannerHalf {
+    .SectionHalf {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 'media' 'texto';
@@ -59,7 +59,7 @@
             /* place-content: center; */
         }
 
-        .BannerHalfText {
+        .SectionHalfText {
             display: grid;
             justify-items: start;
             align-self: center;

@@ -5,7 +5,7 @@
     import ThreeBanner from '../components/particular/ThreeBanner/ThreeBanner.svelte';
     import PhiSvg from '../components/particular/PhiSvg/PhiSvg.svelte';
     import T0T from '../components/particular/T0T/T0T.svelte';
-    import BannerHalf from '../components/generic/BannerHalf.svelte';
+    import SectionHalf from "../components/generic/SectionHalf.svelte";
     import Button from '../components/generic/Button.svelte';
     export let current_page_name;
 
@@ -30,7 +30,7 @@
         img={data[11].img}
     />
 
-    <BannerHalf variante={2} title={data[5].title} text={data[5].subtitle}>
+    <SectionHalf variante={2} title={data[5].title} text={data[5].subtitle}>
         <nav>
             <a href="https://slides.com/sergiofores/" target="_blank">Slides</a>
             <a
@@ -38,17 +38,17 @@
                 target="_blank">Libro</a
             >
         </nav>
-        <div slot="hasSVG"><T0T /></div>
-    </BannerHalf>
+        <span slot="hasSVG"><T0T /></span>
+    </SectionHalf>
     <ThreeBanner variante={3} title={data[6].title} text={data[6].subtitle} />
-    <BannerHalf
+    <SectionHalf
         variante={3}
         title={data[7].title}
         text={data[7].subtitle}
         img={data[7].img}
     >
         <Button variante={1} text={data[7].button} url={data[7].buttonurl} />
-    </BannerHalf>
+    </SectionHalf>
     <PhiSvg variante={2} title={data[8].title} text={data[8].subtitle} />
 </main>
 

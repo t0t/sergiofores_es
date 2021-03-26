@@ -12,10 +12,10 @@ import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
 
 // Sizes
 const sizes = {
-  width: 300,
-  height: 150
-  // width: window.innerWidth,
-  // height: window.innerHeight
+  // width: 300,
+  // height: 150
+  width: window.innerWidth,
+  height: window.innerHeight
 }
 
 // Cámara

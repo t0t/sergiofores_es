@@ -1,11 +1,11 @@
 <script>
+    import { onMount, onDestroy } from 'svelte';
     import { data } from '../data/data.js';
     import { productos } from '../data/productos.js';
 
     import ProductGallery from '../components/particular/ProductGallery/ProductGallery.svelte';
-    import { onMount, onDestroy } from 'svelte';
     import Cover from '../components/generic/Cover.svelte';
-    import BannerHalf from '../components/generic/BannerHalf.svelte';
+    import SectionHalf from "../components/generic/SectionHalf.svelte";
     import Button from '../components/generic/Button.svelte';
     export let current_page_name;
 
@@ -31,26 +31,19 @@
         img={data[12].img}
     />
 
-    <BannerHalf variante={1} title={data[2].title} text={data[2].subtitle}>
+    <SectionHalf variante={1} title={data[2].title} text={data[2].subtitle}>
         <span slot="hasvideo">
-            <video
-                poster="/img/cover3.jpg"
-                loop
-                playsinline
-                controls="controls"
-            >
+            <video poster="/img/cover3.jpg" loop playsinline controls="controls">
                 <source
                     src="/img/desdelapoesiadelamateria.webm"
-                    type="video/webm"
-                />
+                    type="video/webm" />
                 <source
                     src="/img/desdelapoesiadelamateria.mp4"
-                    type="video/mp4"
-                />
+                    type="video/mp4" />
                 <p>Ups! Su navegador no soporta vídeos HTML5.</p>
             </video>
         </span>
-    </BannerHalf>
+    </SectionHalf>
 
     <ProductGallery
         titulo={data[3].title}
@@ -58,7 +51,7 @@
         {productos}
     />
 
-    <BannerHalf
+    <SectionHalf
         variante={1}
         title={data[4].title}
         text={data[4].subtitle}
@@ -69,9 +62,8 @@
             text={data[4].buttontext}
             url={data[4].buttonurl}
         />
-    </BannerHalf>
+    </SectionHalf>
     
-    <slot />
-
 </main>
 
+<slot />

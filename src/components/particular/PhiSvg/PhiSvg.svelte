@@ -1,15 +1,17 @@
 <script>
     import Button from "../../generic/Button.svelte";
-    import {tweened} from "svelte/motion";
+    import {
+        tweened
+    } from "svelte/motion";
     export let title = ""
     export let text = ""
-	let angle = 0.618033988749;
-	let numDots = 360;
+    let angle = 0.618033988749;
+    let numDots = 360;
     let dotsize = 1.62 * 1.62;
-	let tweenedCount = tweened( 0, {
-		duration: 500,
-		interpolate: (a, b) => (t) => Math.round( ( (b-a) * t ) + a )
-	})
+    let tweenedCount = tweened(0, {
+        duration: 500,
+        interpolate: (a, b) => (t) => Math.round(((b - a) * t) + a)
+    })
     let innerWidth, innerHeight, svgWidth;
     export let variante = 0;
     let modificador = [
@@ -20,29 +22,30 @@
     ];
 
     $: $tweenedCount = numDots
-
 </script>
 
 <style lang="scss">
-    @use "../../../sass/_index.scss" as *;
+    @use "../../../sass/_index.scss"as *;
 
     svg {
         circle {
             fill: $grey_2;
         }
+
         g {
             transform: translate(50%, 50%);
         }
     }
+
     .PhiSvg {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "media" "texto";
+        grid-template-areas: "media""texto";
         padding-top: 0;
         padding-right: $h3;
         padding-left: $h3;
         padding-bottom: $h2;
-        
+
         @include media(s2) {
             padding-bottom: 0;
             padding-right: 0;
@@ -74,39 +77,46 @@
                 margin-right: $h2;
                 max-width: $bp1;
             }
+
             h2 {
                 font-weight: bold;
                 margin-top: $h0;
                 margin-right: 0;
                 margin-bottom: $h0;
                 margin-left: 0;
+
                 @include media(s1) {
                     font-weight: inherit;
                 }
             }
         }
     }
+
     .Light {
         background-color: $grey_1;
         color: $grey_3;
+
         p {
             color: $grey_3;
         }
     }
+
     .Dark {
         background-color: $grey_3;
     }
+
     .Colored {
         background-color: $grey_4;
     }
+
     .Light2 {
         background-color: $grey_0;
         color: $grey_5;
+
         p {
             color: $grey_5;
         }
     }
-
 </style>
 
 <svelte:window bind:innerWidth bind:innerHeight />

@@ -5,7 +5,7 @@
     import Cover from "../components/generic/Cover.svelte";
     import BannerTexto from "../components/generic/BannerTexto.svelte";
     import Button from "../components/generic/Button.svelte";
-    import BannerHalf from "../components/generic/BannerHalf.svelte";
+    import SectionHalf from "../components/generic/SectionHalf.svelte";
 
     export let current_page_name;
 </script>
@@ -20,11 +20,11 @@
 
     <BannerTexto header={data[10].title} texto={data[10].subtitle} img={data[10].img} />
 
-    <BannerHalf title={data[9].title} text={data[9].subtitle}>
+    <SectionHalf title={data[9].title} text={data[9].subtitle}>
         <Button variante={1} text={data[9].buttontext} url={data[9].buttonurl} />
         <div slot="hasvideo">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/7BtDRQuPjDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
         </div>
-    </BannerHalf>
+    </SectionHalf>
 
 </main>
