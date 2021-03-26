@@ -1,11 +1,19 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount, onDestroy } from "svelte";
     export let title = "";
     export let text = "";
     import { createScene } from "./scene";
     let el;
+    let three;
     onMount( () => {
-        createScene(el)
+        three = true
+        if (three) {
+            createScene(el)
+        }
+    });
+    onDestroy( () => {
+        el = null
+        // console.log(`destroyed Three component ${el}`)
     });
     export let variante = 0;
     let modificador = [
