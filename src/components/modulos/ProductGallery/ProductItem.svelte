@@ -1,6 +1,4 @@
 <script>
-	// import { onMount } from 'svelte';
-	import Loading from '../Loading.svelte';
     import viewport from "./useViewportAction";
     
     export let title;
@@ -12,13 +10,13 @@
     let active = false
     let opacity_effect; //efecto de use function on enter viewport
     let transform_effect; //efecto de use function on enter viewport
+
+    // let loaded = false;
     
-    let loaded = false;
-    
-    const loading = () => {
-        loaded = true;
-        console.log("imagenes cargadas")
-    };
+    // const loading = () => {
+    //     loaded = true;
+    //     console.log("imagenes cargadas")
+    // };
     
 </script>
 
@@ -29,10 +27,11 @@
         border-radius: 50%;
         &:hover {
             cursor: help;
-        }
-        
+        } 
     }
-
+    img {
+        width: 100%;
+    }
     figure {
       display: grid;
       justify-items: center;
@@ -70,7 +69,7 @@
     
 </style>
 
-<svelte:window on:load={loading} />
+<!-- <svelte:window on:load={loading} /> -->
 
 <article
 use:viewport 
@@ -83,15 +82,11 @@ on:exitViewport={ () => {
   transform_effect = -10
 }}
 style="opacity:{opacity_effect}; transition: all 0.3s ease-out; transform: translateX({transform_effect}rem)">
-<figure on:click={() => active = !active}>
-    {#if loaded}
-        <img 
-        src="../{imagen}" alt="{title}" 
-        class="Obra" 
-        {id}>
-    {:else}
-    <Loading />
-    {/if}
+    <figure on:click={() => active = !active}>
+    <img 
+    src="../{imagen}" alt="{title}" 
+    class="Obra" 
+    {id}>
         <h2>{active ? '-' : '+'}</h2>
         {#if active}
         <figcaption>

@@ -1,28 +1,55 @@
 <script>
 	import { data } from"../data/data.js";
 	import { productos } from"../data/productos.js";
-	import { slides } from"../data/slider.js";
+	import { slides } from"../data/slider.js";  
 
-  // import Loading from './modulos/Loading.svelte';
+  // import Loading from '../components/modulos/Loading.svelte';
+  
+  // import { onMount, onDestroy } from "svelte"
 
-  import Nav from "../components/Nav.svelte";
+  // let loaded;
+  // onMount(() => {
+  //   loaded = false;
+  //   console.log(`MOUNTED y loaded es ${loaded}`)
+  // })
+  // onDestroy(() => {
+  //   loaded = true
+  //   console.log(loaded)
+  // })
+  // const loading = () => {
+  //   if (loaded == false) {
+  //     loaded = true;
+  //     console.log(loaded)
+  //   }
+  // };
+
+  // import Nav from "../components/Nav.svelte";
+
   import Cover from "../components/modulos/Cover.svelte";
-  import T0T from "../components/modulos/T0T/T0T.svelte";
   import Slider from "../components/modulos/Slider/Slider.svelte";
   import ProductGallery from "../components/modulos/ProductGallery/ProductGallery.svelte";
-  import ThreeBanner from "../components/modulos/ThreeBanner.svelte";
-  import BannerFull from "../components/modulos/BannerFull.svelte";
+  // import BannerFull from "../components/modulos/BannerFull.svelte";
   import BannerHalf from "../components/modulos/BannerHalf.svelte";
   import BannerTexto from "../components/modulos/BannerTexto.svelte";
-  import Links from '../components/modulos/Links.svelte';
-  import PhiSvg from '../components/modulos/PhiSvg/PhiSvg.svelte';
   import Button from "../components/modulos/Button.svelte";
+  import Links from '../components/modulos/Links.svelte';
+  export let current_page_name;
 </script>
 
-<svelte:head> <title>Sergio Forés - Hermenéutica Holística +0+1234</title></svelte:head>
+<!-- <svelte:window on:load={loading} /> -->
+<svelte:head>
+  <title>Sergio Forés - Hermenéutica Holística +0+1234 - {current_page_name}</title>
+</svelte:head>
 
-<Nav />
-<!-- <Loading /> -->
+<!-- <Nav /> -->
+
+<!-- {#if (loaded == true)}
+  loaded
+{:else}
+  <Loading />
+{/if} -->
+
+{current_page_name}
 
 <section id="01234">  
   <Cover title={data[0].title} subtitle={data[0].subtitle} text={data[0].text} />
@@ -46,24 +73,6 @@
   <BannerHalf variante={1} title={data[4].title} text={data[4].subtitle} img={data[4].img}>
     <Button variante={0} text={data[4].buttontext} url={data[4].buttonurl} />
   </BannerHalf>
-</section>
-
-<section id="playground">
-  <BannerHalf variante={2} title={data[5].title} text={data[5].subtitle}>
-    <nav>
-      <a href="https://slides.com/sergiofores/" target="_blank">Slides</a>
-      <a href="https://docs.google.com/document/d/15oUQRghNb_lihCFGJ9Ls0z1PyihD_a18v1V3AohVqQ4/edit?usp=sharing" target="_blank">Libro</a>
-    </nav>
-  <div slot="hasSVG"><T0T /></div>
-  </BannerHalf>
-  
-  <ThreeBanner variante={3} title={data[6].title} text ={data[6].subtitle} />
-  
-  <BannerHalf variante={3} title={data[7].title} text={data[7].subtitle} img={data[7].img}>
-    <Button variante={1} text="{data[7].button}" url="{data[7].buttonurl}" />
-  </BannerHalf>
-  
-  <PhiSvg variante={2} title={data[8].title} text="{data[8].subtitle}" />
 </section>
 
 <BannerHalf title={data[9].title} text={data[9].subtitle}>

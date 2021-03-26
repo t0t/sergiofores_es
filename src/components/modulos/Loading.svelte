@@ -10,7 +10,7 @@
             width: 300px;
             height: 300px;
             stroke-width: 1px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
 
         circle {
@@ -48,7 +48,7 @@
         <circle cx="75" cy="100" r="25" />
         <circle cx="125" cy="100" r="25" />
 
-        <text x="100" y="250">Cargando...</text>
+        <text x="100" y="230">Cargando...</text>
     </svg>
 </div>
 

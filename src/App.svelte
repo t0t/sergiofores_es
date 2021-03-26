@@ -1,14 +1,14 @@
 <script>
-	import Home from "./pages/Home.svelte";
-	import Playground from "./pages/Playground.svelte";
-	
-	let currentPage = "home";
-	let show = false;
+	import { pages } from  './components/Nav2.svelte';
+	let currentPage = pages[0];
+	let intSelected = 0;
+	let current_page_name = currentPage.page;
 
-	function changePage(newPage) {
-    	currentPage = newPage;
-  	}
-
+	function changeComponent(event) {
+		currentPage = pages[event.srcElement.id];
+		intSelected = event.srcElement.id;
+		current_page_name = currentPage.page
+	}
 </script>
 
 <style lang="scss">
@@ -31,16 +31,9 @@
 </style>
 
 <main>
-	
-	
-	<nav>
-		<button on:click={() => changePage('playground')}>Playground</button>
-		<button on:click={() => changePage('home')}>Home</button>
-	</nav>
-	{#if currentPage === 'playground'}
-	<svelte:component this={Playground} />
-	{:else}
-	home 	<Home />
-	{/if}
+	{#each pages as option, i}
+		<button class={intSelected==i ? "active" : "xx"} on:click={changeComponent} id={i} role="tab">{option.page}</button>
+	{/each}
 
+	<svelte:component this={currentPage.component} {current_page_name}/>
 </main>

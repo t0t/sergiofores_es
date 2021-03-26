@@ -23,11 +23,11 @@
         }
     }
     
-    img {
+    /* img {
         object-fit: cover;
         max-width: 100%;
         z-index: 100;
-    }
+    } */
     .ObrasContainer {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
