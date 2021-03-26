@@ -65,7 +65,7 @@
 
 <svelte:window bind:innerWidth bind:innerHeight bind:scrollY />
 
-<section class="Cover" style="
+<header class="Cover" style="
                     background-image: url({img});
                     background-size: {topescroll}vw;
                     opacity: {1 - Math.max(0, scrollY / (innerHeight/2))};">
@@ -76,4 +76,4 @@
         </span>
     </h1>
     <p class="CoverText">{text}</p>
-</section>
+</header>

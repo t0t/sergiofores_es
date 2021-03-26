@@ -1,21 +1,24 @@
 <script>
-    import { flip } from "svelte/animate";
+    import { flip } from 'svelte/animate';
     // import { fade } from "svelte/transition";
-    import Button from "../Button.svelte";
+    import Button from '../Button.svelte';
 
     export let slides;
-    let speed= 500;
+    let speed = 500;
     let ancho_slides;
-    
+
     const rotateLeft = () => {
         // const elemento_movido = slides[slides.length - 1]; // coge ultimo elemento
         // document.getElementById(elemento_movido.id).style.opacity = "0";
-        slides = [slides[slides.length - 1], ...slides.slice(0, slides.length - 1)];
+        slides = [
+            slides[slides.length - 1],
+            ...slides.slice(0, slides.length - 1),
+        ];
         // setTimeout( () => {
         //     document.getElementById(elemento_movido.id).style.opacity = "1"
         // }, speed);
-    }
-    
+    };
+
     // const rotateRight = () => {
     //     const elemento_movido = slides[0]; // coge primer elemento de la lista
     //     console.log(elemento_movido);
@@ -27,9 +30,36 @@
     // }
 </script>
 
+<svelte:window bind:innerWidth={ancho_slides} />
+
+<main class="SliderContainer">
+    <section class="SlidesGroup">
+        {#each slides as slide (slide.id)}
+            <article
+                class="Slide"
+                id={slide.id}
+                style="
+        background-image: url({slide.href});
+        width: {ancho_slides}px;
+        "
+                animate:flip={{ duration: speed }}
+            >
+                <h2 class="Caption">
+                    {@html slide.text}
+                </h2>
+            </article>
+        {/each}
+    </section>
+    <nav class="SliderNav">
+        <Button variante={4} text="➥" on:click={rotateLeft} />
+        <!-- <Button variante={0} text="Right" 
+        on:click={rotateRight} /> -->
+    </nav>
+</main>
+
 <style lang="scss">
     @use "../../../sass/_index.scss" as *;
-    
+
     .SliderContainer {
         position: relative;
         background-color: $grey_5;
@@ -84,31 +114,3 @@
         z-index: 1;
     }
 </style>
-
-<svelte:window bind:innerWidth={ancho_slides}/>
-
-<div class="SliderContainer">
-    <div class="SlidesGroup">
-    {#each slides as slide (slide.id)}
-    
-        <div class="Slide"
-        id={slide.id}
-        style="
-        background-image: url({slide.href});
-        width: {ancho_slides}px;
-        "
-        animate:flip={{duration: speed}}>
-            <h2 class="Caption">
-                {@html slide.text}
-            </h2>
-        </div>
-        
-    {/each}
-    </div>
-    <nav class="SliderNav">
-        <Button variante={4} text="➥" 
-        on:click={rotateLeft} />
-        <!-- <Button variante={0} text="Right" 
-        on:click={rotateRight} /> -->
-    </nav>
-</div>

@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     export let title = "";
     export let text = "";
-    import { createScene } from "../../../../scene";
+    import { createScene } from "./scene";
     let el;
     onMount( () => {
         createScene(el)

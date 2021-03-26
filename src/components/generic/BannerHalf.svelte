@@ -1,23 +1,36 @@
 <script>
-    export let title = "";
-    export let text = "";
-    export let img = "";
+    export let title = '';
+    export let text = '';
+    export let img = '';
     export let variante = 0;
-    let modificador = [
-        "Light",
-        "Dark",
-        "Colored",
-        "Light2"
-    ];
-    
+    let modificador = ['Light', 'Dark', 'Colored', 'Light2'];
 </script>
+
+<section class="BannerHalf {modificador[variante]}">
+    <div class="BannerMedia">
+        {#if img}
+            <slot name="hasimage">
+                <img src={img} alt="Imagen" />
+            </slot>
+        {/if}
+        <slot name="hasvideo" />
+        <slot name="hasSVG" />
+    </div>
+
+    <div class="BannerHalfText">
+        <h2>{title}</h2>
+        <p>{@html text}</p>
+        <slot />
+    </div>
+</section>
+
 <style lang="scss">
     @use "../../sass/_index.scss" as *;
-    
+
     .BannerHalf {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "media" "texto";
+        grid-template-areas: 'media' 'texto';
         padding-top: 0;
         padding-right: $h3;
         padding-left: $h3;
@@ -32,12 +45,12 @@
             /* mix-blend-mode: luminosity; */
             /* border-radius: $h2; */
         }
-        
+
         @include media(s2) {
             padding-bottom: 0;
             padding-right: 0;
             grid-template-columns: 1fr 1.62fr;
-            grid-template-areas: "texto media";
+            grid-template-areas: 'texto media';
         }
 
         .BannerMedia {
@@ -93,23 +106,3 @@
         }
     }
 </style>
-
-<div class="BannerHalf {modificador[variante]}">
-
-    <div class="BannerMedia">
-        {#if img}
-        <slot name="hasimage">
-            <img src="{img}" alt="Imagen">
-        </slot>
-        {/if}
-        <slot name="hasvideo"></slot>
-        <slot name="hasSVG"></slot>
-    </div>
-    
-    <div class="BannerHalfText">
-        <h2>{title}</h2>
-        <p>{@html text}</p>
-        <slot></slot>
-    </div>
-
-</div>

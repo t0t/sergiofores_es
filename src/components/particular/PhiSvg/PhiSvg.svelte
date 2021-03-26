@@ -1,5 +1,5 @@
 <script>
-    import Button from "../Button.svelte";
+    import Button from "../../generic/Button.svelte";
     import {tweened} from "svelte/motion";
     export let title = ""
     export let text = ""

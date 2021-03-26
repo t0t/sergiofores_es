@@ -1,8 +1,8 @@
 <script context="module">
-    import Home from "../../pages/Home.svelte";
-	import Playground from "../../pages/Playground.svelte";
-	import About from "../../pages/About.svelte";
-	import Artwork from "../../pages/Artwork.svelte";
+    import Home from "../../../pages/Home.svelte";
+	import Playground from "../../../pages/Playground.svelte";
+	import About from "../../../pages/About.svelte";
+	import Artwork from "../../../pages/Artwork.svelte";
     
     export const pages = [
         { 

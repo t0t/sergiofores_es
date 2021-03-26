@@ -1,6 +1,6 @@
 <script>
   import Draggable from "./Draggable.svelte";
-  import Button from "../Button.svelte";
+  import Button from "../../generic/Button.svelte";
   import {fade} from 'svelte/transition';
 
   let x = 0
