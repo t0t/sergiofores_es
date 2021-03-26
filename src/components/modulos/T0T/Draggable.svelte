@@ -20,7 +20,8 @@
 </script>
 
 <style lang="scss">
-    @import "../../../sass/_global.scss";
+    @use "../../../sass/_index.scss" as *;
+
     .draggable {
         user-select: none;
         cursor: move;

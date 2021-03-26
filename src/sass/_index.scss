@@ -1,8 +1,9 @@
 // ****************************************
 // @TODH BASE IMPORTS
 // ****************************************
+@forward "_animation.scss";
 
-@import "_reset.scss";
+@forward "_reset.scss";
 @import "_mediaqueries.scss";
 @import "_colors.scss";
 @import "_sizes.scss";
@@ -10,7 +11,6 @@
 @import "_forms.scss";
 @import "_nav.scss";
 // @import "_svg.scss";
-@import "_animation.scss";
 
 // Accesibility
 *:focus {

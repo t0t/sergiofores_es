@@ -1,10 +1,18 @@
 <script>
-	import Home from "./components/Home.svelte";
+	import Home from "./pages/Home.svelte";
+	import Playground from "./pages/Playground.svelte";
 	
+	let currentPage = "home";
+	let show = false;
+
+	function changePage(newPage) {
+    	currentPage = newPage;
+  	}
+
 </script>
 
 <style lang="scss">
-	@import 'sass/_global.scss';
+	@use "sass/_index.scss" as *;
 	
 	:global(body) {
 		margin: 0;
@@ -24,6 +32,15 @@
 
 <main>
 	
-	<Home />
+	
+	<nav>
+		<button on:click={() => changePage('playground')}>Playground</button>
+		<button on:click={() => changePage('home')}>Home</button>
+	</nav>
+	{#if currentPage === 'playground'}
+	<svelte:component this={Playground} />
+	{:else}
+	home 	<Home />
+	{/if}
 
 </main>

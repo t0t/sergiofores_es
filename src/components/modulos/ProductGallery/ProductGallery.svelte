@@ -6,7 +6,8 @@
 </script>
 
 <style lang="scss">
-    @import "../../../sass/_global.scss";
+    @use "../../../sass/_index.scss" as *;
+
     .LayoutObras {
         display: grid;
         grid-template-columns: 1fr;
@@ -26,9 +27,6 @@
         object-fit: cover;
         max-width: 100%;
         z-index: 100;
-        a:hover & {
-            opacity: .5;
-        }
     }
     .ObrasContainer {
         display: grid;
@@ -39,11 +37,11 @@
             gap: $h3;
         }
     
-        figure {
+        /* figure {
         display: grid;
         justify-items: center;
         position: relative;
-        }
+        } */
     }
 </style>
 

@@ -35,7 +35,7 @@
 </script>
 
 <style lang="scss">
-	@import '../sass/_global.scss';
+	@use "../sass/_index.scss" as *;
 
     .MainNav {
         display: none;
@@ -89,9 +89,7 @@
 <div use:clickOutside on:click_outside={contraeMainMenu}>
 
 <div class="ButtonNav"
-    on:click={() => {
-        activemenu = !activemenu
-    }}>
+    on:click={() => { activemenu = !activemenu }}>
     <SiteLogo />
 </div>
 

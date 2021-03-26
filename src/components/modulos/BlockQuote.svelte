@@ -11,7 +11,8 @@
 </script>
 
 <style lang="scss">
-    @import "../../sass/_global.scss";
+    @use "../../sass/_index.scss" as *;
+    
     .Grey {
         color: $primary;
     }

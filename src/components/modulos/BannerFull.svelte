@@ -5,7 +5,7 @@
 </script>
 
 <style lang="scss">
-    @import "../../sass/_global.scss";
+    @use "../../sass/_index.scss" as *;
 
     .BannerFull {
         background-color: $grey_4;
