@@ -2,12 +2,8 @@
     export let title = ""
     export let subtitle = ""
     export let text = ""
-    let innerWidth, 
-        innerHeight,
-        scrollY,
-        alphascroll,
-        topescroll;
-        
+    export let img = ""
+    let innerWidth, innerHeight, scrollY, alphascroll, topescroll;
 
     $: if ( scrollY < (innerHeight / 2) ) {
         topescroll = scrollY + 75
@@ -22,7 +18,6 @@
         padding: $h3;
         color: $white;
         background-size: 100%;
-        background-image: url("../img/cover3.jpg");
         background-attachment: fixed;
         background-position: center;
         position: relative;
@@ -43,10 +38,8 @@
             "text";
             text-align: center;
         }
-        /* > * {} */
         
         .CoverTitle {
-            /* text-shadow: 0px 0px $h3 $grey_4; */
             @include media(s1) {
                 grid-area: title;
                 display: flex;
@@ -73,15 +66,13 @@
 <svelte:window bind:innerWidth bind:innerHeight bind:scrollY />
 
 <section class="Cover" style="
-background-size: {topescroll}vw;
-opacity: {1 - Math.max(0, scrollY / (innerHeight/2))};
-">
+                    background-image: url({img});
+                    background-size: {topescroll}vw;
+                    opacity: {1 - Math.max(0, scrollY / (innerHeight/2))};">
     <h1 class="CoverTitle">
         {title} <br>
         <span>
-            <h2 class="CoverSubTitle">
-                {subtitle} 
-            </h2>
+            <h2 class="CoverSubTitle"> {subtitle} </h2>
         </span>
     </h1>
     <p class="CoverText">{text}</p>

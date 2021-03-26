@@ -1,22 +1,9 @@
 <script>
+    import { pages } from  './Routes.svelte';
     import { afterUpdate } from 'svelte';
     import {clickOutside} from './clickOutside.js';
-    import SiteLogo from './modulos/SiteLogo.svelte'
+    import SiteLogo from '../modulos/SiteLogo.svelte'
 
-    const navOptions = [
-        {
-            name: '⨀ Cover',
-            href: '#01234'
-        },
-        {
-            name: '⧰ About',
-            href: '#about'
-        },
-        {
-            name: '➥ Art Works',
-            href: '#artwork'
-        }
-    ];
     let currentitem, y;
     let activemenu = false;
     
@@ -32,10 +19,20 @@
     function contraeMainMenu() {
 		activemenu = false
 	}
+    
+    let currentPage = pages[0];
+	let intSelected = 0;
+	let current_page_name = currentPage.page;
+    
+    function changeComponent(event) {
+		currentPage = pages[event.srcElement.id];
+		intSelected = event.srcElement.id;
+		current_page_name = currentPage.page
+	}
 </script>
 
 <style lang="scss">
-	@use "../sass/_index.scss" as *;
+	@use "../../sass/_index.scss" as *;
 
     .MainNav {
         display: none;
@@ -54,6 +51,7 @@
             user-select: none;
             padding: $h0 $h2;
             display: block;
+            border: none;
             &:hover {
                 color: $white;
             }
@@ -79,7 +77,7 @@
     .active {
         color: $white;
     }
-    a {
+    button {
         color: $grey_1;
     }
 </style>
@@ -88,21 +86,23 @@
 
 <div use:clickOutside on:click_outside={contraeMainMenu}>
 
-<div class="ButtonNav"
-    on:click={() => { activemenu = !activemenu }}>
+<div class="ButtonNav" on:click={() => { activemenu = !activemenu}}>
     <SiteLogo />
 </div>
 
-<ul class="{activemenu ? "MainNav MainNavVisible" : "MainNav"}">
-    {#each navOptions as link, i}
-    <li>
-        { #if y == i }
-            <a href="{link.href}" class="NavItem active">{link.name}</a>
-        { :else }
-            <a on:click="{(event)=>cuandoClick(event)}" class="{
-            link.href == currentitem ? 'NavItem active' : 'NavItem'}" href="{link.href}" id={i}>{link.name}</a>
-        { /if }
-    </li>
+<nav class="{activemenu ? "MainNav MainNavVisible" : "MainNav"}">
+    {#each pages as link, i}
+        <a 
+        class={intSelected==i ? "NavItem active" : "NavItem"} 
+        on:click={changeComponent} 
+        id={i} 
+        role="navigation" 
+        href="#{link.page}"
+        >
+            {link.name}
+        </a>
     {/each}
-</ul>
+</nav>
 </div>
+
+<svelte:component this={currentPage.component} {current_page_name}/>

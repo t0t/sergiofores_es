@@ -1,14 +1,25 @@
 <script>
-	import { pages } from  './components/Nav2.svelte';
-	let currentPage = pages[0];
-	let intSelected = 0;
-	let current_page_name = currentPage.page;
-
-	function changeComponent(event) {
-		currentPage = pages[event.srcElement.id];
-		intSelected = event.srcElement.id;
-		current_page_name = currentPage.page
-	}
+	import Nav from "./components/nav/Nav.svelte";
+	import Loading from './components/modulos/Loading.svelte';
+	import { onMount, onDestroy } from "svelte"
+    
+	let loaded;
+    const loading = () => {
+        // if (loaded == false) {
+        // 	loaded = true;
+		// }
+        loaded = true;
+		console.log(`assets cargados y loaded es: ${loaded}`)
+    };
+  
+    onMount(() => {
+        loaded = false;
+        console.log(`Montado pero loaded es ${loaded}`)
+    })
+    onDestroy(() => {
+        // loaded = true
+        // console.log(loaded)
+    })
 </script>
 
 <style lang="scss">
@@ -30,10 +41,15 @@
 
 </style>
 
-<main>
-	{#each pages as option, i}
-		<button class={intSelected==i ? "active" : "xx"} on:click={changeComponent} id={i} role="tab">{option.page}</button>
-	{/each}
+<svelte:head>
+  <meta property="og:title" content="Sergio Forés" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="sergiofores.es" />
+</svelte:head>
+<svelte:window on:load={loading} />
 
-	<svelte:component this={currentPage.component} {current_page_name}/>
+<main>
+	{#if loaded} <Nav />
+	{:else} <Loading /> {/if}
+	<!-- {#if loaded} <Loading /> {/if} -->
 </main>

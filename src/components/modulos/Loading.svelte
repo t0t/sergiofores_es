@@ -4,13 +4,21 @@
 
 <style lang="scss">
     @use "../../sass/_index.scss" as *;
-    
+    body {
+        position: relative;
+    }
     .Loading {
+        display: grid;
+        place-content: center;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: auto;
+        margin-top: auto;
+
         svg {
             width: 300px;
             height: 300px;
             stroke-width: 1px;
-            /* border: 1px solid black; */
         }
 
         circle {
@@ -22,16 +30,17 @@
             transform-origin: -150px -150px;
             &:nth-child(1) {
                 animation-name: loading;
-                stroke: $black;
             }
             &:nth-child(6) {
                 animation-name: loading;
-                stroke: $black;
             }
             &:nth-child(7) {
                 animation-name: loading;
-                stroke: $black;
             }
+        }
+
+        text {
+            fill: $grey_2;
         }
     }
 </style>
@@ -48,7 +57,7 @@
         <circle cx="75" cy="100" r="25" />
         <circle cx="125" cy="100" r="25" />
 
-        <text x="100" y="230">Cargando...</text>
+        <text x="85" y="230">receiving data...</text>
     </svg>
 </div>
 

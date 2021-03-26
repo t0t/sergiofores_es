@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     let promesa = getPost()
 	
 	async function getPost() {
@@ -23,4 +23,4 @@
     {/each}
 {:catch error}
 	<p>error: {error.message}</p>
-{/await}
+{/await} -->

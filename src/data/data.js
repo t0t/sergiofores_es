@@ -4,7 +4,8 @@ export const data = [
       block: "Cover",
       title: "Hermenéutica Holística +0+1234",
       subtitle: "Sergio Forés Raga",
-      text: "Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Trato de sentir un cierto tipo de orden que conforma un cierto tipo de conexión."
+      text: "Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Trato de sentir un cierto tipo de orden que conforma un cierto tipo de conexión.",
+      img: "../img/cover3.jpg"
     },
     {
       id: "1",
@@ -75,6 +76,30 @@ export const data = [
       title: "About me",
       subtitle: "Cursé estudios de Artes Aplicadas y procedimientos pictóricos, luego Arte Electrónico y Diseño Digital. Desde 1999 ejerciendo como Diseñador Gráfico y Web. En 2010 me centré en Prototipado Frontend y desarrollo de UI. En 2020 incorporo la impresión 3D en mi proceso creativo y desarrollo una Hermenéutica Holística de la Creación (+0+1234) como vía trascendental y de autorealización.",
       img: "../img/avatar.jpg"
+    },
+    {
+      id: "11",
+      block: "playground",
+      title: "Playground",
+      subtitle: "Frontend design laboratory",
+      text: "Pequeños ejercicios de programación en los que pongo en práctica ideas",
+      img: "../img/bg1.jpg"
+    },
+    {
+      id: "12",
+      block: "artwork",
+      title: "Artwork",
+      subtitle: "3D printed art",
+      text: "Obra plástica",
+      img: "../img/bg2.jpg"
+    },
+    {
+      id: "13",
+      block: "about",
+      title: "Sergio Forés",
+      subtitle: "mi historia",
+      text: "Hacia el encuentro con lo que Es",
+      img: "../img/bg4.jpg"
     }
   ]
   

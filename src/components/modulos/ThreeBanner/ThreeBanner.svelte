@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     export let title = "";
     export let text = "";
-    import { createScene } from "../../scene";
+    import { createScene } from "../../../../scene";
     let el;
     onMount( () => {
         createScene(el)
@@ -17,7 +17,7 @@
 </script>
 
 <style lang="scss">
-    @use "../../sass/_index.scss" as *;
+    @use "../../../sass/_index.scss" as *;
 
     .ThreeBanner {
         display: grid;
