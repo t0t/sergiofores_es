@@ -1,5 +1,7 @@
 <script>
-    import { pages } from  './Routes.svelte';
+    import { link } from 'svelte-spa-router'
+	import active from 'svelte-spa-router/active'
+
     import { afterUpdate } from 'svelte';
     import {clickOutside} from './clickOutside.js';
     import SiteLogo from '../SiteLogo.svelte'
@@ -20,20 +22,16 @@
 		activemenu = false
 	}
     
-    let currentPage = pages[0];
-	let intSelected = 0;
-	let current_page_name = currentPage.page;
-    
-    function changeComponent(event) {
-		currentPage = pages[event.srcElement.id];
-		intSelected = event.srcElement.id;
-		current_page_name = currentPage.page
-	}
+	let current_page_name;
+
 </script>
 
 <style lang="scss">
 	@use "../../../sass/_index.scss" as *;
-
+    .active {
+        color: $white;
+		font-weight: bold;
+	}
     .MainNav {
         display: none;
         position: fixed;
@@ -74,9 +72,6 @@
             cursor: pointer;
         }
     }
-    .active {
-        color: $white;
-    }
     button {
         color: $grey_1;
     }
@@ -86,23 +81,19 @@
 
 <div use:clickOutside on:click_outside={contraeMainMenu}>
 
-<div class="ButtonNav" on:click={() => { activemenu = !activemenu}}>
-    <SiteLogo />
-</div>
+    <div class="ButtonNav" on:click={() => { activemenu = !activemenu}}>
+        <SiteLogo />
+    </div>
 
-<nav class="{activemenu ? "MainNav MainNavVisible" : "MainNav"}">
-    {#each pages as link, i}
-        <a 
-        class={intSelected==i ? "NavItem active" : "NavItem"} 
-        on:click={changeComponent} 
-        id={i} 
-        role="navigation" 
-        href="#{link.page}"
-        >
-            {link.name}
-        </a>
-    {/each}
-</nav>
-</div>
+    <nav class="{activemenu ? "MainNav MainNavVisible" : "MainNav"}">
+        <a class="NavItem" id="0" role="navigation" 
+        href="/" use:link use:active> Presentation </a>
+        <a class="NavItem" id="1" role="navigation" 
+        href="/artwork" use:link use:active> Artwork </a>
+        <a class="NavItem" id="1" role="navigation" 
+        href="/playground" use:link use:active> Playground </a>
+        <a class="NavItem" id="1" role="navigation" 
+        href="/about" use:link use:active> About </a>
+    </nav>
 
-<svelte:component this={currentPage.component} {current_page_name}/>
+</div>

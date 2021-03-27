@@ -66,9 +66,7 @@
         width: 100%;
         overflow-x: hidden;
         display: flex;
-        /* flex-direction: column; */
         flex-wrap: nowrap;
-        /* justify-content: center; */
         align-items: center;
     }
 
@@ -86,10 +84,11 @@
         place-content: center;
         background-size: cover;
         background-position: center;
-        /* mask: linear-gradient(to right,transparent, black 40%,black 70%,transparent);
-        -webkit-mask: linear-gradient(to right,transparent, black 40%,black 70%,transparent); */
+        mask: linear-gradient(to right,transparent, black 40%,black 70%,transparent);
+        -webkit-mask: linear-gradient(to right,transparent, black 40%,black 70%,transparent);
 
         .Caption {
+            color: $grey_0;
             user-select: none;
             padding-left: $h4;
             padding-right: $h4;
