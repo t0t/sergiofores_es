@@ -4,7 +4,7 @@
   .Links {
     padding-top: $h5;
     padding-bottom: $h5;
-    background-color: $grey_0;
+    background-color: $grey_5;
     display: grid;
     justify-items: center;
     align-content:center;
@@ -23,9 +23,9 @@
       padding-top: $h1;
       margin-left: $h-1;
       margin-right: $h-1;
-      fill: $primary;
+      fill: $grey_3;
       &:hover {
-        fill: $grey_3;
+        fill: $highlight;
       }
       @include media(s2) {
         margin-left: $h1;

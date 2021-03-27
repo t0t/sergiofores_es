@@ -2,9 +2,9 @@ export const data = [
     {
       id: "0",
       block: "Cover",
-      title: "Hermenéutica Holística +0+1234",
-      subtitle: "Sergio Forés Raga",
-      text: "Practico el arte de descifrar la Creación, en la intersección de artes, tecnologías y saberes. Trato de sentir un cierto tipo de orden que conforma un cierto tipo de conexión.",
+      title: "+0+1234",
+      subtitle: "Hermenéutica Holística",
+      text: "Descifrando la Creación, en la intersección del arte, la tecnología y los saberes tradicionales. Un cierto tipo de orden que conforma un cierto tipo de conexión.",
       img: "../img/cover3.jpg"
     },
     {
@@ -97,8 +97,8 @@ export const data = [
       id: "13",
       block: "about",
       title: "Sergio Forés",
-      subtitle: "mi historia",
-      text: "Hacia el encuentro con lo que Es",
+      subtitle: "Hacia el encuentro con lo que Es",
+      text: "Siento que todo está unido y también imbricado por una paradoja tan sutil como rotunda. No distingo entre pintura, impresión 3D, diseño web, código o poesía. Lo que Es es todo a la vez y en eso consiste el proceso de toda la Creación. ",
       img: "../img/bg4.jpg"
     }
   ]

@@ -34,7 +34,7 @@
 
         @include media(s3) {
             justify-items: center;
-            gap: $h3;
+            gap: 1px;
         }
     
         /* figure {
