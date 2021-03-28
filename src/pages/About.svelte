@@ -6,15 +6,17 @@
     import BannerTexto from "../components/generic/BannerTexto.svelte";
     import Button from "../components/generic/Button.svelte";
     import SectionHalf from "../components/generic/SectionHalf.svelte";
+    import Layout from '../_Layout.svelte';
 
-    export let current_page_name;
+
+    export let current_page_name = "about"
 </script>
 
 <svelte:head>
     <title>Sergio Forés - {current_page_name}</title>
 </svelte:head>
 
-<main id="about">
+<Layout id={current_page_name}>
 
     <Cover title={data[13].title} subtitle={data[13].subtitle} text={data[13].text} img={data[13].img} />
 
@@ -27,4 +29,4 @@
         </div>
     </SectionHalf>
 
-</main>
+</Layout>

@@ -1,3 +1,4 @@
+// Import the wrap method
 import Home from './pages/Home.svelte';
 import About from './pages/About.svelte';
 import Artwork from './pages/Artwork.svelte';

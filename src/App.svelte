@@ -50,7 +50,10 @@
 <main>
 	{#if loaded} 
 		<Nav />
-		<Router {routes} />
+		<Router 
+		{routes} 
+		restoreScrollState={true} 
+		/>
 		<Links />
 	{:else} <Loading /> {/if}
 	<!-- {#if loaded} <Loading /> {/if} -->

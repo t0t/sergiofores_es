@@ -1,16 +1,12 @@
-<style lang="scss">
+<script>
+    import {fade} from 'svelte/transition'
+    export let id;
+</script>
+
+<!-- <style lang="scss">
     @use "sass/_index.scss" as *;
-</style>
+</style> -->
 
-
-
-
-    <slot name="nav"></slot>
-
-<main>
-    <slot name="content-container"></slot>
+<main {id} in:fade="{{duration: 500}}">
+    <slot></slot>
 </main>
-    
-<footer>
-    <slot name="footer"></slot>
-</footer>

@@ -1,9 +1,11 @@
 <script>
     import { link } from 'svelte-spa-router'
 	import active from 'svelte-spa-router/active'
+    // import {push} from 'svelte-spa-router'
 </script>
 
 <nav>
+    <!-- <button on:click={() => push('/artwork')}>Go somewhere</button> -->
     <a href="/artwork" use:link use:active>
         <h2>Artwork</h2>
         <p>3D-Printed Paintings</p>

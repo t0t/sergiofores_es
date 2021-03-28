@@ -7,7 +7,9 @@
     import T0T from '../components/particular/T0T/T0T.svelte';
     import SectionHalf from "../components/generic/SectionHalf.svelte";
     import Button from '../components/generic/Button.svelte';
-    export let current_page_name;
+    import Layout from '../_Layout.svelte';
+
+    let current_page_name = "playground"
 
     onMount(() => {
         console.log('MOUNTED COMPONENT');
@@ -22,7 +24,7 @@
     <title>Sergio Forés - {current_page_name}</title>
 </svelte:head>
 
-<main id="playground">
+<Layout id={current_page_name}>
     <Cover
         title={data[11].title}
         subtitle={data[11].subtitle}
@@ -50,6 +52,4 @@
         <Button variante={1} text={data[7].button} url={data[7].buttonurl} />
     </SectionHalf>
     <PhiSvg variante={2} title={data[8].title} text={data[8].subtitle} />
-</main>
-
-<slot />
+</Layout>

@@ -3,11 +3,12 @@
     import { data } from '../data/data.js';
     import { productos } from '../data/productos.js';
 
+    import Layout from '../_Layout.svelte';
     import ProductGallery from '../components/particular/ProductGallery/ProductGallery.svelte';
     import Cover from '../components/generic/Cover.svelte';
     import SectionHalf from "../components/generic/SectionHalf.svelte";
     import Button from '../components/generic/Button.svelte';
-    export let current_page_name;
+    export let current_page_name = "artwork";
 
     onMount(() => {
         console.log('MOUNTED COMPONENT');
@@ -22,7 +23,7 @@
     <title>Sergio Forés - {current_page_name}</title>
 </svelte:head>
 
-<main id="artwork">
+<Layout id={current_page_name}>
     
     <Cover
         title={data[12].title}
@@ -64,6 +65,6 @@
         />
     </SectionHalf>
     
-</main>
+</Layout>
 
 <slot />
